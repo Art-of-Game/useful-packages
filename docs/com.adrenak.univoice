@@ -1,0 +1,62 @@
+{
+  "name": "com.adrenak.univoice",
+  "dist-tags": {
+    "latest": "4.12.0"
+  },
+  "versions": {
+    "4.12.0": {
+      "name": "com.adrenak.univoice",
+      "version": "4.12.0",
+      "displayName": "Adrenak.UniVoice",
+      "description": "Voice chat/VoIP framework for Unity.",
+      "unity": "2021.2",
+      "author": {
+        "name": "Vatsal Ambastha",
+        "email": "ambastha.vatsal@gmail.com",
+        "url": "http://www.vatsalambastha.com"
+      },
+      "license": "MIT",
+      "keywords": [
+        "Mirror",
+        "Networking",
+        "Voice Chat",
+        "voip",
+        "Unity",
+        "Unity3d",
+        "VR",
+        "AR",
+        "Metaverse",
+        "mic",
+        "opus",
+        "concentus"
+      ],
+      "samples": [
+        {
+          "displayName": "Samples",
+          "description": "UniVoice Samples to get you started",
+          "path": "Samples~"
+        }
+      ],
+      "dependencies": {
+        "com.adrenak.brw": "1.2.0",
+        "com.adrenak.unimic": "3.4.0",
+        "com.adrenak.concentus-unity": "1.0.1"
+      },
+      "documentationUrl": "https://github.com/adrenak/univoice#readme",
+      "changelogUrl": "https://github.com/adrenak/univoice/commits/upm",
+      "licensesUrl": "https://github.com/adrenak/univoice/blob/master/LICENSE",
+      "_id": "com.adrenak.univoice@4.12.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.adrenak.univoice-4.12.0/com.adrenak.univoice-4.12.0.tgz",
+        "shasum": "5defa26696c28b079182941bf7b438e692167647",
+        "integrity": "sha512-G/ouu/FnexVhhmmNJp/+zv8/cereuo09B6ljGwtvnBngDaS8g/JyRE8KXlbim8v9rfFtX/c0OWgi8USIxkz9HQ=="
+      },
+      "_gitTagOf": "5defa26696c28b079182941bf7b438e692167647"
+    }
+  },
+  "time": {
+    "4.12.0": "2026-10-31T22:24:59.271Z",
+    "modified": "2026-10-31T22:24:59.271Z"
+  },
+  "description": "Voice chat/VoIP framework for Unity."
+}

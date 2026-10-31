@@ -1,0 +1,45 @@
+{
+  "name": "com.adrenak.unimic",
+  "dist-tags": {
+    "latest": "3.4.0"
+  },
+  "versions": {
+    "3.4.0": {
+      "name": "com.adrenak.unimic",
+      "version": "3.4.0",
+      "displayName": "Adrenak.UniMic",
+      "description": "Enhanced and easy Microphone for Unity.",
+      "unity": "2019.4",
+      "author": {
+        "name": "Vatsal Ambastha",
+        "email": "ambastha.vatsal@gmail.com",
+        "url": "http://www.vatsalambastha.com"
+      },
+      "samples": [
+        {
+          "displayName": "Samples",
+          "description": "Set of UniMic Samples to get you started",
+          "path": "Samples~"
+        }
+      ],
+      "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+      },
+      "documentationUrl": "https://github.com/adrenak/unimic#readme",
+      "changelogUrl": "https://github.com/adrenak/unimic/commits/upm",
+      "licensesUrl": "https://github.com/adrenak/unimic/blob/master/LICENSE",
+      "_id": "com.adrenak.unimic@3.4.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.adrenak.unimic-3.4.0/com.adrenak.unimic-3.4.0.tgz",
+        "shasum": "ddbefbfc872b3d54dfab199783aa1b75f96e99c9",
+        "integrity": "sha512-zfia2iWMYgH3ZHF/mIFx7eXhCBQVH0IMMyjY6Woq+2txT8m2OcONWxXt8sSik1RqjzrM9rSZ/ZhJisrzOGptgQ=="
+      },
+      "_gitTagOf": "ddbefbfc872b3d54dfab199783aa1b75f96e99c9"
+    }
+  },
+  "time": {
+    "3.4.0": "2026-10-31T22:24:55.258Z",
+    "modified": "2026-10-31T22:24:55.258Z"
+  },
+  "description": "Enhanced and easy Microphone for Unity."
+}

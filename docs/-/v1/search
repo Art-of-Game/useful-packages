@@ -610,8 +610,146 @@
         }
       },
       "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.adrenak.brw",
+        "version": "1.2.0",
+        "displayName": "Adrenak.BRW: Byte Reader Writer",
+        "description": "Byte reading and writing utilities for common C# and Unity types. ",
+        "author": {
+          "name": "Vatsal Ambastha",
+          "email": "ambastha.vatsal@gmail.com",
+          "url": "www.vatsalambastha.com"
+        },
+        "date": "2026-10-31T22:24:42.722Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.adrenak.concentus-unity",
+        "version": "1.0.1",
+        "displayName": "Concentus Unity",
+        "description": "Concentus (C# port of Opus with Speex resampler) made into a UPM package",
+        "author": {
+          "name": "Vatsal Ambastha",
+          "email": "ambastha.vatsal@gmail.com",
+          "url": "http://www.vatsalambastha.com"
+        },
+        "date": "2026-10-31T22:24:46.775Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.adrenak.rnnoise4unity",
+        "version": "1.0.0",
+        "displayName": "Adrenak.RNNoise4Unity",
+        "description": "RNNoise for Unity",
+        "keywords": [
+          "Audio",
+          "Noise",
+          "Denoising",
+          "RNNoise",
+          "voip",
+          "voice",
+          "speech"
+        ],
+        "author": {
+          "name": "Vatsal Ambastha",
+          "email": "ambastha.vatsal@gmail.com",
+          "url": "http://www.vatsalambastha.com"
+        },
+        "date": "2026-10-31T22:24:51.233Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.adrenak.unimic",
+        "version": "3.4.0",
+        "displayName": "Adrenak.UniMic",
+        "description": "Enhanced and easy Microphone for Unity.",
+        "author": {
+          "name": "Vatsal Ambastha",
+          "email": "ambastha.vatsal@gmail.com",
+          "url": "http://www.vatsalambastha.com"
+        },
+        "date": "2026-10-31T22:24:55.258Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.adrenak.univoice",
+        "version": "4.12.0",
+        "displayName": "Adrenak.UniVoice",
+        "description": "Voice chat/VoIP framework for Unity.",
+        "keywords": [
+          "Mirror",
+          "Networking",
+          "Voice Chat",
+          "voip",
+          "Unity",
+          "Unity3d",
+          "VR",
+          "AR",
+          "Metaverse",
+          "mic",
+          "opus",
+          "concentus"
+        ],
+        "author": {
+          "name": "Vatsal Ambastha",
+          "email": "ambastha.vatsal@gmail.com",
+          "url": "http://www.vatsalambastha.com"
+        },
+        "date": "2026-10-31T22:24:59.271Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
     }
   ],
-  "total": 23,
+  "total": 28,
   "time": "Thu, 01 Jan 1970 00:00:00 GMT"
 }

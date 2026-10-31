@@ -1,0 +1,38 @@
+{
+  "name": "com.adrenak.brw",
+  "dist-tags": {
+    "latest": "1.2.0"
+  },
+  "versions": {
+    "1.2.0": {
+      "name": "com.adrenak.brw",
+      "version": "1.2.0",
+      "displayName": "Adrenak.BRW: Byte Reader Writer",
+      "description": "Byte reading and writing utilities for common C# and Unity types. ",
+      "unity": "2018.4",
+      "author": {
+        "name": "Vatsal Ambastha",
+        "email": "ambastha.vatsal@gmail.com",
+        "url": "www.vatsalambastha.com"
+      },
+      "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+      },
+      "documentationUrl": "https://github.com/adrenak/brw#readme",
+      "changelogUrl": "https://github.com/adrenak/brw/commits/upm-latest",
+      "licensesUrl": "https://github.com/adrenak/brw/blob/master/LICENSE",
+      "_id": "com.adrenak.brw@1.2.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.adrenak.brw-1.2.0/com.adrenak.brw-1.2.0.tgz",
+        "shasum": "275610d3b813165703ba8e2cd0b716f972342e1f",
+        "integrity": "sha512-ORcrDPdOyvkj1xLnsPJBhBmLUJ3PIIO3YVs1daqNXG/h/5yNv7CAq/ZVmFTKwHFHsHJBJC0Sxjdjh5NZUR5ZFA=="
+      },
+      "_gitTagOf": "275610d3b813165703ba8e2cd0b716f972342e1f"
+    }
+  },
+  "time": {
+    "1.2.0": "2026-10-31T22:24:42.722Z",
+    "modified": "2026-10-31T22:24:42.722Z"
+  },
+  "description": "Byte reading and writing utilities for common C# and Unity types. "
+}

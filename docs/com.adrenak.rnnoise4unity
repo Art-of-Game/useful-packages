@@ -1,0 +1,45 @@
+{
+  "name": "com.adrenak.rnnoise4unity",
+  "dist-tags": {
+    "latest": "1.0.0"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "com.adrenak.rnnoise4unity",
+      "version": "1.0.0",
+      "displayName": "Adrenak.RNNoise4Unity",
+      "description": "RNNoise for Unity",
+      "unity": "2021.3",
+      "author": {
+        "name": "Vatsal Ambastha",
+        "email": "ambastha.vatsal@gmail.com",
+        "url": "http://www.vatsalambastha.com"
+      },
+      "license": "BSD 3-Clause License",
+      "keywords": [
+        "Audio",
+        "Noise",
+        "Denoising",
+        "RNNoise",
+        "voip",
+        "voice",
+        "speech"
+      ],
+      "documentationUrl": "https://github.com/adrenak/RNNoise4Unity#readme",
+      "changelogUrl": "https://github.com/adrenak/RNNoise4Unity/commits/upm",
+      "licensesUrl": "https://github.com/adrenak/RNNoise4Unity/blob/master/LICENSE",
+      "_id": "com.adrenak.rnnoise4unity@1.0.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.adrenak.rnnoise4unity-1.0.0/com.adrenak.rnnoise4unity-1.0.0.tgz",
+        "shasum": "1a2e9bb3a22a3ad1aa01cc97d314395c5ae9489f",
+        "integrity": "sha512-vaEzeykxSTAxI99ioziCapB0Db7FCAt0V+TOxcPA+ReBKC7MjbBSO2BVqNk91ivDSkB82C7ALsGCLnN86Ppifw=="
+      },
+      "_gitTagOf": "1a2e9bb3a22a3ad1aa01cc97d314395c5ae9489f"
+    }
+  },
+  "time": {
+    "1.0.0": "2026-10-31T22:24:51.233Z",
+    "modified": "2026-10-31T22:24:51.233Z"
+  },
+  "description": "RNNoise for Unity"
+}

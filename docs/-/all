@@ -298,5 +298,70 @@
     "time": {
       "modified": "2026-10-31T21:55:49.328Z"
     }
+  },
+  "com.adrenak.brw": {
+    "name": "com.adrenak.brw",
+    "description": "Byte reading and writing utilities for common C# and Unity types. ",
+    "dist-tags": {
+      "latest": "1.2.0"
+    },
+    "versions": {
+      "1.2.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T22:24:42.722Z"
+    }
+  },
+  "com.adrenak.concentus-unity": {
+    "name": "com.adrenak.concentus-unity",
+    "description": "Concentus (C# port of Opus with Speex resampler) made into a UPM package",
+    "dist-tags": {
+      "latest": "1.0.1"
+    },
+    "versions": {
+      "1.0.1": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T22:24:46.775Z"
+    }
+  },
+  "com.adrenak.rnnoise4unity": {
+    "name": "com.adrenak.rnnoise4unity",
+    "description": "RNNoise for Unity",
+    "dist-tags": {
+      "latest": "1.0.0"
+    },
+    "versions": {
+      "1.0.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T22:24:51.233Z"
+    }
+  },
+  "com.adrenak.unimic": {
+    "name": "com.adrenak.unimic",
+    "description": "Enhanced and easy Microphone for Unity.",
+    "dist-tags": {
+      "latest": "3.4.0"
+    },
+    "versions": {
+      "3.4.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T22:24:55.258Z"
+    }
+  },
+  "com.adrenak.univoice": {
+    "name": "com.adrenak.univoice",
+    "description": "Voice chat/VoIP framework for Unity.",
+    "dist-tags": {
+      "latest": "4.12.0"
+    },
+    "versions": {
+      "4.12.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T22:24:59.271Z"
+    }
   }
 }
