@@ -47,7 +47,7 @@ https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk
 
 To stay on one version, add it to the end, like `#upm/com.google.firebase.app/14.1.0`.
 
-Git packages don't bring each other, so install Firebase App before Firebase Cloud Messaging.
+Unity fetches a package's dependencies from a registry, never from Git. So with Git URLs, add Firebase App first and Firebase Cloud Messaging after it. With the scoped registry above, Firebase Cloud Messaging brings Firebase App by itself.
 
 ## Update
 
