@@ -12,37 +12,82 @@
     {
       "name": "com.google.firebase.app",
       "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/unity/setup",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.firebase.messaging",
       "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/cloud-messaging/unity/get-started",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.firebase.analytics",
       "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/analytics/unity/get-started",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
+    },
+    {
+      "name": "com.google.firebase.app-check",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/app-check/unity/default-providers",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.firebase.auth",
       "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/auth/unity/start",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.firebase.crashlytics",
       "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/crashlytics/unity/get-started",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.firebase.firestore",
       "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/firestore/quickstart",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.firebase.remote-config",
       "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://firebase.google.com/docs/remote-config/unity/get-started",
+        "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+        "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.signin",
@@ -55,6 +100,11 @@
       "author": {
         "name": "Google, coolishbee",
         "url": "https://github.com/coolishbee/google-signin-unity"
+      },
+      "links": {
+        "documentationUrl": "https://github.com/coolishbee/google-signin-unity/blob/v{version}/Packages/com.coolishbee.google-signin/README.md",
+        "changelogUrl": "https://github.com/coolishbee/google-signin-unity/blob/v{version}/Packages/com.coolishbee.google-signin/CHANGELOG.md",
+        "licensesUrl": "https://github.com/coolishbee/google-signin-unity/blob/v{version}/Packages/com.coolishbee.google-signin/LICENSE"
       }
     },
     {
@@ -62,22 +112,42 @@
       "latestFrom": "playgameservices/play-games-plugin-for-unity",
       "tarball": "https://codeload.github.com/playgameservices/play-games-plugin-for-unity/tar.gz/refs/tags/v{version}",
       "folder": "play-games-plugin-for-unity-{version}/Assets/Public/GooglePlayGames/com.google.play.games",
-      "licence": "https://raw.githubusercontent.com/playgameservices/play-games-plugin-for-unity/v{version}/LICENSE"
+      "licence": "https://raw.githubusercontent.com/playgameservices/play-games-plugin-for-unity/v{version}/LICENSE",
+      "links": {
+        "documentationUrl": "https://developer.android.com/games/pgs/unity/unity-start",
+        "changelogUrl": "https://github.com/playgameservices/play-games-plugin-for-unity/blob/v{version}/CHANGELOG.txt",
+        "licensesUrl": "https://github.com/playgameservices/play-games-plugin-for-unity/blob/v{version}/LICENSE"
+      }
     },
     {
       "name": "com.google.play.review",
       "latestBy": "archive",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://developer.android.com/guide/playcore/in-app-review/unity",
+        "changelogUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.review/CHANGELOG.md",
+        "licensesUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.review/LICENSE.md"
+      }
     },
     {
       "name": "com.google.play.appupdate",
       "latestBy": "archive",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://developer.android.com/guide/playcore/in-app-updates/unity",
+        "changelogUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.appupdate/CHANGELOG.md",
+        "licensesUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.appupdate/LICENSE.md"
+      }
     },
     {
       "name": "com.google.play.core",
       "latestBy": "archive",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "links": {
+        "documentationUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.core/README.md",
+        "changelogUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.core/CHANGELOG.md",
+        "licensesUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.core/LICENSE.md"
+      }
     },
     {
       "name": "com.google.play.common",
@@ -85,6 +155,11 @@
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
       "addDependencies": {
         "com.unity.ugui": "1.0.0"
+      },
+      "links": {
+        "documentationUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.common/README.md",
+        "changelogUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.common/CHANGELOG.md",
+        "licensesUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.common/LICENSE.md"
       }
     },
     {
@@ -118,7 +193,12 @@
         "- `Editor/Facebook.Unity.PostProcess.asmdef` is new, because Unity compiles no script in a package without one.",
         "- `Editor/FacebookLinkFile.cs` is new, because Unity reads no `link.xml` from inside a package.",
         "- The `.meta` files of `XInputDotNetPure.dll` and the two `XInputInterface.dll` now say what Meta's `FacebookImporter` sets, because that importer does nothing to files in a package."
-      ]
+      ],
+      "links": {
+        "documentationUrl": "https://developers.facebook.com/documentation/unity",
+        "changelogUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-{version}/CHANGELOG.md",
+        "licensesUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-{version}/LICENSE.txt"
+      }
     }
   ]
 }

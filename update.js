@@ -177,6 +177,11 @@ async function prepare(entry, version, folder) {
     manifest.author = entry.author;
     changes.push(`- \`package.json\` names ${entry.author.name} as the author, which the original leaves out.`);
   }
+  // The Documentation, Changelog and Licenses links in the Package Manager window read these fields.
+  if (entry.links) {
+    for (const [field, url] of Object.entries(entry.links)) manifest[field] = fill(url, entry.name, version);
+    changes.push("- `package.json` links the vendor's documentation, changelog and licence.");
+  }
   for (const [dependency, wanted] of Object.entries(entry.addDependencies ?? {})) {
     (manifest.dependencies ??= {})[dependency] = wanted;
     changes.push(`- \`package.json\` names \`${dependency}\`, which the package uses without naming it.`);

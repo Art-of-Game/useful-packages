@@ -3,38 +3,8 @@
   "dist-tags": {
     "latest": "14.1.0"
   },
-  "versions": {
-    "14.1.0": {
-      "name": "com.google.firebase.analytics",
-      "version": "14.1.0",
-      "displayName": "Google Analytics",
-      "keywords": [
-        "Google",
-        "Firebase",
-        "Analytics",
-        "vh-name:FirebaseAnalytics",
-        "vh-name:Google Analytics"
-      ],
-      "author": {
-        "name": "Google LLC",
-        "url": "https://firebase.google.com/docs/analytics/unity/start"
-      },
-      "description": "Get free and unlimited game and player analytics\n\nGoogle Analytics helps you understand and engage your players by revealing what actions they're taking inside your game, where they spend the most time, and why they churn. From acquisition to app usage, Google Analytics will give you insights to make better decisions about your game. You can even combine your analytics data with Google Ads to make sure you're running campaigns that deliver you high-quality players.",
-      "unity": "2022.1",
-      "dependencies": {
-        "com.google.firebase.app": "14.1.0"
-      },
-      "_id": "com.google.firebase.analytics@14.1.0",
-      "dist": {
-        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.analytics-14.1.0/com.google.firebase.analytics-14.1.0.tgz",
-        "shasum": "37bc02348c81f670fd146efddcbfd1f626218568",
-        "integrity": "sha512-JIIqDolI9gci+4v91BqhGJVPQhrnkDF8nTDi5H2RKj1HSYXfAMn/pGl8f8brv2vhbpdzUNGQ8cjLcEdJInMUMQ=="
-      },
-      "_gitTagOf": "37bc02348c81f670fd146efddcbfd1f626218568"
-    }
-  },
+  "versions": {},
   "time": {
-    "14.1.0": "2026-10-31T19:51:21.014Z",
     "modified": "2026-10-31T19:51:21.014Z"
   },
   "description": "Get free and unlimited game and player analytics\n\nGoogle Analytics helps you understand and engage your players by revealing what actions they're taking inside your game, where they spend the most time, and why they churn. From acquisition to app usage, Google Analytics will give you insights to make better decisions about your game. You can even combine your analytics data with Google Ads to make sure you're running campaigns that deliver you high-quality players."

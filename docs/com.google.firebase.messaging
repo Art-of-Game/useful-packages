@@ -32,41 +32,11 @@
         "integrity": "sha512-mFgha9eFYCN4nauLy6qDO9rgTOOffQstR5zbtBDh3xr81lbxlaWesd0zEz0E3DpyBg1qCaCE6SIFwl/MXMmDGA=="
       },
       "_gitTagOf": "d978983cef866f23fc5dde050165e31acc693542"
-    },
-    "14.1.0": {
-      "name": "com.google.firebase.messaging",
-      "version": "14.1.0",
-      "displayName": "Firebase Cloud Messaging",
-      "keywords": [
-        "Google",
-        "Firebase",
-        "Cloud Messaging",
-        "Messaging",
-        "vh-name:FirebaseMessaging",
-        "vh-name:Firebase Cloud Messaging"
-      ],
-      "author": {
-        "name": "Google LLC",
-        "url": "https://firebase.google.com/docs/cloud-messaging/unity/client"
-      },
-      "description": "Send targeted messages and notifications.\n\nCloud Messaging gives you a reliable and battery-efficient way to send messages and notifications across platforms. You can target your messages to certain segments of players and customize them to suit your game's brand. You can also gauge their effectiveness with statistics like click rate, open rate, and the downstream effect on conversions.",
-      "unity": "2022.1",
-      "dependencies": {
-        "com.google.firebase.app": "14.1.0"
-      },
-      "_id": "com.google.firebase.messaging@14.1.0",
-      "dist": {
-        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.messaging-14.1.0/com.google.firebase.messaging-14.1.0.tgz",
-        "shasum": "f3a2eb7f00f81af3e6851275ec72b0a96129aa0a",
-        "integrity": "sha512-WvVmghyWRXSLHpFGQo0WuY05h/jSkHFWhMiU/3ZhA5QpgyODunE3ITYIPpgb1MaLXww14DcFqbiZPaTL9MsDkA=="
-      },
-      "_gitTagOf": "f3a2eb7f00f81af3e6851275ec72b0a96129aa0a"
     }
   },
   "time": {
     "14.0.0": "2026-10-31T13:42:20.362Z",
-    "modified": "2026-10-31T13:42:26.361Z",
-    "14.1.0": "2026-10-31T13:42:26.361Z"
+    "modified": "2026-10-31T13:42:26.361Z"
   },
   "description": "Send targeted messages and notifications.\n\nCloud Messaging gives you a reliable and battery-efficient way to send messages and notifications across platforms. You can target your messages to certain segments of players and customize them to suit your game's brand. You can also gauge their effectiveness with statistics like click rate, open rate, and the downstream effect on conversions."
 }

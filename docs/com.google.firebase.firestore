@@ -3,39 +3,8 @@
   "dist-tags": {
     "latest": "14.1.0"
   },
-  "versions": {
-    "14.1.0": {
-      "name": "com.google.firebase.firestore",
-      "version": "14.1.0",
-      "displayName": "Cloud Firestore",
-      "keywords": [
-        "Google",
-        "Firebase",
-        "Firestore",
-        "Cloud",
-        "vh-name:FirebaseFirestore",
-        "vh-name:Cloud Firestore"
-      ],
-      "author": {
-        "name": "Google LLC",
-        "url": "https://firebase.google.com/docs/firestore"
-      },
-      "description": "Store and sync game data at global scale.\n\nCloud Firestore is a flexible NoSQL document database that lets you easily store, sync, and query data for your games - at global scale.\n\nFirestore supports a million players connected simultaneously with a guaranteed uptime of 5 nines for multi-region instances. That's less than 5 minutes of downtime a year!\n\nWith Cloud Firestore, your players can access and make changes to their data at any time, even when they're offline.",
-      "unity": "2022.1",
-      "dependencies": {
-        "com.google.firebase.app": "14.1.0"
-      },
-      "_id": "com.google.firebase.firestore@14.1.0",
-      "dist": {
-        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.firestore-14.1.0/com.google.firebase.firestore-14.1.0.tgz",
-        "shasum": "5415f057d4be4759a67eeb39844bbe3b1d451701",
-        "integrity": "sha512-0T/CGALVFLhZYTIAzgYg61tkmy9M2VrISi1d86emLKr4b+k371/HS/0AuJJ1Wr6VEh3CixHlulV5+4DPd7Wwfg=="
-      },
-      "_gitTagOf": "5415f057d4be4759a67eeb39844bbe3b1d451701"
-    }
-  },
+  "versions": {},
   "time": {
-    "14.1.0": "2026-10-31T19:51:52.517Z",
     "modified": "2026-10-31T19:51:52.517Z"
   },
   "description": "Store and sync game data at global scale.\n\nCloud Firestore is a flexible NoSQL document database that lets you easily store, sync, and query data for your games - at global scale.\n\nFirestore supports a million players connected simultaneously with a guaranteed uptime of 5 nines for multi-region instances. That's less than 5 minutes of downtime a year!\n\nWith Cloud Firestore, your players can access and make changes to their data at any time, even when they're offline."

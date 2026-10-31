@@ -3,30 +3,8 @@
   "dist-tags": {
     "latest": "1.8.5"
   },
-  "versions": {
-    "1.8.5": {
-      "name": "com.google.play.core",
-      "displayName": "Google Play Core",
-      "description": "The Google Play Core package provides the Play Core Library required by some Google Play packages, such as Play Asset Delivery.\n\nThis package doesn't provide any features when installed separately.",
-      "version": "1.8.5",
-      "unity": "2018.4",
-      "author": {
-        "name": "Google LLC"
-      },
-      "dependencies": {
-        "com.unity.external-dependency-manager": "2.1.1"
-      },
-      "_id": "com.google.play.core@1.8.5",
-      "dist": {
-        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.play.core-1.8.5/com.google.play.core-1.8.5.tgz",
-        "shasum": "1b9244f12155f3c83041098fa21e5d434b1290f7",
-        "integrity": "sha512-oq8rNpqlj8nrsJmcG8yUaP24bnXmOnGfI01ZF3Um+6bNvq2+FUtwEUmmW6c6oqSl4yzzMPi0WC8GSvJz9lP8Tg=="
-      },
-      "_gitTagOf": "1b9244f12155f3c83041098fa21e5d434b1290f7"
-    }
-  },
+  "versions": {},
   "time": {
-    "1.8.5": "2026-10-31T19:52:33.104Z",
     "modified": "2026-10-31T19:52:33.104Z"
   },
   "description": "The Google Play Core package provides the Play Core Library required by some Google Play packages, such as Play Asset Delivery.\n\nThis package doesn't provide any features when installed separately."

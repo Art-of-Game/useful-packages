@@ -3,31 +3,8 @@
   "dist-tags": {
     "latest": "1.8.3"
   },
-  "versions": {
-    "1.8.3": {
-      "name": "com.google.play.review",
-      "displayName": "Google Play In-app Review",
-      "description": "The Google Play In-App Review package lets you prompt users to submit Play Store ratings and reviews without the inconvenience of leaving your game.",
-      "version": "1.8.3",
-      "unity": "2018.4",
-      "author": {
-        "name": "Google LLC"
-      },
-      "dependencies": {
-        "com.google.play.common": "1.9.2",
-        "com.google.play.core": "1.8.5"
-      },
-      "_id": "com.google.play.review@1.8.3",
-      "dist": {
-        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.play.review-1.8.3/com.google.play.review-1.8.3.tgz",
-        "shasum": "853fad213919046d29fd1961ada1ea8c5e5c3059",
-        "integrity": "sha512-e0xV9vJ47Kpc2V/hhlyT2N5yFBPRFanpDFOcR/dNUkpmxQzzvRTvFFIhMXF9fg17N5FUHyQzxBJ/XP1jAR2SzA=="
-      },
-      "_gitTagOf": "853fad213919046d29fd1961ada1ea8c5e5c3059"
-    }
-  },
+  "versions": {},
   "time": {
-    "1.8.3": "2026-10-31T19:52:19.332Z",
     "modified": "2026-10-31T19:52:19.332Z"
   },
   "description": "The Google Play In-App Review package lets you prompt users to submit Play Store ratings and reviews without the inconvenience of leaving your game."

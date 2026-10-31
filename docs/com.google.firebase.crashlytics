@@ -3,39 +3,8 @@
   "dist-tags": {
     "latest": "14.1.0"
   },
-  "versions": {
-    "14.1.0": {
-      "name": "com.google.firebase.crashlytics",
-      "version": "14.1.0",
-      "displayName": "Firebase Crashlytics",
-      "keywords": [
-        "Google",
-        "Firebase",
-        "Crashlytics",
-        "Fabric",
-        "vh-name:FirebaseCrashlytics",
-        "vh-name:Firebase Crashlytics"
-      ],
-      "author": {
-        "name": "Google LLC",
-        "url": "https://firebase.google.com/docs/crashlytics/unity/start"
-      },
-      "description": "Prioritize and fix stability issues faster.\n\nFirebase Crashlytics helps you track, prioritize, and fix stability issues that erode game quality, in realtime. Spend less time triaging and troubleshooting crashes and more time building game content and features that delight players.\n\nCrashlytics also sends realtime alerts for new issues, regressed issues, and burgeoning issues that might require immediate attention to ensure you never miss a critical crash no matter where you are.",
-      "unity": "2022.1",
-      "dependencies": {
-        "com.google.firebase.app": "14.1.0"
-      },
-      "_id": "com.google.firebase.crashlytics@14.1.0",
-      "dist": {
-        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.crashlytics-14.1.0/com.google.firebase.crashlytics-14.1.0.tgz",
-        "shasum": "c51502d3265db50c8b13ad1a27de529d0a260270",
-        "integrity": "sha512-mnKpodaj+xOJahf0S6ScrmWUuk0o5v9kmCH9YP2GGH0VJUFT21y9tdzaBc4XvyIto2ev/wF+Z0cCGFVZ95Uy0g=="
-      },
-      "_gitTagOf": "c51502d3265db50c8b13ad1a27de529d0a260270"
-    }
-  },
+  "versions": {},
   "time": {
-    "14.1.0": "2026-10-31T19:51:37.044Z",
     "modified": "2026-10-31T19:51:37.044Z"
   },
   "description": "Prioritize and fix stability issues faster.\n\nFirebase Crashlytics helps you track, prioritize, and fix stability issues that erode game quality, in realtime. Spend less time triaging and troubleshooting crashes and more time building game content and features that delight players.\n\nCrashlytics also sends realtime alerts for new issues, regressed issues, and burgeoning issues that might require immediate attention to ensure you never miss a critical crash no matter where you are."

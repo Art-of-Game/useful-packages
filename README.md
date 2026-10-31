@@ -14,6 +14,7 @@ From [firebase/firebase-unity-sdk](https://github.com/firebase/firebase-unity-sd
 |---|---|---|
 | `com.google.firebase.app` | Firebase App (Core) | External Dependency Manager |
 | `com.google.firebase.analytics` | Google Analytics for Firebase | Firebase App |
+| `com.google.firebase.app-check` | Firebase App Check | Firebase App |
 | `com.google.firebase.auth` | Firebase Authentication | Firebase App |
 | `com.google.firebase.crashlytics` | Firebase Crashlytics | Firebase App |
 | `com.google.firebase.firestore` | Cloud Firestore | Firebase App |
