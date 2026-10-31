@@ -29,6 +29,24 @@ In `Packages/manifest.json`, add the registry and only the packages you use:
 }
 ```
 
+## Install by Git URL instead
+
+Every version also has a Git tag of its own, `upm/<package>/<version>`, that holds only that package, so each one is still its
+own download. Unity brings no dependencies for Git packages, so list each one yourself:
+
+```json
+{
+  "dependencies": {
+    "com.google.external-dependency-manager": "https://github.com/Art-of-Game/useful-packages.git#upm/com.google.external-dependency-manager/1.2.190",
+    "com.google.firebase.app": "https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app/14.1.0",
+    "com.google.firebase.messaging": "https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging/14.1.0"
+  }
+}
+```
+
+A Git package has no **Update** button. To update, change the version at the end of the URLs. GitHub takes no file over 100 MiB,
+so a version with a bigger file gets no Git tag (the workflow warns about it) but is still in the registry.
+
 ## Update a package in a project
 
 Package Manager window, **Packages: In Project**, select the package, **Update**.
@@ -36,8 +54,8 @@ Package Manager window, **Packages: In Project**, select the package, **Update**
 ## How new versions get here
 
 `.github/workflows/update.yml` runs every day. When the vendor has a new version, `update.js` copies its `.tgz`, unchanged, into
-a release of this repository and rewrites the files in `docs/`, which GitHub Pages serves to Unity. To run it now: **Actions**,
-**Update packages**, **Run workflow**.
+a release of this repository, adds its Git tag and rewrites the files in `docs/`, which GitHub Pages serves to Unity. To run it
+now: **Actions**, **Update packages**, **Run workflow**.
 
 ## Add a package
 

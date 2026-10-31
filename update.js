@@ -93,6 +93,37 @@ async function publish(entry, version) {
   return true;
 }
 
+// A Git URL needs the package's files in Git. Each version gets its own tag, and that tag's commit holds only
+// that package with no parent, so a shallow clone of the tag downloads just that package.
+async function ensureGitTag(name, version, tarball) {
+  const tag = `upm/${name}/${version}`;
+  const run = (cwd, env, ...args) =>
+    execFileSync("git", ["-c", "core.autocrlf=false", "-c", "core.longpaths=true", "-c", "user.name=github-actions[bot]",
+      "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com", ...args],
+      { cwd, env: { ...process.env, ...env }, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
+
+  if (run(__dirname, {}, "ls-remote", "--tags", "origin", `refs/tags/${tag}`)) return;
+
+  const response = await fetch(tarball);
+  if (!response.ok) throw new Error(`${response.status} from ${tarball}`);
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "useful-packages-"));
+  fs.writeFileSync(path.join(tempDir, "package.tgz"), Buffer.from(await response.arrayBuffer()));
+  execFileSync("tar", ["-xzf", "package.tgz"], { cwd: tempDir });
+
+  const tree = path.join(tempDir, "package");
+  fs.writeFileSync(path.join(tree, ".gitattributes"), "* -text\n");
+  const env = {
+    GIT_DIR: path.join(__dirname, ".git"),
+    GIT_WORK_TREE: tree,
+    GIT_INDEX_FILE: path.join(tempDir, "index"),
+  };
+  run(tree, env, "add", "-A", "-f", ".");
+  const commit = run(tree, env, "commit-tree", run(tree, env, "write-tree"), "-m", `${name} ${version}`);
+  run(__dirname, {}, "push", "origin", `${commit}:refs/tags/${tag}`);
+  fs.rmSync(tempDir, { recursive: true, force: true });
+  console.log(`${name} ${version}: Git tag ${tag}`);
+}
+
 // Unity lists a registry's packages from these two files, the package's own file says everything else.
 function writeListings() {
   const all = { _updated: 0 };
@@ -138,6 +169,17 @@ async function main() {
     await publish(entry, version);
   }
   writeListings();
+
+  // A refused Git tag (GitHub takes no file over 100 MiB) must not stop the registry, which has no such limit.
+  for (const { name } of config.packages) {
+    for (const [version, { dist }] of Object.entries(readDoc(name).versions)) {
+      try {
+        await ensureGitTag(name, version, dist.tarball);
+      } catch (error) {
+        console.log(`::warning::${name} ${version} has no Git tag: ${error.message}`);
+      }
+    }
+  }
 }
 
 main().catch((error) => {
