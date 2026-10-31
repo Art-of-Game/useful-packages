@@ -1,18 +1,5 @@
 {
   "_updated": 0,
-  "com.google.external-dependency-manager": {
-    "name": "com.google.external-dependency-manager",
-    "description": "This package is deprecated. Use <a href=\"com.unity3d.kharma:upmpackage/com.unity.external-dependency-manager\">External Dependency Manager official Unity Package</a> instead.External Dependency Manager for Unity (EDM4U) can be used by any Unity plugin that requires Android specific libraries (e.g. AARs), iOS CocoaPods, version management of transitive dependencies, and/or management of Unity Package Manager registries.",
-    "dist-tags": {
-      "latest": "1.2.190"
-    },
-    "versions": {
-      "1.2.190": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T11:48:55.694Z"
-    }
-  },
   "com.google.firebase.app": {
     "name": "com.google.firebase.app",
     "description": "Firebase App is the core library every Firebase package depends on.",
@@ -23,7 +10,7 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T11:50:46.507Z"
+      "modified": "2026-10-31T13:42:14.932Z"
     }
   },
   "com.google.firebase.messaging": {
@@ -36,7 +23,20 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T11:50:49.874Z"
+      "modified": "2026-10-31T13:42:26.361Z"
+    }
+  },
+  "com.coolishbee.google-signin": {
+    "name": "com.coolishbee.google-signin",
+    "description": "Google Sign-In for Unity. Android uses CredentialManager + AuthorizationClient, iOS uses GIDSignIn, and Editor/Standalone uses a loopback OAuth flow.",
+    "dist-tags": {
+      "latest": "1.0.0"
+    },
+    "versions": {
+      "1.0.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T13:42:31.081Z"
     }
   }
 }

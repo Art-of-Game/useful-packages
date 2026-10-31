@@ -1,11 +1,14 @@
 {
   "repo": "Art-of-Game/useful-packages",
+  "organizationId": "18968138129184",
+  "organizationName": "Art Of Game",
+  "replaceDependencies": {
+    "com.google.external-dependency-manager": {
+      "name": "com.unity.external-dependency-manager",
+      "version": "2.1.1"
+    }
+  },
   "packages": [
-    {
-      "name": "com.google.external-dependency-manager",
-      "latestFrom": "googlesamples/unity-jar-resolver",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
     {
       "name": "com.google.firebase.app",
       "latestFrom": "firebase/firebase-unity-sdk",
@@ -15,6 +18,13 @@
       "name": "com.google.firebase.messaging",
       "latestFrom": "firebase/firebase-unity-sdk",
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.coolishbee.google-signin",
+      "latestFrom": "coolishbee/google-signin-unity",
+      "latestBy": "tag",
+      "tarball": "https://codeload.github.com/coolishbee/google-signin-unity/tar.gz/refs/tags/v{version}",
+      "folder": "google-signin-unity-{version}/Packages/com.coolishbee.google-signin"
     }
   ]
 }

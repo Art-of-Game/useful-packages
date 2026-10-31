@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 3 * * *"
   workflow_dispatch:
+    inputs:
+      test_signing:
+        description: Only check that signing works, publish nothing
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -14,13 +19,21 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
+      UPM_SERVICE_ACCOUNT_KEY_ID: ${{ secrets.UPM_SERVICE_ACCOUNT_KEY_ID }}
+      UPM_SERVICE_ACCOUNT_KEY_SECRET: ${{ secrets.UPM_SERVICE_ACCOUNT_KEY_SECRET }}
     steps:
       - uses: actions/checkout@v7
 
+      - name: Check that signing works
+        if: ${{ inputs.test_signing }}
+        run: node update.js test-signing com.google.firebase.messaging
+
       - name: Publish new versions
+        if: ${{ !inputs.test_signing }}
         run: node update.js
 
       - name: Save the registry files
+        if: ${{ !inputs.test_signing }}
         run: |
           git add docs
           if git diff --cached --quiet; then

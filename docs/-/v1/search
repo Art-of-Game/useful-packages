@@ -2,41 +2,6 @@
   "objects": [
     {
       "package": {
-        "name": "com.google.external-dependency-manager",
-        "version": "1.2.190",
-        "displayName": "External Dependency Manager for Unity",
-        "description": "This package is deprecated. Use <a href=\"com.unity3d.kharma:upmpackage/com.unity.external-dependency-manager\">External Dependency Manager official Unity Package</a> instead.External Dependency Manager for Unity (EDM4U) can be used by any Unity plugin that requires Android specific libraries (e.g. AARs), iOS CocoaPods, version management of transitive dependencies, and/or management of Unity Package Manager registries.",
-        "keywords": [
-          "Google",
-          "Android",
-          "Gradle",
-          "Cocoapods",
-          "Dependency",
-          "Unity Package Manager",
-          "Unity",
-          "vh-name:play-services-resolver",
-          "vh-name:unity-jar-resolver",
-          "vh-name:external-dependency-manager",
-          "vh-name:External Dependency Manager for Unity"
-        ],
-        "author": {
-          "name": "Google LLC",
-          "url": "https://github.com/googlesamples/unity-jar-resolver"
-        },
-        "date": "2026-10-31T11:48:55.694Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
         "name": "com.google.firebase.app",
         "version": "14.1.0",
         "displayName": "Firebase App (Core)",
@@ -51,7 +16,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/unity/setup"
         },
-        "date": "2026-10-31T11:50:46.507Z"
+        "date": "2026-10-31T13:42:14.932Z"
       },
       "score": {
         "final": 1,
@@ -81,7 +46,31 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/cloud-messaging/unity/client"
         },
-        "date": "2026-10-31T11:50:49.874Z"
+        "date": "2026-10-31T13:42:26.361Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.coolishbee.google-signin",
+        "version": "1.0.0",
+        "displayName": "Google Sign-In for Unity",
+        "description": "Google Sign-In for Unity. Android uses CredentialManager + AuthorizationClient, iOS uses GIDSignIn, and Editor/Standalone uses a loopback OAuth flow.",
+        "keywords": [
+          "google",
+          "signin",
+          "oauth",
+          "authentication"
+        ],
+        "date": "2026-10-31T13:42:31.081Z"
       },
       "score": {
         "final": 1,

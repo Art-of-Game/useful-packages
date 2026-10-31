@@ -21,13 +21,13 @@
       "description": "Firebase App is the core library every Firebase package depends on.",
       "unity": "2022.1",
       "dependencies": {
-        "com.google.external-dependency-manager": "1.2.190"
+        "com.unity.external-dependency-manager": "2.1.1"
       },
       "_id": "com.google.firebase.app@14.0.0",
       "dist": {
         "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.app-14.0.0/com.google.firebase.app-14.0.0.tgz",
-        "shasum": "61c34e22601438ac9751f5a310460a4ed51b8a57",
-        "integrity": "sha512-pHhnNUX1X9sMouON42oVYE/oNwrSEPmF3pJEv7sc9EpRNGFRyhRMgQm4OhNbxbj0ePCr2t/HdQgzPTKGCI6yVg=="
+        "shasum": "36f2e641dab19c2b716df8dec7cb80735420353c",
+        "integrity": "sha512-YUd1SAf2xcxzwblyeDsVh5ywIhV3A+nyH/IzcCv72/M/3DZAps0vcPBE6oyjhayf1ixOgKnFd0kxBSU89LzmxA=="
       }
     },
     "14.1.0": {
@@ -47,20 +47,20 @@
       "description": "Firebase App is the core library every Firebase package depends on.",
       "unity": "2022.1",
       "dependencies": {
-        "com.google.external-dependency-manager": "1.2.190"
+        "com.unity.external-dependency-manager": "2.1.1"
       },
       "_id": "com.google.firebase.app@14.1.0",
       "dist": {
         "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.app-14.1.0/com.google.firebase.app-14.1.0.tgz",
-        "shasum": "4375d28a6dd84ee4083a90e0e9ce54936cf86dd1",
-        "integrity": "sha512-UaQunXjq4JeDnnDBV/1q3f8oXP8G4n6hR7Qah10QUwtrPwnbkv62ndqQiJKRfCeLe3RDTwiPo3wXvfrrpQdiog=="
+        "shasum": "078e7ad410823895c368c6dcdbfc1cf25d315f69",
+        "integrity": "sha512-+/yr9IHnelBRvDhbMDDAd/XUE7vu/9p8fd3PU0B/3Hegmn4PHYep8V/3M3UVbMZW5tJ8ekPZn014z9QfiWsVaQ=="
       }
     }
   },
   "time": {
-    "14.0.0": "2026-10-31T11:49:44.810Z",
-    "modified": "2026-10-31T11:50:46.507Z",
-    "14.1.0": "2026-10-31T11:50:46.507Z"
+    "14.0.0": "2026-10-31T13:41:46.734Z",
+    "modified": "2026-10-31T13:42:14.932Z",
+    "14.1.0": "2026-10-31T13:42:14.932Z"
   },
   "description": "Firebase App is the core library every Firebase package depends on."
 }
