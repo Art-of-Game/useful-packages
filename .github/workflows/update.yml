@@ -1,0 +1,39 @@
+name: Update packages
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  actions: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish new versions
+        run: node update.js
+
+      - name: Save the registry files
+        run: |
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: new package versions"
+          git push
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
+
+      # GitHub stops a daily schedule after 60 days without a commit. This keeps it running.
+      - name: Keep the schedule alive
+        run: gh workflow enable update.yml

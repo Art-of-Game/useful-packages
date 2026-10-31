@@ -1,0 +1,20 @@
+{
+  "repo": "Art-of-Game/useful-packages",
+  "packages": [
+    {
+      "name": "com.google.external-dependency-manager",
+      "latestFrom": "googlesamples/unity-jar-resolver",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.app",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.messaging",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    }
+  ]
+}
