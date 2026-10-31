@@ -89,6 +89,13 @@ function addMissingMetas(name, tree, folder = tree) {
   }
 }
 
+async function addLicence(entry, version, tree) {
+  const licence = await fetch(fill(entry.licence, entry.name, version));
+  if (!licence.ok) throw new Error(`${licence.status} from ${entry.licence}`);
+  fs.writeFileSync(path.join(tree, "LICENSE.txt"), Buffer.from(await licence.arrayBuffer()));
+  addMissingMetas(entry.name, tree);
+}
+
 // A vendor without a package ships a .unitypackage, which is one folder per file: its path, the file and its .meta. This takes
 // the paths named in "take", then adds extras/<package> and the licence.
 async function packageFromUnitypackage(entry, version, folder) {
@@ -125,11 +132,7 @@ async function packageFromUnitypackage(entry, version, folder) {
   const manifestFile = path.join(tree, "package.json");
   fs.writeFileSync(manifestFile, fill(fs.readFileSync(manifestFile, "utf8"), name, version));
 
-  const licence = await fetch(fill(entry.licence, name, version));
-  if (!licence.ok) throw new Error(`${licence.status} from ${entry.licence}`);
-  fs.writeFileSync(path.join(tree, "LICENSE.txt"), Buffer.from(await licence.arrayBuffer()));
-
-  addMissingMetas(name, tree);
+  await addLicence(entry, version, tree);
   fs.rmSync(files, { recursive: true, force: true });
   fs.rmSync(path.join(folder, "zip"), { recursive: true, force: true });
 }
@@ -151,6 +154,7 @@ async function prepare(entry, version, folder) {
   } else {
     execFileSync("tar", ["-xzf", "source.download"], { cwd: folder });
     if (entry.folder) fs.renameSync(path.join(folder, fill(entry.folder, entry.name, version)), tree);
+    if (entry.licence) await addLicence(entry, version, tree);
   }
   fs.rmSync(path.join(folder, "source.download"));
 

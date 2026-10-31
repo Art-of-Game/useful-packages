@@ -25,11 +25,6 @@
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
     {
-      "name": "com.google.firebase.app-check",
-      "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
       "name": "com.google.firebase.auth",
       "latestFrom": "firebase/firebase-unity-sdk",
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
@@ -40,37 +35,12 @@
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
     {
-      "name": "com.google.firebase.database",
-      "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
-      "name": "com.google.firebase.firebaseai",
-      "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
       "name": "com.google.firebase.firestore",
       "latestFrom": "firebase/firebase-unity-sdk",
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
     {
-      "name": "com.google.firebase.functions",
-      "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
-      "name": "com.google.firebase.installations",
-      "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
       "name": "com.google.firebase.remote-config",
-      "latestFrom": "firebase/firebase-unity-sdk",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
-      "name": "com.google.firebase.storage",
       "latestFrom": "firebase/firebase-unity-sdk",
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
@@ -88,22 +58,19 @@
       }
     },
     {
+      "name": "com.google.play.games",
+      "latestFrom": "playgameservices/play-games-plugin-for-unity",
+      "tarball": "https://codeload.github.com/playgameservices/play-games-plugin-for-unity/tar.gz/refs/tags/v{version}",
+      "folder": "play-games-plugin-for-unity-{version}/Assets/Public/GooglePlayGames/com.google.play.games",
+      "licence": "https://raw.githubusercontent.com/playgameservices/play-games-plugin-for-unity/v{version}/LICENSE"
+    },
+    {
       "name": "com.google.play.review",
       "latestBy": "archive",
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
     {
       "name": "com.google.play.appupdate",
-      "latestBy": "archive",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
-      "name": "com.google.play.integrity",
-      "latestBy": "archive",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
-    },
-    {
-      "name": "com.google.play.assetdelivery",
       "latestBy": "archive",
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
@@ -119,11 +86,6 @@
       "addDependencies": {
         "com.unity.ugui": "1.0.0"
       }
-    },
-    {
-      "name": "com.google.android.appbundle",
-      "latestBy": "archive",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
     {
       "name": "com.facebook.sdk",

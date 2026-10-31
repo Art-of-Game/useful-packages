@@ -14,34 +14,26 @@ From [firebase/firebase-unity-sdk](https://github.com/firebase/firebase-unity-sd
 |---|---|---|
 | `com.google.firebase.app` | Firebase App (Core) | External Dependency Manager |
 | `com.google.firebase.analytics` | Google Analytics for Firebase | Firebase App |
-| `com.google.firebase.app-check` | Firebase App Check | Firebase App |
 | `com.google.firebase.auth` | Firebase Authentication | Firebase App |
 | `com.google.firebase.crashlytics` | Firebase Crashlytics | Firebase App |
-| `com.google.firebase.database` | Firebase Realtime Database | Firebase Authentication |
-| `com.google.firebase.firebaseai` | Firebase AI Logic | Firebase App |
 | `com.google.firebase.firestore` | Cloud Firestore | Firebase App |
-| `com.google.firebase.functions` | Cloud Functions | Firebase App |
-| `com.google.firebase.installations` | Firebase Installations | Firebase App |
 | `com.google.firebase.messaging` | Firebase Cloud Messaging | Firebase App |
 | `com.google.firebase.remote-config` | Firebase Remote Config | Firebase App |
-| `com.google.firebase.storage` | Cloud Storage for Firebase | Firebase Authentication |
 
 ### Google
 
 | Package | What it is | Source | Also brings |
 |---|---|---|---|
 | `com.google.signin` | Google Sign-In | [coolishbee/google-signin-unity](https://github.com/coolishbee/google-signin-unity) | External Dependency Manager |
+| `com.google.play.games` | Google Play Games | [playgameservices/play-games-plugin-for-unity](https://github.com/playgameservices/play-games-plugin-for-unity) | External Dependency Manager |
 | `com.google.play.review` | Play In-App Review | [google/play-unity-plugins](https://github.com/google/play-unity-plugins) | Play Core, Play Common |
 | `com.google.play.appupdate` | Play In-App Updates | [google/play-unity-plugins](https://github.com/google/play-unity-plugins) | Play Core, Play Common |
-| `com.google.play.integrity` | Play Integrity | [google/play-unity-plugins](https://github.com/google/play-unity-plugins) | Play Core, Play Common |
-| `com.google.play.assetdelivery` | Play Asset Delivery | [google/play-unity-plugins](https://github.com/google/play-unity-plugins) | Play Core, Play Common, Android App Bundle |
 | `com.google.play.core` | Play Core | [google/play-unity-plugins](https://github.com/google/play-unity-plugins) | External Dependency Manager |
 | `com.google.play.common` | Play Common | [google/play-unity-plugins](https://github.com/google/play-unity-plugins) | Unity UI |
-| `com.google.android.appbundle` | Android App Bundle | [google/play-unity-plugins](https://github.com/google/play-unity-plugins) | Nothing |
 
 Google wrote Google Sign-In and later archived [its repo](https://github.com/googlesamples/google-signin-unity). [Thaina](https://github.com/Thaina/google-signin-unity) and [coolishbee](https://github.com/coolishbee/google-signin-unity) brought it up to date, and coolishbee's fork is what you get here.
 
-Google has archived the Play repo too. These are the newest versions on [Google's archive page](https://developers.google.com/unity/archive).
+Google has archived `play-unity-plugins` too. Those packages are the newest versions on [Google's archive page](https://developers.google.com/unity/archive).
 
 ### Facebook
 
