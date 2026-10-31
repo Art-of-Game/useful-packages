@@ -23,8 +23,8 @@ const fill = (text, name, version) => text.replaceAll("{name}", name).replaceAll
 const tempFolder = () => fs.mkdtempSync(path.join(os.tmpdir(), "useful-packages-"));
 
 const run = (cwd, env, ...args) =>
-  execFileSync("git", ["-c", "core.autocrlf=false", "-c", "core.longpaths=true", "-c", "user.name=github-actions[bot]",
-    "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com", ...args],
+  execFileSync("git", ["-c", "core.autocrlf=false", "-c", "core.longpaths=true", "-c", "user.name=Art of Game",
+    "-c", "user.email=186954620+ArtOfGameGit@users.noreply.github.com", ...args],
     { cwd, env: { ...process.env, ...env }, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
 
 function readDoc(name) {
@@ -105,7 +105,7 @@ async function prepare(entry, version, folder) {
 
 function sign(tree, destination, what) {
   if (!process.env.UPM_SERVICE_ACCOUNT_KEY_ID || !process.env.UPM_SERVICE_ACCOUNT_KEY_SECRET) {
-    throw new Error(`${what} cannot be signed: add the repository secrets UPM_SERVICE_ACCOUNT_KEY_ID and UPM_SERVICE_ACCOUNT_KEY_SECRET (see README).`);
+    throw new Error(`${what} cannot be signed: add the repository secrets UPM_SERVICE_ACCOUNT_KEY_ID and UPM_SERVICE_ACCOUNT_KEY_SECRET.`);
   }
   const upm = path.join(os.homedir(), ".upm", "bin", "upm");
   if (!fs.existsSync(upm)) execFileSync("bash", ["-c", "curl -fsSL https://cdn.packages.unity.com/upm-cli/install.sh | bash"], { stdio: "inherit" });

@@ -40,8 +40,8 @@ jobs:
             echo "Nothing new."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "Art of Game"
+          git config user.email "186954620+ArtOfGameGit@users.noreply.github.com"
           git commit -m "chore: new package versions"
           git push
 
