@@ -382,7 +382,9 @@ ${first.length ? `<div class="first">Add first: ${escape(first.join(", "))}</div
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>Useful Packages</title>
+<title>Useful Packages: signed Unity packages by scoped registry or Git URL</title>
+<meta name="description" content="Unity packages I use in my projects, signed and installable by scoped registry or Git URL: Firebase, Google Sign-In, Google Play Games, Facebook SDK, MagicOnion, UniTask, UIEffect and more.">
+<link rel="canonical" href="${escape(registry)}/">${config.googleSiteVerification ? `\n<meta name="google-site-verification" content="${escape(config.googleSiteVerification)}">` : ""}
 <style>
 body { font: 16px/1.5 system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 32px 16px; }
 h1 { font-size: 28px; margin: 0 0 8px; }
@@ -435,6 +437,11 @@ document.addEventListener("click", (event) => {
 </script>
 </body>
 </html>
+`);
+  fs.writeFileSync(path.join(docs, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${escape(registry)}/</loc></url>
+</urlset>
 `);
 }
 
