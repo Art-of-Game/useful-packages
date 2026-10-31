@@ -1,0 +1,35 @@
+{
+  "name": "com.facebook.sdk",
+  "version": "19.0.0",
+  "displayName": "Facebook SDK",
+  "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples.",
+  "unity": "2022.3",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "author": {
+    "name": "Meta",
+    "url": "https://github.com/meta/facebook-sdk-for-unity"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meta/facebook-sdk-for-unity.git"
+  },
+  "documentationUrl": "https://developers.facebook.com/documentation/unity",
+  "keywords": [
+    "facebook",
+    "meta",
+    "login",
+    "sdk"
+  ],
+  "dependencies": {
+    "com.unity.external-dependency-manager": "2.1.1"
+  },
+  "samples": [
+    {
+      "displayName": "Examples",
+      "description": "Meta's example scenes, the IAP sample they call and the files they read. Move StreamingAssets to Assets/StreamingAssets to run the upload example.",
+      "path": "Samples~/Examples"
+    }
+  ],
+  "changelogUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-19.0.0/CHANGELOG.md",
+  "licensesUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-19.0.0/LICENSE.txt"
+}
