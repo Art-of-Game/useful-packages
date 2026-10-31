@@ -1,0 +1,43 @@
+{
+  "name": "com.google.firebase.auth",
+  "dist-tags": {
+    "latest": "14.1.0"
+  },
+  "versions": {
+    "14.1.0": {
+      "name": "com.google.firebase.auth",
+      "version": "14.1.0",
+      "displayName": "Firebase Authentication",
+      "keywords": [
+        "Google",
+        "Firebase",
+        "Auth",
+        "Authentication",
+        "FirebaseAuth",
+        "vh-name:FirebaseAuth",
+        "vh-name:Firebase Authentication"
+      ],
+      "author": {
+        "name": "Google LLC",
+        "url": "https://firebase.google.com/docs/auth/unity/start"
+      },
+      "description": "Easily sign-in and authenticate players.\n\nSign-in players using any identity provider with Firebase Authentication. It supports email and password, phone authentication, Facebook, Google, Twitter, and more. Out-of-the-box, you get a secure, end-to-end identity solution.",
+      "unity": "2022.1",
+      "dependencies": {
+        "com.google.firebase.app": "14.1.0"
+      },
+      "_id": "com.google.firebase.auth@14.1.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.auth-14.1.0/com.google.firebase.auth-14.1.0.tgz",
+        "shasum": "d2f1dfe3fe50171fa9edca9ea7ca4d793745a6c5",
+        "integrity": "sha512-lsgs7mZZnwCqC3n85MhRLmB7FMy3z8bnDuWX2DJbCzMCQl3sdEJRxSZzf90z1fGB/sTGqgohRDDKjjwUJVeLIA=="
+      },
+      "_gitTagOf": "d2f1dfe3fe50171fa9edca9ea7ca4d793745a6c5"
+    }
+  },
+  "time": {
+    "14.1.0": "2026-10-31T19:51:32.976Z",
+    "modified": "2026-10-31T19:51:32.976Z"
+  },
+  "description": "Easily sign-in and authenticate players.\n\nSign-in players using any identity provider with Firebase Authentication. It supports email and password, phone authentication, Facebook, Google, Twitter, and more. Out-of-the-box, you get a secure, end-to-end identity solution."
+}

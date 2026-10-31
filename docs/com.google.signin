@@ -1,0 +1,54 @@
+{
+  "name": "com.google.signin",
+  "dist-tags": {
+    "latest": "1.0.0"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "com.google.signin",
+      "version": "1.0.0",
+      "displayName": "Google Sign-In for Unity",
+      "description": "Google Sign-In for Unity. Android uses CredentialManager + AuthorizationClient, iOS uses GIDSignIn, and Editor/Standalone uses a loopback OAuth flow. Originally by Google, updated by coolishbee: https://github.com/coolishbee/google-signin-unity",
+      "unity": "2021.3",
+      "license": "Apache-2.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/coolishbee/google-signin-unity.git"
+      },
+      "keywords": [
+        "google",
+        "signin",
+        "oauth",
+        "authentication"
+      ],
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.external-dependency-manager": "2.1.1"
+      },
+      "samples": [
+        {
+          "displayName": "SignIn Sample",
+          "description": "Sign-in, sign-out, and authentication result display example.",
+          "path": "Samples~/SignInSample"
+        }
+      ],
+      "documentationUrl": "https://github.com/coolishbee/google-signin-unity/blob/main/Packages/com.coolishbee.google-signin/README.md",
+      "author": {
+        "name": "Google, coolishbee",
+        "url": "https://github.com/coolishbee/google-signin-unity"
+      },
+      "_id": "com.google.signin@1.0.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.signin-1.0.0/com.google.signin-1.0.0.tgz",
+        "shasum": "417f2bb6c2502492e247713848e2ff3de8e7aa4a",
+        "integrity": "sha512-gVBXsJVxgR8CZ8Mm7v9ilER8srbjasy66cb2lcFno1wyNWzssCz8KWiNGAPvYYag0jTPueCwoHmVo5/KpqmvVA=="
+      },
+      "_gitTagOf": "417f2bb6c2502492e247713848e2ff3de8e7aa4a"
+    }
+  },
+  "time": {
+    "1.0.0": "2026-10-31T19:52:13.671Z",
+    "modified": "2026-10-31T19:52:13.671Z"
+  },
+  "description": "Google Sign-In for Unity. Android uses CredentialManager + AuthorizationClient, iOS uses GIDSignIn, and Editor/Standalone uses a loopback OAuth flow. Originally by Google, updated by coolishbee: https://github.com/coolishbee/google-signin-unity"
+}

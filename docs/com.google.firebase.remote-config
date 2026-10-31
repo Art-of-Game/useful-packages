@@ -1,0 +1,43 @@
+{
+  "name": "com.google.firebase.remote-config",
+  "dist-tags": {
+    "latest": "14.1.0"
+  },
+  "versions": {
+    "14.1.0": {
+      "name": "com.google.firebase.remote-config",
+      "version": "14.1.0",
+      "displayName": "Firebase Remote Config",
+      "keywords": [
+        "Google",
+        "Firebase",
+        "Remote",
+        "Config",
+        "Remote Config",
+        "vh-name:FirebaseRemoteConfig",
+        "vh-name:Firebase Remote Config"
+      ],
+      "author": {
+        "name": "Google LLC",
+        "url": "https://firebase.google.com/docs/remote-config/use-config-unity"
+      },
+      "description": "Customize your game on the fly.\n\nRemote Config lets you dynamically change the behavior and appearance of your game right from the Firebase console so you can deliver personalized experiences to players - without waiting for app store approval.",
+      "unity": "2022.1",
+      "dependencies": {
+        "com.google.firebase.app": "14.1.0"
+      },
+      "_id": "com.google.firebase.remote-config@14.1.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.remote-config-14.1.0/com.google.firebase.remote-config-14.1.0.tgz",
+        "shasum": "b956431af9438a585d8bbcb829c6bd9b5f7f3027",
+        "integrity": "sha512-KupiQhXdby2awbH/yCKVseTkstbHn2wW15gXdtIol+jRErjRh4jdaGIBIgVh6H6pwbBnYEwhSlRRAL0au3Dizw=="
+      },
+      "_gitTagOf": "b956431af9438a585d8bbcb829c6bd9b5f7f3027"
+    }
+  },
+  "time": {
+    "14.1.0": "2026-10-31T19:52:04.605Z",
+    "modified": "2026-10-31T19:52:04.605Z"
+  },
+  "description": "Customize your game on the fly.\n\nRemote Config lets you dynamically change the behavior and appearance of your game right from the Firebase console so you can deliver personalized experiences to players - without waiting for app store approval."
+}
