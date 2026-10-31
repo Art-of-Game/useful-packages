@@ -93,15 +93,28 @@ async function publish(entry, version) {
   return true;
 }
 
+const run = (cwd, env, ...args) =>
+  execFileSync("git", ["-c", "core.autocrlf=false", "-c", "core.longpaths=true", "-c", "user.name=github-actions[bot]",
+    "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com", ...args],
+    { cwd, env: { ...process.env, ...env }, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
+
+// The branch upm/<package> always sits on the newest version. A project installed from the branch gets a new version
+// from the Update button of the Package Manager window, one installed from a tag stays on that version.
+function moveNewestBranch(name, version) {
+  const remoteCommit = (ref) => run(__dirname, {}, "ls-remote", "origin", ref).split(/\s/)[0];
+  const tag = `refs/tags/upm/${name}/${version}`;
+  const branch = `refs/heads/upm/${name}`;
+  const commit = remoteCommit(tag);
+  if (!commit || commit === remoteCommit(branch)) return;
+  run(__dirname, {}, "fetch", "--depth=1", "origin", tag);
+  run(__dirname, {}, "push", "--force", "origin", `${commit}:${branch}`);
+  console.log(`${name}: branch upm/${name} is now on ${version}`);
+}
+
 // A Git URL needs the package's files in Git. Each version gets its own tag, and that tag's commit holds only
 // that package with no parent, so a shallow clone of the tag downloads just that package.
 async function ensureGitTag(name, version, tarball) {
   const tag = `upm/${name}/${version}`;
-  const run = (cwd, env, ...args) =>
-    execFileSync("git", ["-c", "core.autocrlf=false", "-c", "core.longpaths=true", "-c", "user.name=github-actions[bot]",
-      "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com", ...args],
-      { cwd, env: { ...process.env, ...env }, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
-
   if (run(__dirname, {}, "ls-remote", "--tags", "origin", `refs/tags/${tag}`)) return;
 
   const response = await fetch(tarball);
@@ -172,13 +185,15 @@ async function main() {
 
   // A refused Git tag (GitHub takes no file over 100 MiB) must not stop the registry, which has no such limit.
   for (const { name } of config.packages) {
-    for (const [version, { dist }] of Object.entries(readDoc(name).versions)) {
+    const doc = readDoc(name);
+    for (const [version, { dist }] of Object.entries(doc.versions)) {
       try {
         await ensureGitTag(name, version, dist.tarball);
       } catch (error) {
         console.log(`::warning::${name} ${version} has no Git tag: ${error.message}`);
       }
     }
+    moveNewestBranch(name, doc["dist-tags"].latest);
   }
 }
 
