@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
   actions: write
 
 jobs:
@@ -32,7 +31,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: new package versions"
           git push
-          gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
 
       # GitHub stops a daily schedule after 60 days without a commit. This keeps it running.
       - name: Keep the schedule alive
