@@ -13,6 +13,10 @@ Unity packages I use in my projects, collected in one place. Each one installs o
 
 All the work belongs to their authors, and each package keeps its own licence. I only point them at Unity's External Dependency Manager and sign them. Meta ships the Facebook SDK as a `.unitypackage`, so I also turned it into a package with just the Android and iOS parts. Each package says what changed in `Documentation~/MODIFIED.md`.
 
+## External Dependency Manager
+
+Unity has published its own [External Dependency Manager](https://docs.unity3d.com/Packages/com.unity.external-dependency-manager@2.1/manual/index.html) in the Unity Registry since April 17, 2026, and Google deprecated its version on September 29, 2026. So these packages take it directly from Unity. It comes by itself, and you don't need Google's.
+
 ## Install with a scoped registry
 
 Add this to `Packages/manifest.json`, with only the packages you want:
