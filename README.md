@@ -60,6 +60,8 @@ Google has archived `play-unity-plugins` too. Those packages are the newest vers
 | `com.nosuchstudio.rtltmpro` | RTL TextMesh Pro | [hk1ll3r/RTLTMPro](https://github.com/hk1ll3r/RTLTMPro) | Nothing |
 | `com.yasirkula.nativegallery` | Native Gallery | [yasirkula/UnityNativeGallery](https://github.com/yasirkula/UnityNativeGallery) | Nothing |
 
+The MagicOnion client and YetAnotherHttpHandler also need NuGet libraries, which their own READMEs list. NuGetForUnity installs them.
+
 All the work belongs to their authors, and each package keeps its own licence. I only point them at Unity's External Dependency Manager and sign them. Meta ships the Facebook SDK as a `.unitypackage`, so I also turned it into a package and moved Meta's examples under **Samples** in the Package Manager window. Each package says what changed in `Documentation~/MODIFIED.md`.
 
 ## External Dependency Manager
