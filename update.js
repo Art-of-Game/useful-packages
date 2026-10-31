@@ -173,6 +173,10 @@ async function prepare(entry, version, folder) {
     manifest.author = entry.author;
     changes.push(`- \`package.json\` names ${entry.author.name} as the author, which the original leaves out.`);
   }
+  for (const [dependency, wanted] of Object.entries(entry.addDependencies ?? {})) {
+    (manifest.dependencies ??= {})[dependency] = wanted;
+    changes.push(`- \`package.json\` names \`${dependency}\`, which the package uses without naming it.`);
+  }
   for (const [from, to] of Object.entries(config.replaceDependencies)) {
     if (!manifest.dependencies?.[from]) continue;
     delete manifest.dependencies[from];

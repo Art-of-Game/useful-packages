@@ -115,7 +115,10 @@
     {
       "name": "com.google.play.common",
       "latestBy": "archive",
-      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz",
+      "addDependencies": {
+        "com.unity.ugui": "1.0.0"
+      }
     },
     {
       "name": "com.google.android.appbundle",
