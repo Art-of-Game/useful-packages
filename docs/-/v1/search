@@ -89,35 +89,6 @@
     },
     {
       "package": {
-        "name": "com.google.firebase.app-check",
-        "version": "14.1.0",
-        "displayName": "Firebase App Check",
-        "description": "App Check helps protect your API resources from abuse by preventing unauthorized clients from accessing your backend resources. It works with both Firebase services, Google Cloud services, and your own APIs to keep your resources safe.",
-        "keywords": [
-          "Google",
-          "Firebase",
-          "App Check",
-          "vh-name:FirebaseAppCheck",
-          "vh-name:Firebase App Check"
-        ],
-        "author": {
-          "name": "Google LLC",
-          "url": "https://firebase.google.com/docs/app-check"
-        },
-        "date": "2026-10-31T19:51:25.359Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
         "name": "com.google.firebase.auth",
         "version": "14.1.0",
         "displayName": "Firebase Authentication",
@@ -179,66 +150,6 @@
     },
     {
       "package": {
-        "name": "com.google.firebase.database",
-        "version": "14.1.0",
-        "displayName": "Firebase Realtime Database",
-        "description": "Store and sync data in near-realtime.\n\nRealtime Database is a cloud-hosted NoSQL database that lets you store and sync JSON data in near-realtime. It's optimized for very rapid syncing of small amounts of data.\n\nWhen your players go offline, the Realtime Database SDKs use local cache on the device to serve and store changes. When the device comes online, the local data is automatically synchronized so people can keep playing your game from where they left off.",
-        "keywords": [
-          "Google",
-          "Firebase",
-          "Database",
-          "Realtime",
-          "vh-name:FirebaseDatabase",
-          "vh-name:Firebase Realtime Database"
-        ],
-        "author": {
-          "name": "Google LLC",
-          "url": "https://firebase.google.com/docs/database/unity/start"
-        },
-        "date": "2026-10-31T19:51:41.712Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
-        "name": "com.google.firebase.firebaseai",
-        "version": "14.1.0",
-        "displayName": "Firebase AI",
-        "description": "Build AI-powered mobile and web apps and features with the Gemini API using Firebase AI.",
-        "keywords": [
-          "Google",
-          "Firebase",
-          "Firebase AI",
-          "Vertex AI",
-          "vh-name:FirebaseAI",
-          "vh-name:Firebase AI"
-        ],
-        "author": {
-          "name": "Google LLC",
-          "url": "https://firebase.google.com/docs/vertex-ai"
-        },
-        "date": "2026-10-31T19:51:46.123Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
         "name": "com.google.firebase.firestore",
         "version": "14.1.0",
         "displayName": "Cloud Firestore",
@@ -256,65 +167,6 @@
           "url": "https://firebase.google.com/docs/firestore"
         },
         "date": "2026-10-31T19:51:52.517Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
-        "name": "com.google.firebase.functions",
-        "version": "14.1.0",
-        "displayName": "Cloud Functions for Firebase",
-        "description": "Run your mobile backend code without managing servers.\n\nWith Cloud Functions, you can write and deploy code to our servers that automatically responds (i.e. executes) to events in your game.\n\nThis way, your game logic is fully insulated from the client so you can be sure its functions are private and can't be reverse engineered. Cloud Functions also automatically scales up computing resources to match the usage patterns of your game.",
-        "keywords": [
-          "Google",
-          "Firebase",
-          "Functions",
-          "Cloud",
-          "vh-name:FirebaseFunctions",
-          "vh-name:Cloud Functions for Firebase"
-        ],
-        "author": {
-          "name": "Google LLC",
-          "url": "https://firebase.google.com/docs/functions"
-        },
-        "date": "2026-10-31T19:51:56.397Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
-        "name": "com.google.firebase.installations",
-        "version": "14.1.0",
-        "displayName": "Firebase Installations",
-        "description": "The Firebase installations service (FIS) provides a Firebase installation ID (FID) for each installed instance of a Firebase app. The Firebase installation ID is used internally by Firebase services such as In-App Messaging or Remote Config without requiring developers to interact directly with the FIS API. Using this API, a developer can delete a Firebase installation and the data tied to it, target specific app installations, and retrieve installation auth tokens.",
-        "keywords": [
-          "Google",
-          "Firebase",
-          "Installations",
-          "vh-name:FirebaseInstallations",
-          "vh-name:Firebase Installations"
-        ],
-        "author": {
-          "name": "Google LLC",
-          "url": "https://firebase.google.com/docs/reference/unity/namespace/firebase/installations"
-        },
-        "date": "2026-10-31T19:52:00.420Z"
       },
       "score": {
         "final": 1,
@@ -359,36 +211,6 @@
     },
     {
       "package": {
-        "name": "com.google.firebase.storage",
-        "version": "14.1.0",
-        "displayName": "Cloud Storage for Firebase",
-        "description": "Store and serve game content with ease.\n\nWith Cloud Storage, you can easily store and serve large binary objects, such as screenshots, replays, or game assets, and effortlessly grow from prototype to production.\n\nThrough an integration with Firebase Authentication, you can use our declarative security model to control access and keep data safe.",
-        "keywords": [
-          "Google",
-          "Firebase",
-          "Storage",
-          "Cloud",
-          "vh-name:FirebaseStorage",
-          "vh-name:Cloud Storage for Firebase"
-        ],
-        "author": {
-          "name": "Google LLC",
-          "url": "https://firebase.google.com/docs/storage/unity/start"
-        },
-        "date": "2026-10-31T19:52:09.127Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
         "name": "com.google.signin",
         "version": "1.0.0",
         "displayName": "Google Sign-In for Unity",
@@ -404,6 +226,27 @@
           "url": "https://github.com/coolishbee/google-signin-unity"
         },
         "date": "2026-10-31T19:52:13.671Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.google.play.games",
+        "version": "2.3.0",
+        "displayName": "Google Play Games",
+        "description": "The Google Play Games plugin for Unity allows you to access the Google Play Games API through Unity's social interface.",
+        "author": {
+          "name": "Google LLC"
+        },
+        "date": "2026-10-31T20:43:09.523Z"
       },
       "score": {
         "final": 1,
@@ -459,48 +302,6 @@
     },
     {
       "package": {
-        "name": "com.google.play.integrity",
-        "version": "1.4.0",
-        "displayName": "Google Play Integrity",
-        "description": "Provides Play Integrity API support for Unity runtime",
-        "author": {
-          "name": "Google LLC"
-        },
-        "date": "2026-10-31T19:52:26.222Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
-        "name": "com.google.play.assetdelivery",
-        "version": "1.9.2",
-        "displayName": "Google Play Asset Delivery",
-        "description": "Play Asset Delivery enables AssetBundles and other assets to be packaged into an Android App Bundle and delivered through Google Play.",
-        "author": {
-          "name": "Google LLC"
-        },
-        "date": "2026-10-31T19:52:29.456Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
         "name": "com.google.play.core",
         "version": "1.8.5",
         "displayName": "Google Play Core",
@@ -529,28 +330,7 @@
         "author": {
           "name": "Google LLC"
         },
-        "date": "2026-10-31T19:52:36.640Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
-        "name": "com.google.android.appbundle",
-        "version": "1.9.0",
-        "displayName": "Google Android App Bundle",
-        "description": "The Google Android App Bundle package provides access to the latest Android App Bundles features, such as Play Asset Delivery.",
-        "author": {
-          "name": "Google LLC"
-        },
-        "date": "2026-10-31T19:52:44.612Z"
+        "date": "2026-10-31T20:43:13.595Z"
       },
       "score": {
         "final": 1,
@@ -591,6 +371,6 @@
       "searchScore": 1
     }
   ],
-  "total": 22,
+  "total": 14,
   "time": "Thu, 01 Jan 1970 00:00:00 GMT"
 }

@@ -39,19 +39,6 @@
       "modified": "2026-10-31T19:51:21.014Z"
     }
   },
-  "com.google.firebase.app-check": {
-    "name": "com.google.firebase.app-check",
-    "description": "App Check helps protect your API resources from abuse by preventing unauthorized clients from accessing your backend resources. It works with both Firebase services, Google Cloud services, and your own APIs to keep your resources safe.",
-    "dist-tags": {
-      "latest": "14.1.0"
-    },
-    "versions": {
-      "14.1.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:51:25.359Z"
-    }
-  },
   "com.google.firebase.auth": {
     "name": "com.google.firebase.auth",
     "description": "Easily sign-in and authenticate players.\n\nSign-in players using any identity provider with Firebase Authentication. It supports email and password, phone authentication, Facebook, Google, Twitter, and more. Out-of-the-box, you get a secure, end-to-end identity solution.",
@@ -78,32 +65,6 @@
       "modified": "2026-10-31T19:51:37.044Z"
     }
   },
-  "com.google.firebase.database": {
-    "name": "com.google.firebase.database",
-    "description": "Store and sync data in near-realtime.\n\nRealtime Database is a cloud-hosted NoSQL database that lets you store and sync JSON data in near-realtime. It's optimized for very rapid syncing of small amounts of data.\n\nWhen your players go offline, the Realtime Database SDKs use local cache on the device to serve and store changes. When the device comes online, the local data is automatically synchronized so people can keep playing your game from where they left off.",
-    "dist-tags": {
-      "latest": "14.1.0"
-    },
-    "versions": {
-      "14.1.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:51:41.712Z"
-    }
-  },
-  "com.google.firebase.firebaseai": {
-    "name": "com.google.firebase.firebaseai",
-    "description": "Build AI-powered mobile and web apps and features with the Gemini API using Firebase AI.",
-    "dist-tags": {
-      "latest": "14.1.0"
-    },
-    "versions": {
-      "14.1.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:51:46.123Z"
-    }
-  },
   "com.google.firebase.firestore": {
     "name": "com.google.firebase.firestore",
     "description": "Store and sync game data at global scale.\n\nCloud Firestore is a flexible NoSQL document database that lets you easily store, sync, and query data for your games - at global scale.\n\nFirestore supports a million players connected simultaneously with a guaranteed uptime of 5 nines for multi-region instances. That's less than 5 minutes of downtime a year!\n\nWith Cloud Firestore, your players can access and make changes to their data at any time, even when they're offline.",
@@ -115,32 +76,6 @@
     },
     "time": {
       "modified": "2026-10-31T19:51:52.517Z"
-    }
-  },
-  "com.google.firebase.functions": {
-    "name": "com.google.firebase.functions",
-    "description": "Run your mobile backend code without managing servers.\n\nWith Cloud Functions, you can write and deploy code to our servers that automatically responds (i.e. executes) to events in your game.\n\nThis way, your game logic is fully insulated from the client so you can be sure its functions are private and can't be reverse engineered. Cloud Functions also automatically scales up computing resources to match the usage patterns of your game.",
-    "dist-tags": {
-      "latest": "14.1.0"
-    },
-    "versions": {
-      "14.1.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:51:56.397Z"
-    }
-  },
-  "com.google.firebase.installations": {
-    "name": "com.google.firebase.installations",
-    "description": "The Firebase installations service (FIS) provides a Firebase installation ID (FID) for each installed instance of a Firebase app. The Firebase installation ID is used internally by Firebase services such as In-App Messaging or Remote Config without requiring developers to interact directly with the FIS API. Using this API, a developer can delete a Firebase installation and the data tied to it, target specific app installations, and retrieve installation auth tokens.",
-    "dist-tags": {
-      "latest": "14.1.0"
-    },
-    "versions": {
-      "14.1.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:52:00.420Z"
     }
   },
   "com.google.firebase.remote-config": {
@@ -156,19 +91,6 @@
       "modified": "2026-10-31T19:52:04.605Z"
     }
   },
-  "com.google.firebase.storage": {
-    "name": "com.google.firebase.storage",
-    "description": "Store and serve game content with ease.\n\nWith Cloud Storage, you can easily store and serve large binary objects, such as screenshots, replays, or game assets, and effortlessly grow from prototype to production.\n\nThrough an integration with Firebase Authentication, you can use our declarative security model to control access and keep data safe.",
-    "dist-tags": {
-      "latest": "14.1.0"
-    },
-    "versions": {
-      "14.1.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:52:09.127Z"
-    }
-  },
   "com.google.signin": {
     "name": "com.google.signin",
     "description": "Google Sign-In for Unity. Android uses CredentialManager + AuthorizationClient, iOS uses GIDSignIn, and Editor/Standalone uses a loopback OAuth flow. Originally by Google, updated by coolishbee: https://github.com/coolishbee/google-signin-unity",
@@ -180,6 +102,19 @@
     },
     "time": {
       "modified": "2026-10-31T19:52:13.671Z"
+    }
+  },
+  "com.google.play.games": {
+    "name": "com.google.play.games",
+    "description": "The Google Play Games plugin for Unity allows you to access the Google Play Games API through Unity's social interface.",
+    "dist-tags": {
+      "latest": "2.3.0"
+    },
+    "versions": {
+      "2.3.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T20:43:09.523Z"
     }
   },
   "com.google.play.review": {
@@ -208,32 +143,6 @@
       "modified": "2026-10-31T19:52:22.734Z"
     }
   },
-  "com.google.play.integrity": {
-    "name": "com.google.play.integrity",
-    "description": "Provides Play Integrity API support for Unity runtime",
-    "dist-tags": {
-      "latest": "1.4.0"
-    },
-    "versions": {
-      "1.4.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:52:26.222Z"
-    }
-  },
-  "com.google.play.assetdelivery": {
-    "name": "com.google.play.assetdelivery",
-    "description": "Play Asset Delivery enables AssetBundles and other assets to be packaged into an Android App Bundle and delivered through Google Play.",
-    "dist-tags": {
-      "latest": "1.9.2"
-    },
-    "versions": {
-      "1.9.2": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:52:29.456Z"
-    }
-  },
   "com.google.play.core": {
     "name": "com.google.play.core",
     "description": "The Google Play Core package provides the Play Core Library required by some Google Play packages, such as Play Asset Delivery.\n\nThis package doesn't provide any features when installed separately.",
@@ -257,20 +166,7 @@
       "1.9.2": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:52:36.640Z"
-    }
-  },
-  "com.google.android.appbundle": {
-    "name": "com.google.android.appbundle",
-    "description": "The Google Android App Bundle package provides access to the latest Android App Bundles features, such as Play Asset Delivery.",
-    "dist-tags": {
-      "latest": "1.9.0"
-    },
-    "versions": {
-      "1.9.0": "latest"
-    },
-    "time": {
-      "modified": "2026-10-31T19:52:44.612Z"
+      "modified": "2026-10-31T20:43:13.595Z"
     }
   },
   "com.facebook.sdk": {
