@@ -368,9 +368,14 @@ function writeIndex(packageDocs) {
       return `<div class="row">
 <div class="title">${escape(p.displayName)} <span class="version">${escape(p.version)}</span></div>
 <code class="url">${escape(url)}</code>
-${first.length ? `<div class="first">Add first: ${escape(first.join(", "))}</div>\n` : ""}<button data-url="${escape(url)}">Copy</button>
+${first.length ? `<div class="first">Add first: ${escape(first.join(", "))}</div>\n` : ""}<button data-copy="${escape(url)}">Copy</button>
 </div>`;
     });
+  const [owner, repoName] = config.repo.split("/");
+  const registry = `https://${owner.toLowerCase()}.github.io/${repoName}`;
+  const scopes = [...new Set(newest.map((p) => p.name.split(".").slice(0, 2).join(".")))].sort();
+  const manifestLines = JSON.stringify({ scopedRegistries: [{ name: "Useful Packages", url: registry, scopes }] }, null, 2).split("\n").slice(1, -1).join("\n");
+  const manifestBlock = `${manifestLines},`;
   fs.writeFileSync(path.join(docs, "index.html"), `<!doctype html>
 <html lang="en">
 <head>
@@ -381,26 +386,50 @@ ${first.length ? `<div class="first">Add first: ${escape(first.join(", "))}</div
 <style>
 body { font: 16px/1.5 system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 32px 16px; }
 h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+ol { padding-left: 24px; }
+pre { font-size: 13px; margin: 0; overflow-x: auto; }
+.chip { font: 13px ui-monospace, monospace; padding: 4px 8px; margin: 2px 4px 2px 0; cursor: pointer; }
 .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid #8884; }
 .title { font-weight: 600; }
 .version { font-weight: 400; opacity: 0.7; margin-left: 6px; }
 .url { font-size: 13px; overflow-wrap: anywhere; }
 .first { font-size: 14px; opacity: 0.8; }
-button { grid-column: 2; grid-row: 1 / span 3; font: inherit; font-size: 14px; padding: 6px 14px; min-width: 76px; cursor: pointer; }
+.row > button { grid-column: 2; grid-row: 1 / span 3; font: inherit; font-size: 14px; padding: 6px 14px; min-width: 76px; cursor: pointer; }
 </style>
 </head>
 <body>
 <h1>Useful Packages</h1>
-<p>This address is a Unity package registry. How to add it to a project is in the <a href="https://github.com/${config.repo}#readme">README</a>.</p>
-<p>To install one package with a Git URL, press <b>+</b> in the Package Manager window, choose <b>Install package from git URL</b>, and paste its URL. A URL follows the newest version. To stay on one version, add it to the end, like <code>/14.1.0</code>.</p>
+<p>Unity packages I use in my projects, collected in one place and signed. The repo is <a href="https://github.com/${escape(config.repo)}">github.com/${escape(config.repo)}</a>.</p>
+
+<h2>Add the registry</h2>
+<p>With the registry, each package installs and updates from the Package Manager window and brings what it needs by itself.</p>
+<p>The quick way is to add this next to <code>dependencies</code> in <code>Packages/manifest.json</code>:</p>
+<div class="row">
+<pre>${escape(manifestBlock)}</pre>
+<button data-copy="${escape(manifestBlock)}">Copy</button>
+</div>
+<p>Or do it in the Unity window:</p>
+<ol>
+<li>Open <b>Edit</b>, <b>Project Settings</b>, <b>Package Manager</b>.</li>
+<li>Under <b>Scoped Registries</b> press <b>+</b> and fill in the three values below, then save.</li>
+<li>Open <b>Window</b>, <b>Package Manager</b>, choose <b>My Registries</b>, and install what you want.</li>
+</ol>
+<div class="row"><div class="title">Name</div><code class="url">Useful Packages</code><button data-copy="Useful Packages">Copy</button></div>
+<div class="row"><div class="title">URL</div><code class="url">${escape(registry)}</code><button data-copy="${escape(registry)}">Copy</button></div>
+<div class="row" style="display:block"><div class="title">Scopes</div><div class="first">One row for each, only for the packages you use. Press one to copy it.</div>${scopes.map((scope) => `<button class="chip" data-copy="${escape(scope)}">${escape(scope)}</button>`).join("")}</div>
+
+<h2>Install one package with a Git URL</h2>
+<p>Press <b>+</b> in the Package Manager window, choose <b>Install package from git URL</b>, and paste its URL. A URL follows the newest version. To stay on one version, add it to the end, like <code>/14.1.0</code>.</p>
 ${rows.join("\n")}
 <script>
 document.addEventListener("click", (event) => {
-  const button = event.target.closest("button");
+  const button = event.target.closest("button[data-copy]");
   if (!button) return;
-  navigator.clipboard.writeText(button.dataset.url).then(() => {
+  button.dataset.label ??= button.textContent;
+  navigator.clipboard.writeText(button.dataset.copy).then(() => {
     button.textContent = "Copied";
-    setTimeout(() => { button.textContent = "Copy"; }, 1500);
+    setTimeout(() => { button.textContent = button.dataset.label; }, 1500);
   });
 });
 </script>

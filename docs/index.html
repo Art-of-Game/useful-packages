@@ -8,175 +8,231 @@
 <style>
 body { font: 16px/1.5 system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 32px 16px; }
 h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+ol { padding-left: 24px; }
+pre { font-size: 13px; margin: 0; overflow-x: auto; }
+.chip { font: 13px ui-monospace, monospace; padding: 4px 8px; margin: 2px 4px 2px 0; cursor: pointer; }
 .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid #8884; }
 .title { font-weight: 600; }
 .version { font-weight: 400; opacity: 0.7; margin-left: 6px; }
 .url { font-size: 13px; overflow-wrap: anywhere; }
 .first { font-size: 14px; opacity: 0.8; }
-button { grid-column: 2; grid-row: 1 / span 3; font: inherit; font-size: 14px; padding: 6px 14px; min-width: 76px; cursor: pointer; }
+.row > button { grid-column: 2; grid-row: 1 / span 3; font: inherit; font-size: 14px; padding: 6px 14px; min-width: 76px; cursor: pointer; }
 </style>
 </head>
 <body>
 <h1>Useful Packages</h1>
-<p>This address is a Unity package registry. How to add it to a project is in the <a href="https://github.com/Art-of-Game/useful-packages#readme">README</a>.</p>
-<p>To install one package with a Git URL, press <b>+</b> in the Package Manager window, choose <b>Install package from git URL</b>, and paste its URL. A URL follows the newest version. To stay on one version, add it to the end, like <code>/14.1.0</code>.</p>
+<p>Unity packages I use in my projects, collected in one place and signed. The repo is <a href="https://github.com/Art-of-Game/useful-packages">github.com/Art-of-Game/useful-packages</a>.</p>
+
+<h2>Add the registry</h2>
+<p>With the registry, each package installs and updates from the Package Manager window and brings what it needs by itself.</p>
+<p>The quick way is to add this next to <code>dependencies</code> in <code>Packages/manifest.json</code>:</p>
+<div class="row">
+<pre>  &quot;scopedRegistries&quot;: [
+    {
+      &quot;name&quot;: &quot;Useful Packages&quot;,
+      &quot;url&quot;: &quot;https://art-of-game.github.io/useful-packages&quot;,
+      &quot;scopes&quot;: [
+        &quot;com.adrenak&quot;,
+        &quot;com.coffee&quot;,
+        &quot;com.cysharp&quot;,
+        &quot;com.facebook&quot;,
+        &quot;com.github-glitchenzo&quot;,
+        &quot;com.google&quot;,
+        &quot;com.netpyoung&quot;,
+        &quot;com.nosuchstudio&quot;,
+        &quot;com.yasirkula&quot;
+      ]
+    }
+  ],</pre>
+<button data-copy="  &quot;scopedRegistries&quot;: [
+    {
+      &quot;name&quot;: &quot;Useful Packages&quot;,
+      &quot;url&quot;: &quot;https://art-of-game.github.io/useful-packages&quot;,
+      &quot;scopes&quot;: [
+        &quot;com.adrenak&quot;,
+        &quot;com.coffee&quot;,
+        &quot;com.cysharp&quot;,
+        &quot;com.facebook&quot;,
+        &quot;com.github-glitchenzo&quot;,
+        &quot;com.google&quot;,
+        &quot;com.netpyoung&quot;,
+        &quot;com.nosuchstudio&quot;,
+        &quot;com.yasirkula&quot;
+      ]
+    }
+  ],">Copy</button>
+</div>
+<p>Or do it in the Unity window:</p>
+<ol>
+<li>Open <b>Edit</b>, <b>Project Settings</b>, <b>Package Manager</b>.</li>
+<li>Under <b>Scoped Registries</b> press <b>+</b> and fill in the three values below, then save.</li>
+<li>Open <b>Window</b>, <b>Package Manager</b>, choose <b>My Registries</b>, and install what you want.</li>
+</ol>
+<div class="row"><div class="title">Name</div><code class="url">Useful Packages</code><button data-copy="Useful Packages">Copy</button></div>
+<div class="row"><div class="title">URL</div><code class="url">https://art-of-game.github.io/useful-packages</code><button data-copy="https://art-of-game.github.io/useful-packages">Copy</button></div>
+<div class="row" style="display:block"><div class="title">Scopes</div><div class="first">One row for each, only for the packages you use. Press one to copy it.</div><button class="chip" data-copy="com.adrenak">com.adrenak</button><button class="chip" data-copy="com.coffee">com.coffee</button><button class="chip" data-copy="com.cysharp">com.cysharp</button><button class="chip" data-copy="com.facebook">com.facebook</button><button class="chip" data-copy="com.github-glitchenzo">com.github-glitchenzo</button><button class="chip" data-copy="com.google">com.google</button><button class="chip" data-copy="com.netpyoung">com.netpyoung</button><button class="chip" data-copy="com.nosuchstudio">com.nosuchstudio</button><button class="chip" data-copy="com.yasirkula">com.yasirkula</button></div>
+
+<h2>Install one package with a Git URL</h2>
+<p>Press <b>+</b> in the Package Manager window, choose <b>Install package from git URL</b>, and paste its URL. A URL follows the newest version. To stay on one version, add it to the end, like <code>/14.1.0</code>.</p>
 <div class="row">
 <div class="title">Adrenak.BRW: Byte Reader Writer <span class="version">1.2.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.brw</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.brw">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.brw">Copy</button>
 </div>
 <div class="row">
 <div class="title">Adrenak.RNNoise4Unity <span class="version">1.0.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.rnnoise4unity</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.rnnoise4unity">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.rnnoise4unity">Copy</button>
 </div>
 <div class="row">
 <div class="title">Adrenak.UniMic <span class="version">3.4.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.unimic</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.unimic">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.unimic">Copy</button>
 </div>
 <div class="row">
 <div class="title">Adrenak.UniVoice <span class="version">4.12.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.univoice</code>
 <div class="first">Add first: Adrenak.BRW: Byte Reader Writer, Adrenak.UniMic, Concentus Unity</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.univoice">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.univoice">Copy</button>
 </div>
 <div class="row">
 <div class="title">Cloud Firestore <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.firestore</code>
 <div class="first">Add first: Firebase App (Core)</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.firestore">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.firestore">Copy</button>
 </div>
 <div class="row">
 <div class="title">Concentus Unity <span class="version">1.0.1</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.concentus-unity</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.concentus-unity">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.concentus-unity">Copy</button>
 </div>
 <div class="row">
 <div class="title">Facebook SDK <span class="version">19.0.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk">Copy</button>
 </div>
 <div class="row">
 <div class="title">Firebase App (Core) <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app">Copy</button>
 </div>
 <div class="row">
 <div class="title">Firebase App Check <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app-check</code>
 <div class="first">Add first: Firebase App (Core)</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app-check">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app-check">Copy</button>
 </div>
 <div class="row">
 <div class="title">Firebase Authentication <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.auth</code>
 <div class="first">Add first: Firebase App (Core)</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.auth">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.auth">Copy</button>
 </div>
 <div class="row">
 <div class="title">Firebase Cloud Messaging <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging</code>
 <div class="first">Add first: Firebase App (Core)</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging">Copy</button>
 </div>
 <div class="row">
 <div class="title">Firebase Crashlytics <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.crashlytics</code>
 <div class="first">Add first: Firebase App (Core)</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.crashlytics">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.crashlytics">Copy</button>
 </div>
 <div class="row">
 <div class="title">Firebase Remote Config <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.remote-config</code>
 <div class="first">Add first: Firebase App (Core)</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.remote-config">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.remote-config">Copy</button>
 </div>
 <div class="row">
 <div class="title">Google Analytics <span class="version">14.1.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.analytics</code>
 <div class="first">Add first: Firebase App (Core)</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.analytics">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.analytics">Copy</button>
 </div>
 <div class="row">
 <div class="title">Google Play Common <span class="version">1.9.2</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.common</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.common">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.common">Copy</button>
 </div>
 <div class="row">
 <div class="title">Google Play Core <span class="version">1.8.5</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.core</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.core">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.core">Copy</button>
 </div>
 <div class="row">
 <div class="title">Google Play Games <span class="version">2.3.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.games</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.games">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.games">Copy</button>
 </div>
 <div class="row">
 <div class="title">Google Play In-app Review <span class="version">1.8.3</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.review</code>
 <div class="first">Add first: Google Play Common, Google Play Core</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.review">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.review">Copy</button>
 </div>
 <div class="row">
 <div class="title">Google Play In-app Updates <span class="version">1.8.3</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.appupdate</code>
 <div class="first">Add first: Google Play Common, Google Play Core</div>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.appupdate">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.appupdate">Copy</button>
 </div>
 <div class="row">
 <div class="title">Google Sign-In for Unity <span class="version">1.0.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.signin</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.signin">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.signin">Copy</button>
 </div>
 <div class="row">
 <div class="title">MagicOnion.Client.Unity <span class="version">7.11.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.magiconion.client.unity</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.magiconion.client.unity">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.magiconion.client.unity">Copy</button>
 </div>
 <div class="row">
 <div class="title">Native Gallery <span class="version">1.9.5</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativegallery</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativegallery">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativegallery">Copy</button>
 </div>
 <div class="row">
 <div class="title">NuGetForUnity <span class="version">4.5.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.github-glitchenzo.nugetforunity</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.github-glitchenzo.nugetforunity">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.github-glitchenzo.nugetforunity">Copy</button>
 </div>
 <div class="row">
 <div class="title">RTL Text Mesh Pro <span class="version">4.0.0</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.nosuchstudio.rtltmpro</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.nosuchstudio.rtltmpro">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.nosuchstudio.rtltmpro">Copy</button>
 </div>
 <div class="row">
 <div class="title">UI Effect <span class="version">5.11.7</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.coffee.ui-effect</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.coffee.ui-effect">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.coffee.ui-effect">Copy</button>
 </div>
 <div class="row">
 <div class="title">UniTask <span class="version">2.5.11</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.unitask</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.unitask">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.unitask">Copy</button>
 </div>
 <div class="row">
 <div class="title">Unity.WebP <span class="version">0.3.22</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.netpyoung.webp</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.netpyoung.webp">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.netpyoung.webp">Copy</button>
 </div>
 <div class="row">
 <div class="title">YetAnotherHttpHandler <span class="version">1.11.7</span></div>
 <code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.yetanotherhttphandler</code>
-<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.yetanotherhttphandler">Copy</button>
+<button data-copy="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.yetanotherhttphandler">Copy</button>
 </div>
 <script>
 document.addEventListener("click", (event) => {
-  const button = event.target.closest("button");
+  const button = event.target.closest("button[data-copy]");
   if (!button) return;
-  navigator.clipboard.writeText(button.dataset.url).then(() => {
+  button.dataset.label ??= button.textContent;
+  navigator.clipboard.writeText(button.dataset.copy).then(() => {
     button.textContent = "Copied";
-    setTimeout(() => { button.textContent = "Copy"; }, 1500);
+    setTimeout(() => { button.textContent = button.dataset.label; }, 1500);
   });
 });
 </script>
