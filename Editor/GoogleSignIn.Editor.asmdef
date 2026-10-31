@@ -1,0 +1,9 @@
+{
+    "name": "GoogleSignIn.Editor",
+    "references": [
+        "GoogleSignIn"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}
