@@ -8,7 +8,22 @@ URLs: it does not support Git dependencies between packages, and a Git package h
 |---|---|
 | `com.google.firebase.messaging` | Firebase Cloud Messaging. Brings Firebase App |
 | `com.google.firebase.app` | Firebase App (Core). Brings External Dependency Manager |
-| `com.google.external-dependency-manager` | External Dependency Manager |
+| `com.google.external-dependency-manager` | Google's External Dependency Manager, deprecated. See below |
+
+Unity marks these packages as unsigned (a yellow triangle and a **Missing Signature** notice), because the vendor's `.tgz` is not
+signed. That is expected.
+
+## External Dependency Manager
+
+Google archived its package and points to Unity's, so use `com.unity.external-dependency-manager` from the Unity Registry. Firebase
+App still names Google's package, so:
+
+1. Add both to the project. Google's is here only so that Firebase App can install.
+2. Choose **Use Unity's External Dependency Manager**, or **Assets > External Dependency Manager > Change To Unity's EDM**.
+3. Unity writes an empty stand-in at `Packages/com.google.external-dependency-manager`. Commit that folder, along with
+   `ProjectSettings/ExternalDependencyManagerSettings.json` and `ExternalDependencyManagerResolverSettings.asset`.
+
+After this Google's package is no longer needed in `manifest.json`.
 
 ## Install
 
@@ -17,7 +32,8 @@ In `Packages/manifest.json`, add the registry and only the packages you use:
 ```json
 {
   "dependencies": {
-    "com.google.firebase.messaging": "14.1.0"
+    "com.google.firebase.messaging": "14.1.0",
+    "com.unity.external-dependency-manager": "2.1.1"
   },
   "scopedRegistries": [
     {
@@ -44,7 +60,8 @@ brings no dependencies for Git packages, so list each one yourself.
   "dependencies": {
     "com.google.external-dependency-manager": "https://github.com/Art-of-Game/useful-packages.git#upm/com.google.external-dependency-manager",
     "com.google.firebase.app": "https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app",
-    "com.google.firebase.messaging": "https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging"
+    "com.google.firebase.messaging": "https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging",
+    "com.unity.external-dependency-manager": "2.1.1"
   }
 }
 ```
