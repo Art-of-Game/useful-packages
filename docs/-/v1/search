@@ -1,0 +1,99 @@
+{
+  "objects": [
+    {
+      "package": {
+        "name": "com.google.external-dependency-manager",
+        "version": "1.2.190",
+        "displayName": "External Dependency Manager for Unity",
+        "description": "This package is deprecated. Use <a href=\"com.unity3d.kharma:upmpackage/com.unity.external-dependency-manager\">External Dependency Manager official Unity Package</a> instead.External Dependency Manager for Unity (EDM4U) can be used by any Unity plugin that requires Android specific libraries (e.g. AARs), iOS CocoaPods, version management of transitive dependencies, and/or management of Unity Package Manager registries.",
+        "keywords": [
+          "Google",
+          "Android",
+          "Gradle",
+          "Cocoapods",
+          "Dependency",
+          "Unity Package Manager",
+          "Unity",
+          "vh-name:play-services-resolver",
+          "vh-name:unity-jar-resolver",
+          "vh-name:external-dependency-manager",
+          "vh-name:External Dependency Manager for Unity"
+        ],
+        "author": {
+          "name": "Google LLC",
+          "url": "https://github.com/googlesamples/unity-jar-resolver"
+        },
+        "date": "2026-10-31T11:48:55.694Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.google.firebase.app",
+        "version": "14.0.0",
+        "displayName": "Firebase App (Core)",
+        "description": "Firebase App is the core library every Firebase package depends on.",
+        "keywords": [
+          "Google",
+          "Firebase",
+          "FirebaseApp",
+          "App"
+        ],
+        "author": {
+          "name": "Google LLC",
+          "url": "https://firebase.google.com/docs/unity/setup"
+        },
+        "date": "2026-10-31T11:49:44.810Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.google.firebase.messaging",
+        "version": "14.0.0",
+        "displayName": "Firebase Cloud Messaging",
+        "description": "Send targeted messages and notifications.\n\nCloud Messaging gives you a reliable and battery-efficient way to send messages and notifications across platforms. You can target your messages to certain segments of players and customize them to suit your game's brand. You can also gauge their effectiveness with statistics like click rate, open rate, and the downstream effect on conversions.",
+        "keywords": [
+          "Google",
+          "Firebase",
+          "Cloud Messaging",
+          "Messaging",
+          "vh-name:FirebaseMessaging",
+          "vh-name:Firebase Cloud Messaging"
+        ],
+        "author": {
+          "name": "Google LLC",
+          "url": "https://firebase.google.com/docs/cloud-messaging/unity/client"
+        },
+        "date": "2026-10-31T11:49:52.047Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    }
+  ],
+  "total": 3,
+  "time": "Thu, 01 Jan 1970 00:00:00 GMT"
+}
