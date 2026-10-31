@@ -3,9 +3,43 @@
   "dist-tags": {
     "latest": "14.1.0"
   },
-  "versions": {},
+  "versions": {
+    "14.1.0": {
+      "name": "com.google.firebase.crashlytics",
+      "version": "14.1.0",
+      "displayName": "Firebase Crashlytics",
+      "keywords": [
+        "Google",
+        "Firebase",
+        "Crashlytics",
+        "Fabric",
+        "vh-name:FirebaseCrashlytics",
+        "vh-name:Firebase Crashlytics"
+      ],
+      "author": {
+        "name": "Google LLC",
+        "url": "https://firebase.google.com/docs/crashlytics/unity/start"
+      },
+      "description": "Prioritize and fix stability issues faster.\n\nFirebase Crashlytics helps you track, prioritize, and fix stability issues that erode game quality, in realtime. Spend less time triaging and troubleshooting crashes and more time building game content and features that delight players.\n\nCrashlytics also sends realtime alerts for new issues, regressed issues, and burgeoning issues that might require immediate attention to ensure you never miss a critical crash no matter where you are.",
+      "unity": "2022.1",
+      "dependencies": {
+        "com.google.firebase.app": "14.1.0"
+      },
+      "documentationUrl": "https://firebase.google.com/docs/crashlytics/unity/get-started",
+      "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+      "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v14.1.0/LICENSE",
+      "_id": "com.google.firebase.crashlytics@14.1.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.crashlytics-14.1.0/com.google.firebase.crashlytics-14.1.0.tgz",
+        "shasum": "c78537923f1255a4e0c3209f98cb5def49e44446",
+        "integrity": "sha512-lSQcVyO4yx0s8vX4Bp9/vw6t6Zx9s36OIhVLQWHwNjGaw071X9MI+WJjnwzKAQZb4ynOs/E8Bc0g8SMwWG/Rkw=="
+      },
+      "_gitTagOf": "c78537923f1255a4e0c3209f98cb5def49e44446"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T19:51:37.044Z"
+    "modified": "2026-10-31T21:20:57.131Z",
+    "14.1.0": "2026-10-31T21:20:57.131Z"
   },
   "description": "Prioritize and fix stability issues faster.\n\nFirebase Crashlytics helps you track, prioritize, and fix stability issues that erode game quality, in realtime. Spend less time triaging and troubleshooting crashes and more time building game content and features that delight players.\n\nCrashlytics also sends realtime alerts for new issues, regressed issues, and burgeoning issues that might require immediate attention to ensure you never miss a critical crash no matter where you are."
 }

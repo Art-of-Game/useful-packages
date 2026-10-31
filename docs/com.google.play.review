@@ -3,9 +3,35 @@
   "dist-tags": {
     "latest": "1.8.3"
   },
-  "versions": {},
+  "versions": {
+    "1.8.3": {
+      "name": "com.google.play.review",
+      "displayName": "Google Play In-app Review",
+      "description": "The Google Play In-App Review package lets you prompt users to submit Play Store ratings and reviews without the inconvenience of leaving your game.",
+      "version": "1.8.3",
+      "unity": "2018.4",
+      "author": {
+        "name": "Google LLC"
+      },
+      "dependencies": {
+        "com.google.play.common": "1.9.2",
+        "com.google.play.core": "1.8.5"
+      },
+      "documentationUrl": "https://developer.android.com/guide/playcore/in-app-review/unity",
+      "changelogUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.review/CHANGELOG.md",
+      "licensesUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.review/LICENSE.md",
+      "_id": "com.google.play.review@1.8.3",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.play.review-1.8.3/com.google.play.review-1.8.3.tgz",
+        "shasum": "5f09dc6742c2e1c8392fa35cf364c718eb74d637",
+        "integrity": "sha512-lVn1TDEYy6MhoeNQ3aRpAAUVe8Jz4t/0u587zUpTYQ7zl6TxJPBeQk+EsxMBNFoVyykNHB33c9Ta8r+30vpTLw=="
+      },
+      "_gitTagOf": "5f09dc6742c2e1c8392fa35cf364c718eb74d637"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T19:52:19.332Z"
+    "modified": "2026-10-31T21:21:23.407Z",
+    "1.8.3": "2026-10-31T21:21:23.407Z"
   },
   "description": "The Google Play In-App Review package lets you prompt users to submit Play Store ratings and reviews without the inconvenience of leaving your game."
 }

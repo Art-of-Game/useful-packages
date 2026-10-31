@@ -3,9 +3,53 @@
   "dist-tags": {
     "latest": "19.0.0"
   },
-  "versions": {},
+  "versions": {
+    "19.0.0": {
+      "name": "com.facebook.sdk",
+      "version": "19.0.0",
+      "displayName": "Facebook SDK",
+      "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples.",
+      "unity": "2022.3",
+      "license": "SEE LICENSE IN LICENSE.txt",
+      "author": {
+        "name": "Meta",
+        "url": "https://github.com/meta/facebook-sdk-for-unity"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/meta/facebook-sdk-for-unity.git"
+      },
+      "documentationUrl": "https://developers.facebook.com/documentation/unity",
+      "keywords": [
+        "facebook",
+        "meta",
+        "login",
+        "sdk"
+      ],
+      "dependencies": {
+        "com.unity.external-dependency-manager": "2.1.1"
+      },
+      "samples": [
+        {
+          "displayName": "Examples",
+          "description": "Meta's example scenes, the IAP sample they call and the files they read. Move StreamingAssets to Assets/StreamingAssets to run the upload example.",
+          "path": "Samples~/Examples"
+        }
+      ],
+      "changelogUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-19.0.0/CHANGELOG.md",
+      "licensesUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-19.0.0/LICENSE.txt",
+      "_id": "com.facebook.sdk@19.0.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.facebook.sdk-19.0.0/com.facebook.sdk-19.0.0.tgz",
+        "shasum": "31211ec3e206d24065100a38161dab01abe83476",
+        "integrity": "sha512-9eKF4ZVCVsxjYgdfoRxI9xVVkiZz6q3+p/UOpl95wyL4GJRvdxj6F7d6aB5aRqmqU4JWneT9ObAJFmXztpzfhQ=="
+      },
+      "_gitTagOf": "31211ec3e206d24065100a38161dab01abe83476"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T17:25:04.875Z"
+    "modified": "2026-10-31T21:21:38.975Z",
+    "19.0.0": "2026-10-31T21:21:38.975Z"
   },
   "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples."
 }

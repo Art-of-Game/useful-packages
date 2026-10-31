@@ -3,9 +3,44 @@
   "dist-tags": {
     "latest": "14.1.0"
   },
-  "versions": {},
+  "versions": {
+    "14.1.0": {
+      "name": "com.google.firebase.auth",
+      "version": "14.1.0",
+      "displayName": "Firebase Authentication",
+      "keywords": [
+        "Google",
+        "Firebase",
+        "Auth",
+        "Authentication",
+        "FirebaseAuth",
+        "vh-name:FirebaseAuth",
+        "vh-name:Firebase Authentication"
+      ],
+      "author": {
+        "name": "Google LLC",
+        "url": "https://firebase.google.com/docs/auth/unity/start"
+      },
+      "description": "Easily sign-in and authenticate players.\n\nSign-in players using any identity provider with Firebase Authentication. It supports email and password, phone authentication, Facebook, Google, Twitter, and more. Out-of-the-box, you get a secure, end-to-end identity solution.",
+      "unity": "2022.1",
+      "dependencies": {
+        "com.google.firebase.app": "14.1.0"
+      },
+      "documentationUrl": "https://firebase.google.com/docs/auth/unity/start",
+      "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+      "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v14.1.0/LICENSE",
+      "_id": "com.google.firebase.auth@14.1.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.auth-14.1.0/com.google.firebase.auth-14.1.0.tgz",
+        "shasum": "98fa7a32a4ad46f7ed159e5db4e8e1cc5715e63b",
+        "integrity": "sha512-Y5THmxzPCxzLxD9KGbVnRwqVR5rGxBriKxN8KLUfxc3TDlK9T5PCHFfwBCw79V2vmTExDDFTegmv1wrLiWBq9g=="
+      },
+      "_gitTagOf": "98fa7a32a4ad46f7ed159e5db4e8e1cc5715e63b"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T19:51:32.976Z"
+    "modified": "2026-10-31T21:20:53.563Z",
+    "14.1.0": "2026-10-31T21:20:53.563Z"
   },
   "description": "Easily sign-in and authenticate players.\n\nSign-in players using any identity provider with Firebase Authentication. It supports email and password, phone authentication, Facebook, Google, Twitter, and more. Out-of-the-box, you get a secure, end-to-end identity solution."
 }

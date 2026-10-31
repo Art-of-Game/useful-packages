@@ -3,9 +3,43 @@
   "dist-tags": {
     "latest": "14.1.0"
   },
-  "versions": {},
+  "versions": {
+    "14.1.0": {
+      "name": "com.google.firebase.firestore",
+      "version": "14.1.0",
+      "displayName": "Cloud Firestore",
+      "keywords": [
+        "Google",
+        "Firebase",
+        "Firestore",
+        "Cloud",
+        "vh-name:FirebaseFirestore",
+        "vh-name:Cloud Firestore"
+      ],
+      "author": {
+        "name": "Google LLC",
+        "url": "https://firebase.google.com/docs/firestore"
+      },
+      "description": "Store and sync game data at global scale.\n\nCloud Firestore is a flexible NoSQL document database that lets you easily store, sync, and query data for your games - at global scale.\n\nFirestore supports a million players connected simultaneously with a guaranteed uptime of 5 nines for multi-region instances. That's less than 5 minutes of downtime a year!\n\nWith Cloud Firestore, your players can access and make changes to their data at any time, even when they're offline.",
+      "unity": "2022.1",
+      "dependencies": {
+        "com.google.firebase.app": "14.1.0"
+      },
+      "documentationUrl": "https://firebase.google.com/docs/firestore/quickstart",
+      "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+      "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v14.1.0/LICENSE",
+      "_id": "com.google.firebase.firestore@14.1.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.firestore-14.1.0/com.google.firebase.firestore-14.1.0.tgz",
+        "shasum": "09a528ceee5070f8398a4b2a240527222f6ae0c8",
+        "integrity": "sha512-SPX67e07lnuL/9N3sp7hiAANy60hxFMlt8pitASOmyTFwhK88lN45VCsTzmJggyWdsTIGxsVUzHvYj72BrvRNQ=="
+      },
+      "_gitTagOf": "09a528ceee5070f8398a4b2a240527222f6ae0c8"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T19:51:52.517Z"
+    "modified": "2026-10-31T21:21:04.397Z",
+    "14.1.0": "2026-10-31T21:21:04.397Z"
   },
   "description": "Store and sync game data at global scale.\n\nCloud Firestore is a flexible NoSQL document database that lets you easily store, sync, and query data for your games - at global scale.\n\nFirestore supports a million players connected simultaneously with a guaranteed uptime of 5 nines for multi-region instances. That's less than 5 minutes of downtime a year!\n\nWith Cloud Firestore, your players can access and make changes to their data at any time, even when they're offline."
 }

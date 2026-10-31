@@ -10,7 +10,7 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T13:42:14.932Z"
+      "modified": "2026-10-31T21:20:35.331Z"
     }
   },
   "com.google.firebase.messaging": {
@@ -23,7 +23,7 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T13:42:26.361Z"
+      "modified": "2026-10-31T21:20:39.523Z"
     }
   },
   "com.google.firebase.analytics": {
@@ -36,7 +36,20 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:51:21.014Z"
+      "modified": "2026-10-31T21:20:43.900Z"
+    }
+  },
+  "com.google.firebase.app-check": {
+    "name": "com.google.firebase.app-check",
+    "description": "App Check helps protect your API resources from abuse by preventing unauthorized clients from accessing your backend resources. It works with both Firebase services, Google Cloud services, and your own APIs to keep your resources safe.",
+    "dist-tags": {
+      "latest": "14.1.0"
+    },
+    "versions": {
+      "14.1.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:20:48.855Z"
     }
   },
   "com.google.firebase.auth": {
@@ -49,7 +62,7 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:51:32.976Z"
+      "modified": "2026-10-31T21:20:53.563Z"
     }
   },
   "com.google.firebase.crashlytics": {
@@ -62,7 +75,7 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:51:37.044Z"
+      "modified": "2026-10-31T21:20:57.131Z"
     }
   },
   "com.google.firebase.firestore": {
@@ -75,7 +88,7 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:51:52.517Z"
+      "modified": "2026-10-31T21:21:04.397Z"
     }
   },
   "com.google.firebase.remote-config": {
@@ -88,7 +101,7 @@
       "14.1.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:52:04.605Z"
+      "modified": "2026-10-31T21:21:08.527Z"
     }
   },
   "com.google.signin": {
@@ -101,7 +114,7 @@
       "1.0.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:52:13.671Z"
+      "modified": "2026-10-31T21:21:12.486Z"
     }
   },
   "com.google.play.games": {
@@ -114,7 +127,7 @@
       "2.3.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T20:43:09.523Z"
+      "modified": "2026-10-31T21:21:17.482Z"
     }
   },
   "com.google.play.review": {
@@ -127,7 +140,7 @@
       "1.8.3": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:52:19.332Z"
+      "modified": "2026-10-31T21:21:23.407Z"
     }
   },
   "com.google.play.appupdate": {
@@ -140,7 +153,7 @@
       "1.8.3": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:52:22.734Z"
+      "modified": "2026-10-31T21:21:26.400Z"
     }
   },
   "com.google.play.core": {
@@ -153,7 +166,7 @@
       "1.8.5": "latest"
     },
     "time": {
-      "modified": "2026-10-31T19:52:33.104Z"
+      "modified": "2026-10-31T21:21:29.925Z"
     }
   },
   "com.google.play.common": {
@@ -166,7 +179,7 @@
       "1.9.2": "latest"
     },
     "time": {
-      "modified": "2026-10-31T20:43:13.595Z"
+      "modified": "2026-10-31T21:21:33.389Z"
     }
   },
   "com.facebook.sdk": {
@@ -179,7 +192,7 @@
       "19.0.0": "latest"
     },
     "time": {
-      "modified": "2026-10-31T17:25:04.875Z"
+      "modified": "2026-10-31T21:21:38.975Z"
     }
   }
 }

@@ -16,7 +16,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/unity/setup"
         },
-        "date": "2026-10-31T13:42:14.932Z"
+        "date": "2026-10-31T21:20:35.331Z"
       },
       "score": {
         "final": 1,
@@ -46,7 +46,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/cloud-messaging/unity/client"
         },
-        "date": "2026-10-31T13:42:26.361Z"
+        "date": "2026-10-31T21:20:39.523Z"
       },
       "score": {
         "final": 1,
@@ -75,7 +75,36 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/analytics/unity/start"
         },
-        "date": "2026-10-31T19:51:21.014Z"
+        "date": "2026-10-31T21:20:43.900Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.google.firebase.app-check",
+        "version": "14.1.0",
+        "displayName": "Firebase App Check",
+        "description": "App Check helps protect your API resources from abuse by preventing unauthorized clients from accessing your backend resources. It works with both Firebase services, Google Cloud services, and your own APIs to keep your resources safe.",
+        "keywords": [
+          "Google",
+          "Firebase",
+          "App Check",
+          "vh-name:FirebaseAppCheck",
+          "vh-name:Firebase App Check"
+        ],
+        "author": {
+          "name": "Google LLC",
+          "url": "https://firebase.google.com/docs/app-check"
+        },
+        "date": "2026-10-31T21:20:48.855Z"
       },
       "score": {
         "final": 1,
@@ -106,7 +135,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/auth/unity/start"
         },
-        "date": "2026-10-31T19:51:32.976Z"
+        "date": "2026-10-31T21:20:53.563Z"
       },
       "score": {
         "final": 1,
@@ -136,7 +165,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/crashlytics/unity/start"
         },
-        "date": "2026-10-31T19:51:37.044Z"
+        "date": "2026-10-31T21:20:57.131Z"
       },
       "score": {
         "final": 1,
@@ -166,7 +195,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/firestore"
         },
-        "date": "2026-10-31T19:51:52.517Z"
+        "date": "2026-10-31T21:21:04.397Z"
       },
       "score": {
         "final": 1,
@@ -197,7 +226,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/remote-config/use-config-unity"
         },
-        "date": "2026-10-31T19:52:04.605Z"
+        "date": "2026-10-31T21:21:08.527Z"
       },
       "score": {
         "final": 1,
@@ -225,7 +254,7 @@
           "name": "Google, coolishbee",
           "url": "https://github.com/coolishbee/google-signin-unity"
         },
-        "date": "2026-10-31T19:52:13.671Z"
+        "date": "2026-10-31T21:21:12.486Z"
       },
       "score": {
         "final": 1,
@@ -246,7 +275,7 @@
         "author": {
           "name": "Google LLC"
         },
-        "date": "2026-10-31T20:43:09.523Z"
+        "date": "2026-10-31T21:21:17.482Z"
       },
       "score": {
         "final": 1,
@@ -267,7 +296,7 @@
         "author": {
           "name": "Google LLC"
         },
-        "date": "2026-10-31T19:52:19.332Z"
+        "date": "2026-10-31T21:21:23.407Z"
       },
       "score": {
         "final": 1,
@@ -288,7 +317,7 @@
         "author": {
           "name": "Google LLC"
         },
-        "date": "2026-10-31T19:52:22.734Z"
+        "date": "2026-10-31T21:21:26.400Z"
       },
       "score": {
         "final": 1,
@@ -309,7 +338,7 @@
         "author": {
           "name": "Google LLC"
         },
-        "date": "2026-10-31T19:52:33.104Z"
+        "date": "2026-10-31T21:21:29.925Z"
       },
       "score": {
         "final": 1,
@@ -330,7 +359,7 @@
         "author": {
           "name": "Google LLC"
         },
-        "date": "2026-10-31T20:43:13.595Z"
+        "date": "2026-10-31T21:21:33.389Z"
       },
       "score": {
         "final": 1,
@@ -358,7 +387,7 @@
           "name": "Meta",
           "url": "https://github.com/meta/facebook-sdk-for-unity"
         },
-        "date": "2026-10-31T17:25:04.875Z"
+        "date": "2026-10-31T21:21:38.975Z"
       },
       "score": {
         "final": 1,
@@ -371,6 +400,6 @@
       "searchScore": 1
     }
   ],
-  "total": 14,
+  "total": 15,
   "time": "Thu, 01 Jan 1970 00:00:00 GMT"
 }

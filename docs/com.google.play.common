@@ -3,9 +3,34 @@
   "dist-tags": {
     "latest": "1.9.2"
   },
-  "versions": {},
+  "versions": {
+    "1.9.2": {
+      "name": "com.google.play.common",
+      "displayName": "Google Play Common",
+      "description": "The Google Play Common package provides common files required by some Google Play packages, such as Play Integrity API.\n\nThis package doesn't provide any features when installed separately.",
+      "version": "1.9.2",
+      "unity": "2018.4",
+      "author": {
+        "name": "Google LLC"
+      },
+      "documentationUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.common/README.md",
+      "changelogUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.common/CHANGELOG.md",
+      "licensesUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.common/LICENSE.md",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "_id": "com.google.play.common@1.9.2",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.play.common-1.9.2/com.google.play.common-1.9.2.tgz",
+        "shasum": "f95ed9fabaabfcef162daa0e74d3215d41b68b56",
+        "integrity": "sha512-PfxINZTrXwEG8R6hof0u+mX9aUVLMeJAoA5G2osQ+Nu4K70IcsHli9i1+xPU8m/NDvj03inEizw/wqfJ1DaR6Q=="
+      },
+      "_gitTagOf": "f95ed9fabaabfcef162daa0e74d3215d41b68b56"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T20:43:13.595Z"
+    "modified": "2026-10-31T21:21:33.389Z",
+    "1.9.2": "2026-10-31T21:21:33.389Z"
   },
   "description": "The Google Play Common package provides common files required by some Google Play packages, such as Play Integrity API.\n\nThis package doesn't provide any features when installed separately."
 }

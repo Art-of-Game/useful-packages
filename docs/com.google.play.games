@@ -3,9 +3,34 @@
   "dist-tags": {
     "latest": "2.3.0"
   },
-  "versions": {},
+  "versions": {
+    "2.3.0": {
+      "name": "com.google.play.games",
+      "displayName": "Google Play Games",
+      "description": "The Google Play Games plugin for Unity allows you to access the Google Play Games API through Unity's social interface.",
+      "version": "2.3.0",
+      "unity": "2018.4",
+      "author": {
+        "name": "Google LLC"
+      },
+      "dependencies": {
+        "com.unity.external-dependency-manager": "2.1.1"
+      },
+      "documentationUrl": "https://developer.android.com/games/pgs/unity/unity-start",
+      "changelogUrl": "https://github.com/playgameservices/play-games-plugin-for-unity/blob/v2.3.0/CHANGELOG.txt",
+      "licensesUrl": "https://github.com/playgameservices/play-games-plugin-for-unity/blob/v2.3.0/LICENSE",
+      "_id": "com.google.play.games@2.3.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.play.games-2.3.0/com.google.play.games-2.3.0.tgz",
+        "shasum": "226824aaf88562bbbfa2d10b2474506e2608ce20",
+        "integrity": "sha512-xzZ3wn7Jjx8mOtac914VSohpDZ+aiWVTuBd6mSLIzfQ4uMPV2CzqdCMLp6YDqrhnqZhJrURG4kw1JwMnUdxgMw=="
+      },
+      "_gitTagOf": "226824aaf88562bbbfa2d10b2474506e2608ce20"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T20:43:09.523Z"
+    "modified": "2026-10-31T21:21:17.482Z",
+    "2.3.0": "2026-10-31T21:21:17.482Z"
   },
   "description": "The Google Play Games plugin for Unity allows you to access the Google Play Games API through Unity's social interface."
 }

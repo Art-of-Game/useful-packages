@@ -3,9 +3,35 @@
   "dist-tags": {
     "latest": "1.8.3"
   },
-  "versions": {},
+  "versions": {
+    "1.8.3": {
+      "name": "com.google.play.appupdate",
+      "displayName": "Google Play In-app Updates",
+      "description": "Enables the user to install an app update without exiting to the Play Store.",
+      "version": "1.8.3",
+      "unity": "2018.4",
+      "author": {
+        "name": "Google LLC"
+      },
+      "dependencies": {
+        "com.google.play.common": "1.9.2",
+        "com.google.play.core": "1.8.5"
+      },
+      "documentationUrl": "https://developer.android.com/guide/playcore/in-app-updates/unity",
+      "changelogUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.appupdate/CHANGELOG.md",
+      "licensesUrl": "https://github.com/google/play-unity-plugins/blob/master/GooglePlayPlugins/com.google.play.appupdate/LICENSE.md",
+      "_id": "com.google.play.appupdate@1.8.3",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.play.appupdate-1.8.3/com.google.play.appupdate-1.8.3.tgz",
+        "shasum": "cf69205b9b1f2f886648b00c1720ac49c126c20d",
+        "integrity": "sha512-LqK2TPKVLyUfeHe4IxvxdQ6rRG/AcJc6tQmz47ckxnwAH31TV3uC0bvW5XW3/MPBKrXwoNo5n6LXWHMEzPfUxQ=="
+      },
+      "_gitTagOf": "cf69205b9b1f2f886648b00c1720ac49c126c20d"
+    }
+  },
   "time": {
-    "modified": "2026-10-31T19:52:22.734Z"
+    "modified": "2026-10-31T21:21:26.400Z",
+    "1.8.3": "2026-10-31T21:21:26.400Z"
   },
   "description": "Enables the user to install an app update without exiting to the Play Store."
 }
