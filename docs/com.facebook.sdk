@@ -34,7 +34,8 @@
         "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.facebook.sdk-19.0.0/com.facebook.sdk-19.0.0.tgz",
         "shasum": "00f21b720bb3f94094d3a1c773ddfbfd697b885f",
         "integrity": "sha512-lj3AGHJTObCBDM5JfdbBF8Kd3RHUAZW7xPEP5QQkuocxosrPWnXyj3N1XXR7Wm66ZEiw7oRwvB/KiU1YN/YpEg=="
-      }
+      },
+      "_gitTagOf": "00f21b720bb3f94094d3a1c773ddfbfd697b885f"
     }
   },
   "time": {

@@ -42,7 +42,8 @@
         "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.coolishbee.google-signin-1.0.0/com.coolishbee.google-signin-1.0.0.tgz",
         "shasum": "5b8477deecfb7a0e0a7deeaf0f572ed4b5396de4",
         "integrity": "sha512-nXEyuhhuoIoyGIOz7F+2fXKWWQ43MHUh7w1eOQYZNhbWVM3bBCTOhKvribj+JRxPrL7+FjCO3/zZD59UZ3O5vg=="
-      }
+      },
+      "_gitTagOf": "5b8477deecfb7a0e0a7deeaf0f572ed4b5396de4"
     }
   },
   "time": {
