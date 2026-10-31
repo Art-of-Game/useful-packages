@@ -4,13 +4,14 @@ Unity packages I use in my projects, collected in one place. Each one installs o
 
 ## What's here
 
-| Package | What it is | Also brings |
-|---|---|---|
-| `com.google.firebase.app` | Firebase App (Core) | External Dependency Manager |
-| `com.google.firebase.messaging` | Firebase Cloud Messaging | Firebase App |
-| `com.coolishbee.google-signin` | Google Sign-In | External Dependency Manager |
+| Package | What it is | Source | Also brings |
+|---|---|---|---|
+| `com.google.firebase.app` | Firebase App (Core) | [firebase/firebase-unity-sdk](https://github.com/firebase/firebase-unity-sdk) | External Dependency Manager |
+| `com.google.firebase.messaging` | Firebase Cloud Messaging | [firebase/firebase-unity-sdk](https://github.com/firebase/firebase-unity-sdk) | Firebase App |
+| `com.coolishbee.google-signin` | Google Sign-In | [coolishbee/google-signin-unity](https://github.com/coolishbee/google-signin-unity) | External Dependency Manager |
+| `com.facebook.sdk` | Facebook SDK for Android and iOS | [meta/facebook-sdk-for-unity](https://github.com/meta/facebook-sdk-for-unity) | External Dependency Manager |
 
-These are the original packages from their authors, under their own licences. I only point them at Unity's External Dependency Manager and sign them. Each package says so in `Documentation~/MODIFIED.md`.
+All the work belongs to their authors, and each package keeps its own licence. I only point them at Unity's External Dependency Manager and sign them. Meta ships the Facebook SDK as a `.unitypackage`, so I also turned it into a package with just the Android and iOS parts. Each package says what changed in `Documentation~/MODIFIED.md`.
 
 ## Install with a scoped registry
 
@@ -25,7 +26,7 @@ Add this to `Packages/manifest.json`, with only the packages you want:
     {
       "name": "Useful Packages",
       "url": "https://art-of-game.github.io/useful-packages",
-      "scopes": ["com.google.firebase", "com.coolishbee"]
+      "scopes": ["com.google.firebase", "com.coolishbee", "com.facebook"]
     }
   ]
 }
@@ -41,6 +42,7 @@ In the Package Manager window press **+**, then **Install package from git URL**
 https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app
 https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging
 https://github.com/Art-of-Game/useful-packages.git#upm/com.coolishbee.google-signin
+https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk
 ```
 
 To stay on one version, add it to the end, like `#upm/com.google.firebase.app/14.1.0`.

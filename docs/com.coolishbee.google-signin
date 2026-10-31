@@ -33,18 +33,21 @@
         }
       ],
       "documentationUrl": "https://github.com/coolishbee/google-signin-unity/blob/main/Packages/com.coolishbee.google-signin/README.md",
+      "author": {
+        "name": "coolishbee",
+        "url": "https://github.com/coolishbee/google-signin-unity"
+      },
       "_id": "com.coolishbee.google-signin@1.0.0",
       "dist": {
         "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.coolishbee.google-signin-1.0.0/com.coolishbee.google-signin-1.0.0.tgz",
-        "shasum": "4fb89f447bb48009e2751ca0e1dff7400c8cf88c",
-        "integrity": "sha512-rBSnA3JYM8hboKuTI/DCDl3u6KgyrAuy6iDwlayp1IScbZCQomRJxNFIy224uW95ZOPDyjtQAJZMG/6cFRCQ2Q=="
-      },
-      "_gitTagOf": "4fb89f447bb48009e2751ca0e1dff7400c8cf88c"
+        "shasum": "5b8477deecfb7a0e0a7deeaf0f572ed4b5396de4",
+        "integrity": "sha512-nXEyuhhuoIoyGIOz7F+2fXKWWQ43MHUh7w1eOQYZNhbWVM3bBCTOhKvribj+JRxPrL7+FjCO3/zZD59UZ3O5vg=="
+      }
     }
   },
   "time": {
-    "1.0.0": "2026-10-31T13:42:31.081Z",
-    "modified": "2026-10-31T13:42:31.081Z"
+    "1.0.0": "2026-10-31T16:28:44.145Z",
+    "modified": "2026-10-31T16:28:44.145Z"
   },
   "description": "Google Sign-In for Unity. Android uses CredentialManager + AuthorizationClient, iOS uses GIDSignIn, and Editor/Standalone uses a loopback OAuth flow."
 }

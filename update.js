@@ -53,7 +53,56 @@ function latestVersion(entry) {
   const tag = entry.latestBy === "tag"
     ? gh("api", `repos/${entry.latestFrom}/tags`, "--jq", ".[0].name")
     : gh("api", `repos/${entry.latestFrom}/releases/latest`, "--jq", ".tag_name");
-  return tag.replace(/^v/, "");
+  return tag.replace(/^\D+/, "");
+}
+
+// Unity wants a .meta next to every file and folder of a package. The same path always gets the same guid.
+function addMissingMetas(name, tree, folder = tree) {
+  for (const item of fs.readdirSync(folder, { withFileTypes: true })) {
+    if (item.name.endsWith(".meta") || item.name.endsWith("~")) continue;
+    const full = path.join(folder, item.name);
+    if (item.isDirectory()) addMissingMetas(name, tree, full);
+    if (fs.existsSync(`${full}.meta`)) continue;
+    const relative = path.relative(tree, full).replaceAll("\\", "/");
+    const lines = ["fileFormatVersion: 2", `guid: ${hash("md5", `${name}/${relative}`, "hex")}`];
+    if (item.isDirectory()) lines.push("folderAsset: yes", "DefaultImporter:", "  externalObjects: {}", "  userData: ", "  assetBundleName: ", "  assetBundleVariant: ");
+    fs.writeFileSync(`${full}.meta`, lines.join("\n") + "\n");
+  }
+}
+
+// A vendor without a package ships a .unitypackage, which is one folder per file: its path, the file and its .meta. This takes
+// the paths named in "take", then adds extras/<package> and the licence.
+async function packageFromUnitypackage(entry, version, folder) {
+  const { name } = entry;
+  const tree = path.join(folder, "package");
+  const files = path.join(folder, "files");
+  fs.mkdirSync(files);
+  execFileSync("unzip", ["-q", "source.download", "-d", "zip"], { cwd: folder });
+  execFileSync("tar", ["-xzf", `../zip/${fill(entry.unitypackage, name, version)}`], { cwd: files });
+
+  for (const guid of fs.readdirSync(files)) {
+    const pathFile = path.join(files, guid, "pathname");
+    if (!fs.existsSync(pathFile) || !fs.existsSync(path.join(files, guid, "asset"))) continue;
+    const vendorPath = fs.readFileSync(pathFile, "utf8").split("\n")[0].trim();
+    const start = Object.keys(entry.take).find((prefix) => vendorPath.startsWith(prefix));
+    if (!start) continue;
+    const target = path.join(tree, entry.take[start], vendorPath.slice(start.length));
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.copyFileSync(path.join(files, guid, "asset"), target);
+    fs.copyFileSync(path.join(files, guid, "asset.meta"), `${target}.meta`);
+  }
+
+  fs.cpSync(path.join(__dirname, "extras", name), tree, { recursive: true });
+  const manifestFile = path.join(tree, "package.json");
+  fs.writeFileSync(manifestFile, fill(fs.readFileSync(manifestFile, "utf8"), name, version));
+
+  const licence = await fetch(fill(entry.licence, name, version));
+  if (!licence.ok) throw new Error(`${licence.status} from ${entry.licence}`);
+  fs.writeFileSync(path.join(tree, "LICENSE.txt"), Buffer.from(await licence.arrayBuffer()));
+
+  addMissingMetas(name, tree);
+  fs.rmSync(files, { recursive: true, force: true });
+  fs.rmSync(path.join(folder, "zip"), { recursive: true, force: true });
 }
 
 // Writes the vendor's files to <folder>/package with the dependency changed. Returns false when the vendor has no such file yet.
@@ -66,11 +115,15 @@ async function prepare(entry, version, folder) {
   }
 
   fs.mkdirSync(folder, { recursive: true });
-  fs.writeFileSync(path.join(folder, "source.tgz"), Buffer.from(await response.arrayBuffer()));
-  execFileSync("tar", ["-xzf", "source.tgz"], { cwd: folder });
-  fs.rmSync(path.join(folder, "source.tgz"));
+  fs.writeFileSync(path.join(folder, "source.download"), Buffer.from(await response.arrayBuffer()));
   const tree = path.join(folder, "package");
-  if (entry.folder) fs.renameSync(path.join(folder, fill(entry.folder, entry.name, version)), tree);
+  if (entry.take) {
+    await packageFromUnitypackage(entry, version, folder);
+  } else {
+    execFileSync("tar", ["-xzf", "source.download"], { cwd: folder });
+    if (entry.folder) fs.renameSync(path.join(folder, fill(entry.folder, entry.name, version)), tree);
+  }
+  fs.rmSync(path.join(folder, "source.download"));
 
   const manifestFile = path.join(tree, "package.json");
   const manifest = JSON.parse(fs.readFileSync(manifestFile, "utf8"));
@@ -78,7 +131,11 @@ async function prepare(entry, version, folder) {
     throw new Error(`${source} holds ${manifest.name} ${manifest.version}`);
   }
 
-  const changes = [];
+  const changes = [...(entry.changes ?? [])];
+  if (entry.author) {
+    manifest.author = entry.author;
+    changes.push(`- \`package.json\` names ${entry.author.name} as the author, which the original leaves out.`);
+  }
   for (const [from, to] of Object.entries(config.replaceDependencies)) {
     if (!manifest.dependencies?.[from]) continue;
     delete manifest.dependencies[from];

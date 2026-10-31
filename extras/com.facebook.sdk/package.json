@@ -1,0 +1,26 @@
+{
+  "name": "com.facebook.sdk",
+  "version": "{version}",
+  "displayName": "Facebook SDK",
+  "description": "Meta's Facebook SDK for Unity as a package, the Android and iOS parts.",
+  "unity": "2022.3",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "author": {
+    "name": "Meta",
+    "url": "https://github.com/meta/facebook-sdk-for-unity"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meta/facebook-sdk-for-unity.git"
+  },
+  "documentationUrl": "https://developers.facebook.com/docs/unity",
+  "keywords": [
+    "facebook",
+    "meta",
+    "login",
+    "sdk"
+  ],
+  "dependencies": {
+    "com.unity.external-dependency-manager": "2.1.1"
+  }
+}

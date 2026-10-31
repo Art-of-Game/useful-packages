@@ -24,7 +24,35 @@
       "latestFrom": "coolishbee/google-signin-unity",
       "latestBy": "tag",
       "tarball": "https://codeload.github.com/coolishbee/google-signin-unity/tar.gz/refs/tags/v{version}",
-      "folder": "google-signin-unity-{version}/Packages/com.coolishbee.google-signin"
+      "folder": "google-signin-unity-{version}/Packages/com.coolishbee.google-signin",
+      "author": {
+        "name": "coolishbee",
+        "url": "https://github.com/coolishbee/google-signin-unity"
+      }
+    },
+    {
+      "name": "com.facebook.sdk",
+      "latestFrom": "meta/facebook-sdk-for-unity",
+      "tarball": "https://github.com/meta/facebook-sdk-for-unity/releases/download/sdk-version-{version}/facebook-unity-sdk-{version}.zip",
+      "unitypackage": "facebook-unity-sdk-{version}/FacebookSDK/facebook-unity-sdk-{version}.unitypackage",
+      "licence": "https://raw.githubusercontent.com/meta/facebook-sdk-for-unity/sdk-version-{version}/LICENSE.txt",
+      "take": {
+        "Assets/FacebookSDK/Plugins/Android/": "Plugins/Android/",
+        "Assets/FacebookSDK/Plugins/Editor/": "Plugins/Editor/",
+        "Assets/FacebookSDK/Plugins/iOS/": "Plugins/iOS/",
+        "Assets/FacebookSDK/Plugins/Settings/": "Plugins/Settings/",
+        "Assets/FacebookSDK/Plugins/Facebook.Unity.dll": "Plugins/Facebook.Unity.dll",
+        "Assets/FacebookSDK/SDK/": "SDK/",
+        "Assets/FacebookSDK/link.xml": "link.xml",
+        "Assets/Editor/DisableBitcode.cs": "Editor/DisableBitcode.cs",
+        "Assets/Editor/FBXcodePostProcess.cs": "Editor/FBXcodePostProcess.cs"
+      },
+      "changes": [
+        "- Made into a Unity package from Meta's `.unitypackage`, with the Android, iOS and Editor parts only. Examples, Windows, WebGL, the IAP sample and the bundled External Dependency Manager are left out.",
+        "- `package.json` is new and depends on `com.unity.external-dependency-manager`.",
+        "- `Editor/Facebook.Unity.PostProcess.asmdef` is new, because Unity compiles no script in a package without one.",
+        "- `Editor/FacebookLinkFile.cs` is new, because Unity reads no `link.xml` from inside a package."
+      ]
     }
   ]
 }
