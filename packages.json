@@ -199,6 +199,123 @@
         "changelogUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-{version}/CHANGELOG.md",
         "licensesUrl": "https://github.com/meta/facebook-sdk-for-unity/blob/sdk-version-{version}/LICENSE.txt"
       }
+    },
+    {
+      "name": "com.coffee.ui-effect",
+      "latestFrom": "mob-sakai/UIEffect",
+      "alsoVersions": [
+        "5.11.5"
+      ],
+      "tarball": "https://codeload.github.com/mob-sakai/UIEffect/tar.gz/{ref}",
+      "folder": "UIEffect-{ref}/Packages/src",
+      "links": {
+        "documentationUrl": "https://github.com/mob-sakai/UIEffect#readme",
+        "changelogUrl": "https://github.com/mob-sakai/UIEffect/blob/{version}/Packages/src/CHANGELOG.md",
+        "licensesUrl": "https://github.com/mob-sakai/UIEffect/blob/{version}/Packages/src/LICENSE.md"
+      }
+    },
+    {
+      "name": "com.cysharp.magiconion.client.unity",
+      "latestFrom": "Cysharp/MagicOnion",
+      "alsoVersions": [
+        "7.10.2"
+      ],
+      "tarball": "https://codeload.github.com/Cysharp/MagicOnion/tar.gz/{ref}",
+      "folder": "MagicOnion-{ref}/src/MagicOnion.Client.Unity/Assets/Scripts/MagicOnion.Client.Unity",
+      "licence": "https://raw.githubusercontent.com/Cysharp/MagicOnion/{version}/LICENSE",
+      "links": {
+        "documentationUrl": "https://cysharp.github.io/MagicOnion/",
+        "changelogUrl": "https://github.com/Cysharp/MagicOnion/releases/tag/{version}",
+        "licensesUrl": "https://github.com/Cysharp/MagicOnion/blob/{version}/LICENSE"
+      }
+    },
+    {
+      "name": "com.cysharp.unitask",
+      "latestFrom": "Cysharp/UniTask",
+      "tarball": "https://codeload.github.com/Cysharp/UniTask/tar.gz/{ref}",
+      "folder": "UniTask-{ref}/src/UniTask/Assets/Plugins/UniTask",
+      "licence": "https://raw.githubusercontent.com/Cysharp/UniTask/{version}/LICENSE",
+      "links": {
+        "documentationUrl": "https://github.com/Cysharp/UniTask#readme",
+        "changelogUrl": "https://github.com/Cysharp/UniTask/releases/tag/{version}",
+        "licensesUrl": "https://github.com/Cysharp/UniTask/blob/{version}/LICENSE"
+      }
+    },
+    {
+      "name": "com.cysharp.yetanotherhttphandler",
+      "latestFrom": "Cysharp/YetAnotherHttpHandler",
+      "alsoVersions": [
+        "1.11.5"
+      ],
+      "tarball": "https://codeload.github.com/Cysharp/YetAnotherHttpHandler/tar.gz/{ref}",
+      "folder": "YetAnotherHttpHandler-{ref}/src/YetAnotherHttpHandler",
+      "links": {
+        "documentationUrl": "https://github.com/Cysharp/YetAnotherHttpHandler#readme",
+        "changelogUrl": "https://github.com/Cysharp/YetAnotherHttpHandler/releases/tag/{version}",
+        "licensesUrl": "https://github.com/Cysharp/YetAnotherHttpHandler/blob/{version}/LICENSE"
+      },
+      "licence": "https://raw.githubusercontent.com/Cysharp/YetAnotherHttpHandler/{version}/LICENSE"
+    },
+    {
+      "name": "com.github-glitchenzo.nugetforunity",
+      "latestFrom": "GlitchEnzo/NuGetForUnity",
+      "commits": {
+        "4.5.0": "acc1c7bc9ea34c33b830e40316fca52553878d29"
+      },
+      "tarball": "https://codeload.github.com/GlitchEnzo/NuGetForUnity/tar.gz/{ref}",
+      "folder": "NuGetForUnity-{ref}/src/NuGetForUnity",
+      "author": {
+        "name": "GlitchEnzo",
+        "url": "https://github.com/GlitchEnzo/NuGetForUnity"
+      },
+      "links": {
+        "documentationUrl": "https://github.com/GlitchEnzo/NuGetForUnity#readme",
+        "changelogUrl": "https://github.com/GlitchEnzo/NuGetForUnity/releases/tag/v{version}",
+        "licensesUrl": "https://github.com/GlitchEnzo/NuGetForUnity/blob/v{version}/LICENSE"
+      }
+    },
+    {
+      "name": "com.netpyoung.webp",
+      "latestFrom": "netpyoung/unity.webp",
+      "commits": {
+        "0.3.22": "ff053e8d940fcb60d2b08ce47b7996c466d71dcc"
+      },
+      "tarball": "https://codeload.github.com/netpyoung/unity.webp/tar.gz/{ref}",
+      "folder": "unity.webp-{ref}/unity_project/Assets/unity.webp",
+      "author": {
+        "name": "netpyoung",
+        "url": "https://github.com/netpyoung/unity.webp"
+      },
+      "links": {
+        "documentationUrl": "https://github.com/netpyoung/unity.webp#readme",
+        "changelogUrl": "https://github.com/netpyoung/unity.webp/releases/tag/{version}",
+        "licensesUrl": "https://github.com/netpyoung/unity.webp/blob/{version}/unity_project/Assets/unity.webp/LICENSE.md"
+      }
+    },
+    {
+      "name": "com.nosuchstudio.rtltmpro",
+      "latestFrom": "hk1ll3r/RTLTMPro",
+      "tarball": "https://codeload.github.com/hk1ll3r/RTLTMPro/tar.gz/v{ref}",
+      "folder": "RTLTMPro-{ref}/UPMPackage",
+      "links": {
+        "documentationUrl": "https://github.com/hk1ll3r/RTLTMPro#readme",
+        "changelogUrl": "https://github.com/hk1ll3r/RTLTMPro/releases/tag/v{version}",
+        "licensesUrl": "https://github.com/hk1ll3r/RTLTMPro/blob/v{version}/UPMPackage/LICENSE"
+      }
+    },
+    {
+      "name": "com.yasirkula.nativegallery",
+      "latestFrom": "yasirkula/UnityNativeGallery",
+      "alsoVersions": [
+        "1.9.4"
+      ],
+      "tarball": "https://codeload.github.com/yasirkula/UnityNativeGallery/tar.gz/v{ref}",
+      "folder": "UnityNativeGallery-{ref}",
+      "links": {
+        "documentationUrl": "https://github.com/yasirkula/UnityNativeGallery#readme",
+        "changelogUrl": "https://github.com/yasirkula/UnityNativeGallery/releases/tag/v{version}",
+        "licensesUrl": "https://github.com/yasirkula/UnityNativeGallery/blob/v{version}/LICENSE.txt"
+      }
     }
   ]
 }

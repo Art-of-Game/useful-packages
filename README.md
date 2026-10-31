@@ -42,6 +42,19 @@ Google has archived `play-unity-plugins` too. Those packages are the newest vers
 |---|---|---|---|
 | `com.facebook.sdk` | Facebook SDK | [meta/facebook-sdk-for-unity](https://github.com/meta/facebook-sdk-for-unity) | External Dependency Manager |
 
+### Other
+
+| Package | What it is | Source | Also brings |
+|---|---|---|---|
+| `com.coffee.ui-effect` | UIEffect | [mob-sakai/UIEffect](https://github.com/mob-sakai/UIEffect) | Unity UI |
+| `com.cysharp.magiconion.client.unity` | MagicOnion client | [Cysharp/MagicOnion](https://github.com/Cysharp/MagicOnion) | Nothing |
+| `com.cysharp.unitask` | UniTask | [Cysharp/UniTask](https://github.com/Cysharp/UniTask) | Nothing |
+| `com.cysharp.yetanotherhttphandler` | YetAnotherHttpHandler | [Cysharp/YetAnotherHttpHandler](https://github.com/Cysharp/YetAnotherHttpHandler) | Nothing |
+| `com.github-glitchenzo.nugetforunity` | NuGetForUnity | [GlitchEnzo/NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity) | Nothing |
+| `com.netpyoung.webp` | unity.webp | [netpyoung/unity.webp](https://github.com/netpyoung/unity.webp) | Nothing |
+| `com.nosuchstudio.rtltmpro` | RTL TextMesh Pro | [hk1ll3r/RTLTMPro](https://github.com/hk1ll3r/RTLTMPro) | Nothing |
+| `com.yasirkula.nativegallery` | Native Gallery | [yasirkula/UnityNativeGallery](https://github.com/yasirkula/UnityNativeGallery) | Nothing |
+
 All the work belongs to their authors, and each package keeps its own licence. I only point them at Unity's External Dependency Manager and sign them. Meta ships the Facebook SDK as a `.unitypackage`, so I also turned it into a package and moved Meta's examples under **Samples** in the Package Manager window. Each package says what changed in `Documentation~/MODIFIED.md`.
 
 ## External Dependency Manager
@@ -63,11 +76,13 @@ Add this to `Packages/manifest.json`, with only the packages you want:
     {
       "name": "Useful Packages",
       "url": "https://art-of-game.github.io/useful-packages",
-      "scopes": ["com.google", "com.facebook"]
+      "scopes": ["com.google", "com.facebook", "com.coffee", "com.cysharp", "com.github-glitchenzo", "com.netpyoung", "com.nosuchstudio", "com.yasirkula"]
     }
   ]
 }
 ```
+
+You only need the scopes of the packages you use.
 
 Or add the registry in **Project Settings**, **Package Manager**, and install from **My Registries** in the Package Manager window.
 

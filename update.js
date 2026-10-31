@@ -20,6 +20,8 @@ const gh = (...args) => execFileSync("gh", args, { cwd: __dirname, encoding: "ut
 const newest = (versions) => [...versions].sort((a, b) => a.localeCompare(b, undefined, { numeric: true })).pop();
 const hash = (algorithm, bytes, encoding) => crypto.createHash(algorithm).update(bytes).digest(encoding);
 const fill = (text, name, version) => text.replaceAll("{name}", name).replaceAll("{version}", version);
+// {ref} is the version, or the commit "commits" names for it when the vendor fixed something after tagging that version.
+const fillRef = (text, entry, version) => fill(text, entry.name, version).replaceAll("{ref}", entry.commits?.[version] ?? version);
 const tempFolder = () => fs.mkdtempSync(path.join(os.tmpdir(), "useful-packages-"));
 
 const run = (cwd, env, ...args) =>
@@ -139,7 +141,7 @@ async function packageFromUnitypackage(entry, version, folder) {
 
 // Writes the vendor's files to <folder>/package with the dependency changed. Returns false when the vendor has no such file yet.
 async function prepare(entry, version, folder) {
-  const source = fill(entry.tarball, entry.name, version);
+  const source = fillRef(entry.tarball, entry, version);
   const response = await fetch(source);
   if (!response.ok) {
     console.log(`${entry.name} ${version}: not available yet (${response.status} from ${source})`);
@@ -153,7 +155,7 @@ async function prepare(entry, version, folder) {
     await packageFromUnitypackage(entry, version, folder);
   } else {
     execFileSync("tar", ["-xzf", "source.download"], { cwd: folder });
-    if (entry.folder) fs.renameSync(path.join(folder, fill(entry.folder, entry.name, version)), tree);
+    if (entry.folder) fs.renameSync(path.join(folder, fillRef(entry.folder, entry, version)), tree);
     if (entry.licence) await addLicence(entry, version, tree);
   }
   fs.rmSync(path.join(folder, "source.download"));
@@ -165,6 +167,7 @@ async function prepare(entry, version, folder) {
   }
 
   const changes = [...(entry.changes ?? [])];
+  if (entry.commits?.[version]) changes.push(`- Taken from commit \`${entry.commits[version]}\`, which is newer than the vendor's ${version} tag and has the same version number.`);
   if (entry.vendorName) {
     manifest.name = entry.name;
     changes.push(`- Named \`${entry.name}\` instead of \`${entry.vendorName}\`, so it sits with the other Google packages.`);
@@ -239,7 +242,7 @@ function publish(tarball) {
 
   const assetName = `${name}-${version}.tgz`;
   const tag = `${name}-${version}`;
-  const notes = `The vendor's files from ${fill(entry.tarball, name, version)}, changed as \`Documentation~/MODIFIED.md\` in the package says, and signed for ${config.organizationName}.`;
+  const notes = `The vendor's files from ${fillRef(entry.tarball, entry, version)}, changed as \`Documentation~/MODIFIED.md\` in the package says, and signed for ${config.organizationName}.`;
   const title = `${manifest.displayName} ${version}`;
   const asset = `${tarball}#${assetName}`;
   if (hasRelease(tag)) {
@@ -345,18 +348,26 @@ function writeListings() {
   write("-/v1/search", { objects, total: objects.length, time: new Date(0).toUTCString() });
 }
 
+// One vendor's surprise must not hold back the others. The run still fails at the end, so GitHub sends its email.
 async function publishNewVersions() {
   for (const entry of config.packages) {
-    const version = await latestVersion(entry);
-    if (readDoc(entry.name).versions[version]) {
-      console.log(`${entry.name} ${version}: already published`);
-      continue;
+    try {
+      // "alsoVersions" are older versions a project stays on, like the MagicOnion client that must match its server.
+      for (const version of [...(entry.alsoVersions ?? []), await latestVersion(entry)]) {
+        if (readDoc(entry.name).versions[version]) {
+          console.log(`${entry.name} ${version}: already published`);
+          continue;
+        }
+        const work = tempFolder();
+        if (await prepare(entry, version, work)) {
+          publish(sign(path.join(work, "package"), path.join(work, "signed"), `${entry.name} ${version}`));
+        }
+        fs.rmSync(work, { recursive: true, force: true });
+      }
+    } catch (error) {
+      console.log(`::error::${entry.name}: ${error.message}`);
+      process.exitCode = 1;
     }
-    const work = tempFolder();
-    if (await prepare(entry, version, work)) {
-      publish(sign(path.join(work, "package"), path.join(work, "signed"), `${entry.name} ${version}`));
-    }
-    fs.rmSync(work, { recursive: true, force: true });
   }
 }
 

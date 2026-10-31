@@ -33,7 +33,7 @@ jobs:
         run: node update.js
 
       - name: Save the registry files
-        if: ${{ !inputs.test_signing }}
+        if: ${{ !inputs.test_signing && !cancelled() }}
         run: |
           git add docs
           if git diff --cached --quiet; then
