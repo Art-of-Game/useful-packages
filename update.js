@@ -13,7 +13,7 @@ const path = require("path");
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, "packages.json"), "utf8"));
 const docs = path.join(__dirname, "docs");
 
-const gh = (...args) => execFileSync("gh", args, { cwd: __dirname, encoding: "utf8" }).trim();
+const gh = (...args) => execFileSync("gh", args, { cwd: __dirname, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
 const newest = (versions) => [...versions].sort((a, b) => a.localeCompare(b, undefined, { numeric: true })).pop();
 const hash = (algorithm, bytes, encoding) => crypto.createHash(algorithm).update(bytes).digest(encoding);
 
