@@ -351,15 +351,26 @@ function writeListings() {
   }
   write("-/all", all);
   write("-/v1/search", { objects, total: objects.length, time: new Date(0).toUTCString() });
-  writeIndex(objects.map((item) => item.package));
+  writeIndex(config.packages.map(({ name }) => readDoc(name)).filter((doc) => doc["dist-tags"].latest));
 }
 
 // Unity reads only the JSON files. This page is for a person who opens the address, like GitHub's Deployments link does.
-function writeIndex(packages) {
+function writeIndex(packageDocs) {
   const escape = (text) => String(text ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
-  const rows = [...packages]
+  const newest = packageDocs.map((doc) => doc.versions[doc["dist-tags"].latest]);
+  const displayNames = Object.fromEntries(newest.map((p) => [p.name, p.displayName]));
+  const rows = [...newest]
     .sort((a, b) => a.displayName.localeCompare(b.displayName))
-    .map((p) => `<tr><td>${escape(p.displayName)}</td><td><code>${escape(p.name)}</code></td><td>${escape(p.version)}</td></tr>`);
+    .map((p) => {
+      const url = `https://github.com/${config.repo}.git#upm/${p.name}`;
+      // Unity fetches dependencies from a registry, never from Git, so a Git URL needs its dependencies added first.
+      const first = Object.keys(p.dependencies ?? {}).filter((name) => displayNames[name]).map((name) => displayNames[name]);
+      return `<div class="row">
+<div class="title">${escape(p.displayName)} <span class="version">${escape(p.version)}</span></div>
+<code class="url">${escape(url)}</code>
+${first.length ? `<div class="first">Add first: ${escape(first.join(", "))}</div>\n` : ""}<button data-url="${escape(url)}">Copy</button>
+</div>`;
+    });
   fs.writeFileSync(path.join(docs, "index.html"), `<!doctype html>
 <html lang="en">
 <head>
@@ -368,25 +379,31 @@ function writeIndex(packages) {
 <meta name="color-scheme" content="light dark">
 <title>Useful Packages</title>
 <style>
-body { font: 16px/1.5 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+body { font: 16px/1.5 system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 32px 16px; }
 h1 { font-size: 28px; margin: 0 0 8px; }
-.scroll { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; margin-top: 24px; }
-th, td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid #8884; white-space: nowrap; }
-code { font-size: 14px; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid #8884; }
+.title { font-weight: 600; }
+.version { font-weight: 400; opacity: 0.7; margin-left: 6px; }
+.url { font-size: 13px; overflow-wrap: anywhere; }
+.first { font-size: 14px; opacity: 0.8; }
+button { grid-column: 2; grid-row: 1 / span 3; font: inherit; font-size: 14px; padding: 6px 14px; min-width: 76px; cursor: pointer; }
 </style>
 </head>
 <body>
 <h1>Useful Packages</h1>
-<p>This address is a Unity package registry. Unity reads it, so there is nothing to download from this page. How to add it to a project is in the <a href="https://github.com/${config.repo}#readme">README</a>.</p>
-<div class="scroll">
-<table>
-<thead><tr><th>Package</th><th>Name</th><th>Newest</th></tr></thead>
-<tbody>
+<p>This address is a Unity package registry. How to add it to a project is in the <a href="https://github.com/${config.repo}#readme">README</a>.</p>
+<p>To install one package with a Git URL, press <b>+</b> in the Package Manager window, choose <b>Install package from git URL</b>, and paste its URL. A URL follows the newest version. To stay on one version, add it to the end, like <code>/14.1.0</code>.</p>
 ${rows.join("\n")}
-</tbody>
-</table>
-</div>
+<script>
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("button");
+  if (!button) return;
+  navigator.clipboard.writeText(button.dataset.url).then(() => {
+    button.textContent = "Copied";
+    setTimeout(() => { button.textContent = "Copy"; }, 1500);
+  });
+});
+</script>
 </body>
 </html>
 `);

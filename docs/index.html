@@ -6,51 +6,179 @@
 <meta name="color-scheme" content="light dark">
 <title>Useful Packages</title>
 <style>
-body { font: 16px/1.5 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+body { font: 16px/1.5 system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 32px 16px; }
 h1 { font-size: 28px; margin: 0 0 8px; }
-.scroll { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; margin-top: 24px; }
-th, td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid #8884; white-space: nowrap; }
-code { font-size: 14px; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid #8884; }
+.title { font-weight: 600; }
+.version { font-weight: 400; opacity: 0.7; margin-left: 6px; }
+.url { font-size: 13px; overflow-wrap: anywhere; }
+.first { font-size: 14px; opacity: 0.8; }
+button { grid-column: 2; grid-row: 1 / span 3; font: inherit; font-size: 14px; padding: 6px 14px; min-width: 76px; cursor: pointer; }
 </style>
 </head>
 <body>
 <h1>Useful Packages</h1>
-<p>This address is a Unity package registry. Unity reads it, so there is nothing to download from this page. How to add it to a project is in the <a href="https://github.com/Art-of-Game/useful-packages#readme">README</a>.</p>
-<div class="scroll">
-<table>
-<thead><tr><th>Package</th><th>Name</th><th>Newest</th></tr></thead>
-<tbody>
-<tr><td>Adrenak.BRW: Byte Reader Writer</td><td><code>com.adrenak.brw</code></td><td>1.2.0</td></tr>
-<tr><td>Adrenak.RNNoise4Unity</td><td><code>com.adrenak.rnnoise4unity</code></td><td>1.0.0</td></tr>
-<tr><td>Adrenak.UniMic</td><td><code>com.adrenak.unimic</code></td><td>3.4.0</td></tr>
-<tr><td>Adrenak.UniVoice</td><td><code>com.adrenak.univoice</code></td><td>4.12.0</td></tr>
-<tr><td>Cloud Firestore</td><td><code>com.google.firebase.firestore</code></td><td>14.1.0</td></tr>
-<tr><td>Concentus Unity</td><td><code>com.adrenak.concentus-unity</code></td><td>1.0.1</td></tr>
-<tr><td>Facebook SDK</td><td><code>com.facebook.sdk</code></td><td>19.0.0</td></tr>
-<tr><td>Firebase App (Core)</td><td><code>com.google.firebase.app</code></td><td>14.1.0</td></tr>
-<tr><td>Firebase App Check</td><td><code>com.google.firebase.app-check</code></td><td>14.1.0</td></tr>
-<tr><td>Firebase Authentication</td><td><code>com.google.firebase.auth</code></td><td>14.1.0</td></tr>
-<tr><td>Firebase Cloud Messaging</td><td><code>com.google.firebase.messaging</code></td><td>14.1.0</td></tr>
-<tr><td>Firebase Crashlytics</td><td><code>com.google.firebase.crashlytics</code></td><td>14.1.0</td></tr>
-<tr><td>Firebase Remote Config</td><td><code>com.google.firebase.remote-config</code></td><td>14.1.0</td></tr>
-<tr><td>Google Analytics</td><td><code>com.google.firebase.analytics</code></td><td>14.1.0</td></tr>
-<tr><td>Google Play Common</td><td><code>com.google.play.common</code></td><td>1.9.2</td></tr>
-<tr><td>Google Play Core</td><td><code>com.google.play.core</code></td><td>1.8.5</td></tr>
-<tr><td>Google Play Games</td><td><code>com.google.play.games</code></td><td>2.3.0</td></tr>
-<tr><td>Google Play In-app Review</td><td><code>com.google.play.review</code></td><td>1.8.3</td></tr>
-<tr><td>Google Play In-app Updates</td><td><code>com.google.play.appupdate</code></td><td>1.8.3</td></tr>
-<tr><td>Google Sign-In for Unity</td><td><code>com.google.signin</code></td><td>1.0.0</td></tr>
-<tr><td>MagicOnion.Client.Unity</td><td><code>com.cysharp.magiconion.client.unity</code></td><td>7.11.0</td></tr>
-<tr><td>Native Gallery</td><td><code>com.yasirkula.nativegallery</code></td><td>1.9.5</td></tr>
-<tr><td>NuGetForUnity</td><td><code>com.github-glitchenzo.nugetforunity</code></td><td>4.5.0</td></tr>
-<tr><td>RTL Text Mesh Pro</td><td><code>com.nosuchstudio.rtltmpro</code></td><td>4.0.0</td></tr>
-<tr><td>UI Effect</td><td><code>com.coffee.ui-effect</code></td><td>5.11.7</td></tr>
-<tr><td>UniTask</td><td><code>com.cysharp.unitask</code></td><td>2.5.11</td></tr>
-<tr><td>Unity.WebP</td><td><code>com.netpyoung.webp</code></td><td>0.3.22</td></tr>
-<tr><td>YetAnotherHttpHandler</td><td><code>com.cysharp.yetanotherhttphandler</code></td><td>1.11.7</td></tr>
-</tbody>
-</table>
+<p>This address is a Unity package registry. How to add it to a project is in the <a href="https://github.com/Art-of-Game/useful-packages#readme">README</a>.</p>
+<p>To install one package with a Git URL, press <b>+</b> in the Package Manager window, choose <b>Install package from git URL</b>, and paste its URL. A URL follows the newest version. To stay on one version, add it to the end, like <code>/14.1.0</code>.</p>
+<div class="row">
+<div class="title">Adrenak.BRW: Byte Reader Writer <span class="version">1.2.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.brw</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.brw">Copy</button>
 </div>
+<div class="row">
+<div class="title">Adrenak.RNNoise4Unity <span class="version">1.0.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.rnnoise4unity</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.rnnoise4unity">Copy</button>
+</div>
+<div class="row">
+<div class="title">Adrenak.UniMic <span class="version">3.4.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.unimic</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.unimic">Copy</button>
+</div>
+<div class="row">
+<div class="title">Adrenak.UniVoice <span class="version">4.12.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.univoice</code>
+<div class="first">Add first: Adrenak.BRW: Byte Reader Writer, Adrenak.UniMic, Concentus Unity</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.univoice">Copy</button>
+</div>
+<div class="row">
+<div class="title">Cloud Firestore <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.firestore</code>
+<div class="first">Add first: Firebase App (Core)</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.firestore">Copy</button>
+</div>
+<div class="row">
+<div class="title">Concentus Unity <span class="version">1.0.1</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.concentus-unity</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.concentus-unity">Copy</button>
+</div>
+<div class="row">
+<div class="title">Facebook SDK <span class="version">19.0.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk">Copy</button>
+</div>
+<div class="row">
+<div class="title">Firebase App (Core) <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app">Copy</button>
+</div>
+<div class="row">
+<div class="title">Firebase App Check <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app-check</code>
+<div class="first">Add first: Firebase App (Core)</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app-check">Copy</button>
+</div>
+<div class="row">
+<div class="title">Firebase Authentication <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.auth</code>
+<div class="first">Add first: Firebase App (Core)</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.auth">Copy</button>
+</div>
+<div class="row">
+<div class="title">Firebase Cloud Messaging <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging</code>
+<div class="first">Add first: Firebase App (Core)</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging">Copy</button>
+</div>
+<div class="row">
+<div class="title">Firebase Crashlytics <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.crashlytics</code>
+<div class="first">Add first: Firebase App (Core)</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.crashlytics">Copy</button>
+</div>
+<div class="row">
+<div class="title">Firebase Remote Config <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.remote-config</code>
+<div class="first">Add first: Firebase App (Core)</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.remote-config">Copy</button>
+</div>
+<div class="row">
+<div class="title">Google Analytics <span class="version">14.1.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.analytics</code>
+<div class="first">Add first: Firebase App (Core)</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.analytics">Copy</button>
+</div>
+<div class="row">
+<div class="title">Google Play Common <span class="version">1.9.2</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.common</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.common">Copy</button>
+</div>
+<div class="row">
+<div class="title">Google Play Core <span class="version">1.8.5</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.core</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.core">Copy</button>
+</div>
+<div class="row">
+<div class="title">Google Play Games <span class="version">2.3.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.games</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.games">Copy</button>
+</div>
+<div class="row">
+<div class="title">Google Play In-app Review <span class="version">1.8.3</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.review</code>
+<div class="first">Add first: Google Play Common, Google Play Core</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.review">Copy</button>
+</div>
+<div class="row">
+<div class="title">Google Play In-app Updates <span class="version">1.8.3</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.appupdate</code>
+<div class="first">Add first: Google Play Common, Google Play Core</div>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.appupdate">Copy</button>
+</div>
+<div class="row">
+<div class="title">Google Sign-In for Unity <span class="version">1.0.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.google.signin</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.google.signin">Copy</button>
+</div>
+<div class="row">
+<div class="title">MagicOnion.Client.Unity <span class="version">7.11.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.magiconion.client.unity</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.magiconion.client.unity">Copy</button>
+</div>
+<div class="row">
+<div class="title">Native Gallery <span class="version">1.9.5</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativegallery</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativegallery">Copy</button>
+</div>
+<div class="row">
+<div class="title">NuGetForUnity <span class="version">4.5.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.github-glitchenzo.nugetforunity</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.github-glitchenzo.nugetforunity">Copy</button>
+</div>
+<div class="row">
+<div class="title">RTL Text Mesh Pro <span class="version">4.0.0</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.nosuchstudio.rtltmpro</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.nosuchstudio.rtltmpro">Copy</button>
+</div>
+<div class="row">
+<div class="title">UI Effect <span class="version">5.11.7</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.coffee.ui-effect</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.coffee.ui-effect">Copy</button>
+</div>
+<div class="row">
+<div class="title">UniTask <span class="version">2.5.11</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.unitask</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.unitask">Copy</button>
+</div>
+<div class="row">
+<div class="title">Unity.WebP <span class="version">0.3.22</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.netpyoung.webp</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.netpyoung.webp">Copy</button>
+</div>
+<div class="row">
+<div class="title">YetAnotherHttpHandler <span class="version">1.11.7</span></div>
+<code class="url">https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.yetanotherhttphandler</code>
+<button data-url="https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.yetanotherhttphandler">Copy</button>
+</div>
+<script>
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("button");
+  if (!button) return;
+  navigator.clipboard.writeText(button.dataset.url).then(() => {
+    button.textContent = "Copied";
+    setTimeout(() => { button.textContent = "Copy"; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

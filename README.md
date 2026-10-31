@@ -93,16 +93,59 @@ Or add the registry in **Project Settings**, **Package Manager**, and install fr
 
 ## Install with a Git URL
 
-In the Package Manager window press **+**, then **Install package from git URL**, and paste the URL with the package's name after `upm/`:
+In the Package Manager window press **+**, then **Install package from git URL**, and paste one of these. [This page](https://art-of-game.github.io/useful-packages/) has a **Copy** button for each.
+
+Firebase:
 
 ```
 https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app
-https://github.com/Art-of-Game/useful-packages.git#upm/com.google.signin
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.analytics
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.app-check
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.auth
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.crashlytics
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.firestore
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.messaging
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.firebase.remote-config
 ```
 
-To stay on one version, add it to the end, like `#upm/com.google.firebase.app/14.1.0`.
+Google:
 
-Unity fetches a package's dependencies from a registry, never from Git. So with Git URLs, add what the tables say a package brings first, like Firebase App before Firebase Cloud Messaging. With the scoped registry above, each package brings them by itself.
+```
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.signin
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.games
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.common
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.core
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.review
+https://github.com/Art-of-Game/useful-packages.git#upm/com.google.play.appupdate
+```
+
+Facebook:
+
+```
+https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk
+```
+
+Other:
+
+```
+https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.brw
+https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.concentus-unity
+https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.unimic
+https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.univoice
+https://github.com/Art-of-Game/useful-packages.git#upm/com.adrenak.rnnoise4unity
+https://github.com/Art-of-Game/useful-packages.git#upm/com.coffee.ui-effect
+https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.magiconion.client.unity
+https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.unitask
+https://github.com/Art-of-Game/useful-packages.git#upm/com.cysharp.yetanotherhttphandler
+https://github.com/Art-of-Game/useful-packages.git#upm/com.github-glitchenzo.nugetforunity
+https://github.com/Art-of-Game/useful-packages.git#upm/com.netpyoung.webp
+https://github.com/Art-of-Game/useful-packages.git#upm/com.nosuchstudio.rtltmpro
+https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativegallery
+```
+
+These follow the newest version. To stay on one version, add it to the end, like `#upm/com.google.firebase.app/14.1.0`.
+
+Unity fetches a package's dependencies from a registry, never from Git. So with Git URLs, add what the tables say a package brings first, like Firebase App before Firebase Cloud Messaging. Each list above already has that order. With the scoped registry above, each package brings them by itself.
 
 ## Update
 
