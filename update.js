@@ -49,7 +49,19 @@ function hasRelease(tag) {
   }
 }
 
-function latestVersion(entry) {
+// Google's Play packages have no releases of their own, only this page.
+let googleArchive;
+async function newestInGoogleArchive(name) {
+  googleArchive ??= await (await fetch("https://developers.google.com/unity/archive")).text();
+  const found = [...googleArchive.matchAll(/registry\/unity\/([a-z0-9.\-]+)\/\1-(\d[0-9a-zA-Z.\-]*)\.tgz/g)]
+    .filter((match) => match[1] === name)
+    .map((match) => match[2]);
+  if (!found.length) throw new Error(`${name} is not on Google's archive page`);
+  return newest(found);
+}
+
+async function latestVersion(entry) {
+  if (entry.latestBy === "archive") return newestInGoogleArchive(entry.name);
   const tag = entry.latestBy === "tag"
     ? gh("api", `repos/${entry.latestFrom}/tags`, "--jq", ".[0].name")
     : gh("api", `repos/${entry.latestFrom}/releases/latest`, "--jq", ".tag_name");
@@ -144,11 +156,19 @@ async function prepare(entry, version, folder) {
 
   const manifestFile = path.join(tree, "package.json");
   const manifest = JSON.parse(fs.readFileSync(manifestFile, "utf8"));
-  if (manifest.name !== entry.name || manifest.version !== version) {
+  if (manifest.name !== (entry.vendorName ?? entry.name) || manifest.version !== version) {
     throw new Error(`${source} holds ${manifest.name} ${manifest.version}`);
   }
 
   const changes = [...(entry.changes ?? [])];
+  if (entry.vendorName) {
+    manifest.name = entry.name;
+    changes.push(`- Named \`${entry.name}\` instead of \`${entry.vendorName}\`, so it sits with the other Google packages.`);
+  }
+  if (entry.description) {
+    manifest.description = entry.description;
+    changes.push("- `package.json` has a longer description that names the authors.");
+  }
   if (entry.author) {
     manifest.author = entry.author;
     changes.push(`- \`package.json\` names ${entry.author.name} as the author, which the original leaves out.`);
@@ -314,7 +334,7 @@ function writeListings() {
 
 async function publishNewVersions() {
   for (const entry of config.packages) {
-    const version = latestVersion(entry);
+    const version = await latestVersion(entry);
     if (readDoc(entry.name).versions[version]) {
       console.log(`${entry.name} ${version}: already published`);
       continue;
@@ -347,7 +367,7 @@ async function main() {
   }
   if (command === "test-signing") {
     const entry = entryNamed(args[0]);
-    const version = latestVersion(entry);
+    const version = await latestVersion(entry);
     const work = tempFolder();
     if (!(await prepare(entry, version, work))) process.exit(1);
     const signed = sign(path.join(work, "package"), path.join(work, "signed"), `${entry.name} ${version}`);

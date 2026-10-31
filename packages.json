@@ -20,15 +20,107 @@
       "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
     {
-      "name": "com.coolishbee.google-signin",
+      "name": "com.google.firebase.analytics",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.app-check",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.auth",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.crashlytics",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.database",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.firebaseai",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.firestore",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.functions",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.installations",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.remote-config",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.firebase.storage",
+      "latestFrom": "firebase/firebase-unity-sdk",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.signin",
+      "vendorName": "com.coolishbee.google-signin",
       "latestFrom": "coolishbee/google-signin-unity",
       "latestBy": "tag",
       "tarball": "https://codeload.github.com/coolishbee/google-signin-unity/tar.gz/refs/tags/v{version}",
       "folder": "google-signin-unity-{version}/Packages/com.coolishbee.google-signin",
+      "description": "Google Sign-In for Unity. Android uses CredentialManager + AuthorizationClient, iOS uses GIDSignIn, and Editor/Standalone uses a loopback OAuth flow. Originally by Google, updated by coolishbee: https://github.com/coolishbee/google-signin-unity",
       "author": {
-        "name": "coolishbee",
+        "name": "Google, coolishbee",
         "url": "https://github.com/coolishbee/google-signin-unity"
       }
+    },
+    {
+      "name": "com.google.play.review",
+      "latestBy": "archive",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.play.appupdate",
+      "latestBy": "archive",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.play.integrity",
+      "latestBy": "archive",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.play.assetdelivery",
+      "latestBy": "archive",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.play.core",
+      "latestBy": "archive",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.play.common",
+      "latestBy": "archive",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
+    },
+    {
+      "name": "com.google.android.appbundle",
+      "latestBy": "archive",
+      "tarball": "https://dl.google.com/games/registry/unity/{name}/{name}-{version}.tgz"
     },
     {
       "name": "com.facebook.sdk",
