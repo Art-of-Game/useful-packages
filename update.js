@@ -21,7 +21,7 @@ const newest = (versions) => [...versions].sort((a, b) => a.localeCompare(b, und
 const hash = (algorithm, bytes, encoding) => crypto.createHash(algorithm).update(bytes).digest(encoding);
 const fill = (text, name, version) => text.replaceAll("{name}", name).replaceAll("{version}", version);
 // {ref} is the version, or the commit "commits" names for it when the vendor fixed something after tagging that version.
-const fillRef = (text, entry, version) => fill(text, entry.name, version).replaceAll("{ref}", entry.commits?.[version] ?? version);
+const fillRef = (text, entry, version) => fill(text, entry.name, version).replaceAll("{ref}", entry.commits?.[version] ?? entry.branch ?? version);
 const tempFolder = () => fs.mkdtempSync(path.join(os.tmpdir(), "useful-packages-"));
 
 const run = (cwd, env, ...args) =>
@@ -64,6 +64,11 @@ async function newestInGoogleArchive(name) {
 
 async function latestVersion(entry) {
   if (entry.latestBy === "archive") return newestInGoogleArchive(entry.name);
+  // These repos keep the package on a branch, with no tags or releases, so that branch's package.json has the newest version.
+  if (entry.latestBy === "branch") {
+    const content = gh("api", `repos/${entry.latestFrom}/contents/package.json?ref=${entry.branch}`, "--jq", ".content");
+    return JSON.parse(Buffer.from(content, "base64").toString("utf8").replace(/^﻿/, "")).version;
+  }
   const tag = entry.latestBy === "tag"
     ? gh("api", `repos/${entry.latestFrom}/tags`, "--jq", ".[0].name")
     : gh("api", `repos/${entry.latestFrom}/releases/latest`, "--jq", ".tag_name");
@@ -167,7 +172,7 @@ async function prepare(entry, version, folder) {
   }
 
   const changes = [...(entry.changes ?? [])];
-  if (entry.commits?.[version]) changes.push(`- Taken from commit \`${entry.commits[version]}\`, which is newer than the vendor's ${version} tag and has the same version number.`);
+  if (entry.commits?.[version]) changes.push(`- Taken from commit \`${entry.commits[version]}\` of the vendor's repo, which has the same version number.`);
   if (entry.vendorName) {
     manifest.name = entry.name;
     changes.push(`- Named \`${entry.name}\` instead of \`${entry.vendorName}\`, so it sits with the other Google packages.`);
@@ -346,6 +351,45 @@ function writeListings() {
   }
   write("-/all", all);
   write("-/v1/search", { objects, total: objects.length, time: new Date(0).toUTCString() });
+  writeIndex(objects.map((item) => item.package));
+}
+
+// Unity reads only the JSON files. This page is for a person who opens the address, like GitHub's Deployments link does.
+function writeIndex(packages) {
+  const escape = (text) => String(text ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const rows = [...packages]
+    .sort((a, b) => a.displayName.localeCompare(b.displayName))
+    .map((p) => `<tr><td>${escape(p.displayName)}</td><td><code>${escape(p.name)}</code></td><td>${escape(p.version)}</td></tr>`);
+  fs.writeFileSync(path.join(docs, "index.html"), `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Useful Packages</title>
+<style>
+body { font: 16px/1.5 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; margin-top: 24px; }
+th, td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid #8884; white-space: nowrap; }
+code { font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>Useful Packages</h1>
+<p>This address is a Unity package registry. Unity reads it, so there is nothing to download from this page. How to add it to a project is in the <a href="https://github.com/${config.repo}#readme">README</a>.</p>
+<div class="scroll">
+<table>
+<thead><tr><th>Package</th><th>Name</th><th>Newest</th></tr></thead>
+<tbody>
+${rows.join("\n")}
+</tbody>
+</table>
+</div>
+</body>
+</html>
+`);
 }
 
 // One vendor's surprise must not hold back the others. The run still fails at the end, so GitHub sends its email.

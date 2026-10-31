@@ -316,6 +316,75 @@
         "changelogUrl": "https://github.com/yasirkula/UnityNativeGallery/releases/tag/v{version}",
         "licensesUrl": "https://github.com/yasirkula/UnityNativeGallery/blob/v{version}/LICENSE.txt"
       }
+    },
+    {
+      "name": "com.adrenak.brw",
+      "latestFrom": "adrenak/brw",
+      "latestBy": "branch",
+      "branch": "upm-latest",
+      "tarball": "https://codeload.github.com/adrenak/brw/tar.gz/{ref}",
+      "folder": "brw-{ref}",
+      "commits": {
+        "1.2.0": "66f7f7d791783c49cee7374a0c6fcc061b08e4e5"
+      },
+      "licence": "https://raw.githubusercontent.com/adrenak/brw/master/LICENSE",
+      "links": {
+        "documentationUrl": "https://github.com/adrenak/brw#readme",
+        "changelogUrl": "https://github.com/adrenak/brw/commits/upm-latest",
+        "licensesUrl": "https://github.com/adrenak/brw/blob/master/LICENSE"
+      }
+    },
+    {
+      "name": "com.adrenak.concentus-unity",
+      "latestFrom": "adrenak/concentus-unity",
+      "latestBy": "branch",
+      "branch": "upm",
+      "tarball": "https://codeload.github.com/adrenak/concentus-unity/tar.gz/{ref}",
+      "folder": "concentus-unity-{ref}",
+      "links": {
+        "documentationUrl": "https://github.com/adrenak/concentus-unity#readme",
+        "changelogUrl": "https://github.com/adrenak/concentus-unity/commits/upm",
+        "licensesUrl": "https://github.com/adrenak/concentus-unity/blob/master/LICENSE"
+      }
+    },
+    {
+      "name": "com.adrenak.rnnoise4unity",
+      "latestFrom": "adrenak/RNNoise4Unity",
+      "latestBy": "branch",
+      "branch": "upm",
+      "tarball": "https://codeload.github.com/adrenak/RNNoise4Unity/tar.gz/{ref}",
+      "folder": "RNNoise4Unity-{ref}",
+      "links": {
+        "documentationUrl": "https://github.com/adrenak/RNNoise4Unity#readme",
+        "changelogUrl": "https://github.com/adrenak/RNNoise4Unity/commits/upm",
+        "licensesUrl": "https://github.com/adrenak/RNNoise4Unity/blob/master/LICENSE"
+      }
+    },
+    {
+      "name": "com.adrenak.unimic",
+      "latestFrom": "adrenak/unimic",
+      "latestBy": "branch",
+      "branch": "upm",
+      "tarball": "https://codeload.github.com/adrenak/unimic/tar.gz/{ref}",
+      "folder": "unimic-{ref}",
+      "links": {
+        "documentationUrl": "https://github.com/adrenak/unimic#readme",
+        "changelogUrl": "https://github.com/adrenak/unimic/commits/upm",
+        "licensesUrl": "https://github.com/adrenak/unimic/blob/master/LICENSE"
+      }
+    },
+    {
+      "name": "com.adrenak.univoice",
+      "latestFrom": "adrenak/univoice",
+      "latestBy": "branch",
+      "branch": "upm",
+      "tarball": "https://codeload.github.com/adrenak/univoice/tar.gz/{ref}",
+      "folder": "univoice-{ref}",
+      "links": {
+        "documentationUrl": "https://github.com/adrenak/univoice#readme",
+        "changelogUrl": "https://github.com/adrenak/univoice/commits/upm",
+        "licensesUrl": "https://github.com/adrenak/univoice/blob/master/LICENSE"
+      }
     }
   ]
 }

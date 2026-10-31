@@ -46,6 +46,11 @@ Google has archived `play-unity-plugins` too. Those packages are the newest vers
 
 | Package | What it is | Source | Also brings |
 |---|---|---|---|
+| `com.adrenak.univoice` | UniVoice | [adrenak/univoice](https://github.com/adrenak/univoice) | BRW, UniMic, Concentus |
+| `com.adrenak.brw` | BRW | [adrenak/brw](https://github.com/adrenak/brw) | Nothing |
+| `com.adrenak.concentus-unity` | Concentus | [adrenak/concentus-unity](https://github.com/adrenak/concentus-unity) | Nothing |
+| `com.adrenak.rnnoise4unity` | RNNoise4Unity | [adrenak/RNNoise4Unity](https://github.com/adrenak/RNNoise4Unity) | Nothing |
+| `com.adrenak.unimic` | UniMic | [adrenak/unimic](https://github.com/adrenak/unimic) | Nothing |
 | `com.coffee.ui-effect` | UIEffect | [mob-sakai/UIEffect](https://github.com/mob-sakai/UIEffect) | Unity UI |
 | `com.cysharp.magiconion.client.unity` | MagicOnion client | [Cysharp/MagicOnion](https://github.com/Cysharp/MagicOnion) | Nothing |
 | `com.cysharp.unitask` | UniTask | [Cysharp/UniTask](https://github.com/Cysharp/UniTask) | Nothing |
@@ -76,7 +81,7 @@ Add this to `Packages/manifest.json`, with only the packages you want:
     {
       "name": "Useful Packages",
       "url": "https://art-of-game.github.io/useful-packages",
-      "scopes": ["com.google", "com.facebook", "com.coffee", "com.cysharp", "com.github-glitchenzo", "com.netpyoung", "com.nosuchstudio", "com.yasirkula"]
+      "scopes": ["com.google", "com.facebook", "com.adrenak", "com.coffee", "com.cysharp", "com.github-glitchenzo", "com.netpyoung", "com.nosuchstudio", "com.yasirkula"]
     }
   ]
 }
