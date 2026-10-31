@@ -218,7 +218,7 @@ function sign(tree, destination, what) {
     throw new Error(`${what} cannot be signed: add the repository secrets UPM_SERVICE_ACCOUNT_KEY_ID and UPM_SERVICE_ACCOUNT_KEY_SECRET.`);
   }
   const upm = path.join(os.homedir(), ".upm", "bin", "upm");
-  if (!fs.existsSync(upm)) execFileSync("bash", ["-c", "curl -fsSL https://cdn.packages.unity.com/upm-cli/install.sh | bash"], { stdio: "inherit" });
+  if (!fs.existsSync(upm)) execFileSync("bash", ["-o", "pipefail", "-c", "curl -fsSL --retry 5 --retry-all-errors --retry-delay 5 https://cdn.packages.unity.com/upm-cli/install.sh | bash"], { stdio: "inherit" });
   execFileSync(upm, ["pack", tree, "--organization-id", config.organizationId, "--destination", destination], { stdio: "inherit" });
 
   const files = fs.readdirSync(destination).filter((file) => file.endsWith(".tgz"));
