@@ -1,0 +1,58 @@
+{
+  "name": "com.cysharp.yetanotherhttphandler",
+  "dist-tags": {
+    "latest": "1.11.7"
+  },
+  "versions": {
+    "1.11.5": {
+      "name": "com.cysharp.yetanotherhttphandler",
+      "version": "1.11.5",
+      "author": {
+        "name": "Cysharp, Inc.",
+        "url": "https://cysharp.co.jp/en/"
+      },
+      "displayName": "YetAnotherHttpHandler",
+      "description": "YetAnotherHttpHandler that brings the power of HTTP/2 (and gRPC) to Unity and .NET Standard.",
+      "unity": "2021.3",
+      "license": "MIT",
+      "documentationUrl": "https://github.com/Cysharp/YetAnotherHttpHandler#readme",
+      "changelogUrl": "https://github.com/Cysharp/YetAnotherHttpHandler/releases/tag/1.11.5",
+      "licensesUrl": "https://github.com/Cysharp/YetAnotherHttpHandler/blob/1.11.5/LICENSE",
+      "_id": "com.cysharp.yetanotherhttphandler@1.11.5",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.cysharp.yetanotherhttphandler-1.11.5/com.cysharp.yetanotherhttphandler-1.11.5.tgz",
+        "shasum": "b9b9fc7c60da6eb906a29a6d9f0bf738e45bd8dd",
+        "integrity": "sha512-QNXT93F0Cs2j+GvQSov2sHshOujpTk4keiNHBTwJ2bDzehtyol91al9jpzHu7CEbYYL4WMtl0bEeKkL0KnN8ZQ=="
+      },
+      "_gitTagOf": "b9b9fc7c60da6eb906a29a6d9f0bf738e45bd8dd"
+    },
+    "1.11.7": {
+      "name": "com.cysharp.yetanotherhttphandler",
+      "version": "1.11.7",
+      "author": {
+        "name": "Cysharp, Inc.",
+        "url": "https://cysharp.co.jp/en/"
+      },
+      "displayName": "YetAnotherHttpHandler",
+      "description": "YetAnotherHttpHandler that brings the power of HTTP/2 (and gRPC) to Unity and .NET Standard.",
+      "unity": "2021.3",
+      "license": "MIT",
+      "documentationUrl": "https://github.com/Cysharp/YetAnotherHttpHandler#readme",
+      "changelogUrl": "https://github.com/Cysharp/YetAnotherHttpHandler/releases/tag/1.11.7",
+      "licensesUrl": "https://github.com/Cysharp/YetAnotherHttpHandler/blob/1.11.7/LICENSE",
+      "_id": "com.cysharp.yetanotherhttphandler@1.11.7",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.cysharp.yetanotherhttphandler-1.11.7/com.cysharp.yetanotherhttphandler-1.11.7.tgz",
+        "shasum": "6746da8e25fba0a1a554b8e02146d0b484fd8a6b",
+        "integrity": "sha512-gKQjDfRuMbZoNadU8vvorxbFQ162u5QW0ZYv9GYxB6hU3bAxXwlQY+S+S+zIEHzGoD3AjEQJcfe8X2Tj9CcPww=="
+      },
+      "_gitTagOf": "6746da8e25fba0a1a554b8e02146d0b484fd8a6b"
+    }
+  },
+  "time": {
+    "1.11.5": "2026-10-31T21:55:12.048Z",
+    "modified": "2026-10-31T21:55:26.171Z",
+    "1.11.7": "2026-10-31T21:55:26.171Z"
+  },
+  "description": "YetAnotherHttpHandler that brings the power of HTTP/2 (and gRPC) to Unity and .NET Standard."
+}

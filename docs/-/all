@@ -194,5 +194,109 @@
     "time": {
       "modified": "2026-10-31T21:21:38.975Z"
     }
+  },
+  "com.coffee.ui-effect": {
+    "name": "com.coffee.ui-effect",
+    "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",
+    "dist-tags": {
+      "latest": "5.11.7"
+    },
+    "versions": {
+      "5.11.7": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:54:45.228Z"
+    }
+  },
+  "com.cysharp.magiconion.client.unity": {
+    "name": "com.cysharp.magiconion.client.unity",
+    "description": "Unified Realtime/API framework for .NET platform and Unity.",
+    "dist-tags": {
+      "latest": "7.11.0"
+    },
+    "versions": {
+      "7.11.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:54:53.392Z"
+    }
+  },
+  "com.cysharp.unitask": {
+    "name": "com.cysharp.unitask",
+    "description": "Provides an efficient async/await integration to Unity.",
+    "dist-tags": {
+      "latest": "2.5.11"
+    },
+    "versions": {
+      "2.5.11": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:54:57.471Z"
+    }
+  },
+  "com.cysharp.yetanotherhttphandler": {
+    "name": "com.cysharp.yetanotherhttphandler",
+    "description": "YetAnotherHttpHandler that brings the power of HTTP/2 (and gRPC) to Unity and .NET Standard.",
+    "dist-tags": {
+      "latest": "1.11.7"
+    },
+    "versions": {
+      "1.11.7": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:55:26.171Z"
+    }
+  },
+  "com.github-glitchenzo.nugetforunity": {
+    "name": "com.github-glitchenzo.nugetforunity",
+    "description": "A NuGet Package Manager for Unity",
+    "dist-tags": {
+      "latest": "4.5.0"
+    },
+    "versions": {
+      "4.5.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:55:31.321Z"
+    }
+  },
+  "com.netpyoung.webp": {
+    "name": "com.netpyoung.webp",
+    "description": "webp made easy for Unity3d.",
+    "dist-tags": {
+      "latest": "0.3.22"
+    },
+    "versions": {
+      "0.3.22": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:55:37.697Z"
+    }
+  },
+  "com.nosuchstudio.rtltmpro": {
+    "name": "com.nosuchstudio.rtltmpro",
+    "description": "This package adds Right-to-left language support to TextMeshPro Unity package. Supports Persian, Arabic and Hebrew.",
+    "dist-tags": {
+      "latest": "4.0.0"
+    },
+    "versions": {
+      "4.0.0": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:55:42.114Z"
+    }
+  },
+  "com.yasirkula.nativegallery": {
+    "name": "com.yasirkula.nativegallery",
+    "description": "This plugin helps you save your images and/or videos to device Gallery on Android and Photos on iOS. It is also possible to pick an image or video from Gallery/Photos.",
+    "dist-tags": {
+      "latest": "1.9.5"
+    },
+    "versions": {
+      "1.9.5": "latest"
+    },
+    "time": {
+      "modified": "2026-10-31T21:55:49.328Z"
+    }
   }
 }

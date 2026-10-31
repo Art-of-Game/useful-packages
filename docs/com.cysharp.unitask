@@ -1,0 +1,43 @@
+{
+  "name": "com.cysharp.unitask",
+  "dist-tags": {
+    "latest": "2.5.11"
+  },
+  "versions": {
+    "2.5.11": {
+      "name": "com.cysharp.unitask",
+      "displayName": "UniTask",
+      "author": {
+        "name": "Cysharp, Inc.",
+        "url": "https://cysharp.co.jp/en/"
+      },
+      "version": "2.5.11",
+      "unity": "2018.4",
+      "description": "Provides an efficient async/await integration to Unity.",
+      "keywords": [
+        "async/await",
+        "async",
+        "Task",
+        "UniTask"
+      ],
+      "license": "MIT",
+      "category": "Task",
+      "dependencies": {},
+      "documentationUrl": "https://github.com/Cysharp/UniTask#readme",
+      "changelogUrl": "https://github.com/Cysharp/UniTask/releases/tag/2.5.11",
+      "licensesUrl": "https://github.com/Cysharp/UniTask/blob/2.5.11/LICENSE",
+      "_id": "com.cysharp.unitask@2.5.11",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.cysharp.unitask-2.5.11/com.cysharp.unitask-2.5.11.tgz",
+        "shasum": "751167eba756d11d0fe2c19c75e8821f7b355a66",
+        "integrity": "sha512-q3Mo9lBrw/H4rFD+xAhX60RaX0lZStPIvcXtSnsz4sUkjNYoPtdXDDJbTU2QKEwgXNik6u1VF9tj4hENmdgxug=="
+      },
+      "_gitTagOf": "751167eba756d11d0fe2c19c75e8821f7b355a66"
+    }
+  },
+  "time": {
+    "2.5.11": "2026-10-31T21:54:57.471Z",
+    "modified": "2026-10-31T21:54:57.471Z"
+  },
+  "description": "Provides an efficient async/await integration to Unity."
+}

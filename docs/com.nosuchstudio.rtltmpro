@@ -1,0 +1,65 @@
+{
+  "name": "com.nosuchstudio.rtltmpro",
+  "dist-tags": {
+    "latest": "4.0.0"
+  },
+  "versions": {
+    "4.0.0": {
+      "name": "com.nosuchstudio.rtltmpro",
+      "displayName": "RTL Text Mesh Pro",
+      "version": "4.0.0",
+      "unity": "6000.0",
+      "description": "This package adds Right-to-left language support to TextMeshPro Unity package. Supports Persian, Arabic and Hebrew.",
+      "keywords": [
+        "Unity",
+        "TMPro",
+        "TextMeshPro",
+        "RTL",
+        "Right-To-Left",
+        "Arabic",
+        "Farsi",
+        "Persian",
+        "Hebrew"
+      ],
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": {
+        "name": "hk1ll3r",
+        "email": "hossein.shbz@gmail.com",
+        "url": "https://github.com/hk1ll3r"
+      },
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/pnarimani/RTLTMPro.git",
+        "directory": "UPMPackage"
+      },
+      "bugs": {
+        "url": "https://github.com/pnarimani/RTLTMPro/issues"
+      },
+      "homepage": "https://github.com/pnarimani/RTLTMPro#readme",
+      "documentationUrl": "https://github.com/hk1ll3r/RTLTMPro#readme",
+      "category": "Utility",
+      "dependencies": {},
+      "publishConfig": {
+        "registry": "https://package.openupm.com"
+      },
+      "changelogUrl": "https://github.com/hk1ll3r/RTLTMPro/releases/tag/v4.0.0",
+      "licensesUrl": "https://github.com/hk1ll3r/RTLTMPro/blob/v4.0.0/UPMPackage/LICENSE",
+      "_id": "com.nosuchstudio.rtltmpro@4.0.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.nosuchstudio.rtltmpro-4.0.0/com.nosuchstudio.rtltmpro-4.0.0.tgz",
+        "shasum": "4743ea650bc4ae056d6df5b38c50c1266c7e1305",
+        "integrity": "sha512-84ZtoHbgauBt2hbw79AmT0DW82DCYupBNShpjnP/NOkbuITllG4h7Ott4ob5EQnQVugRFRutXb9CXrZTPrxaOg=="
+      },
+      "_gitTagOf": "4743ea650bc4ae056d6df5b38c50c1266c7e1305"
+    }
+  },
+  "time": {
+    "4.0.0": "2026-10-31T21:55:42.114Z",
+    "modified": "2026-10-31T21:55:42.114Z"
+  },
+  "description": "This package adds Right-to-left language support to TextMeshPro Unity package. Supports Persian, Arabic and Hebrew."
+}

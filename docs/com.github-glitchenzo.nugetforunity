@@ -1,0 +1,39 @@
+{
+  "name": "com.github-glitchenzo.nugetforunity",
+  "dist-tags": {
+    "latest": "4.5.0"
+  },
+  "versions": {
+    "4.5.0": {
+      "name": "com.github-glitchenzo.nugetforunity",
+      "displayName": "NuGetForUnity",
+      "version": "4.5.0",
+      "description": "A NuGet Package Manager for Unity",
+      "unity": "2018.4",
+      "keywords": [
+        "nuget",
+        "unity"
+      ],
+      "license": "MIT",
+      "licensesUrl": "https://github.com/GlitchEnzo/NuGetForUnity/blob/v4.5.0/LICENSE",
+      "changelogUrl": "https://github.com/GlitchEnzo/NuGetForUnity/releases/tag/v4.5.0",
+      "documentationUrl": "https://github.com/GlitchEnzo/NuGetForUnity#readme",
+      "author": {
+        "name": "GlitchEnzo",
+        "url": "https://github.com/GlitchEnzo/NuGetForUnity"
+      },
+      "_id": "com.github-glitchenzo.nugetforunity@4.5.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.github-glitchenzo.nugetforunity-4.5.0/com.github-glitchenzo.nugetforunity-4.5.0.tgz",
+        "shasum": "8210ca9cdfdf96c1ac16d8f186aad71762cce7c6",
+        "integrity": "sha512-+kbgVt7xIBoPutmJmoRpFAfWlHiss4GZzjh1pFDymyhhpXbhvRbMbgAQvIKjjMcGKzDuFl5OfZCovSaUSvgdRw=="
+      },
+      "_gitTagOf": "8210ca9cdfdf96c1ac16d8f186aad71762cce7c6"
+    }
+  },
+  "time": {
+    "4.5.0": "2026-10-31T21:55:31.321Z",
+    "modified": "2026-10-31T21:55:31.321Z"
+  },
+  "description": "A NuGet Package Manager for Unity"
+}

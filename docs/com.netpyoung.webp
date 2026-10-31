@@ -1,0 +1,47 @@
+{
+  "name": "com.netpyoung.webp",
+  "dist-tags": {
+    "latest": "0.3.22"
+  },
+  "versions": {
+    "0.3.22": {
+      "name": "com.netpyoung.webp",
+      "displayName": "Unity.WebP",
+      "version": "0.3.22",
+      "unity": "2018.4",
+      "description": "webp made easy for Unity3d.",
+      "keywords": [
+        "webp",
+        "unity.webp"
+      ],
+      "license": "MIT",
+      "category": "image",
+      "samples": [
+        {
+          "displayName": "backward-compatibility-2022-ios",
+          "description": "backward compatibility 2022 ios.",
+          "path": "Samples~/backward-compatibility-2022-ios"
+        }
+      ],
+      "author": {
+        "name": "netpyoung",
+        "url": "https://github.com/netpyoung/unity.webp"
+      },
+      "documentationUrl": "https://github.com/netpyoung/unity.webp#readme",
+      "changelogUrl": "https://github.com/netpyoung/unity.webp/releases/tag/0.3.22",
+      "licensesUrl": "https://github.com/netpyoung/unity.webp/blob/0.3.22/unity_project/Assets/unity.webp/LICENSE.md",
+      "_id": "com.netpyoung.webp@0.3.22",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.netpyoung.webp-0.3.22/com.netpyoung.webp-0.3.22.tgz",
+        "shasum": "e87f964efaad06340dc62cb93761fdeb29ebaed9",
+        "integrity": "sha512-smyYKo3H/A/l48TcLryRDR4i6AwLQJSA6odmx3d/Hiv6BByz9ykAw9b5x6v6cEZCw189DuTVzbVEGnaA6NK09A=="
+      },
+      "_gitTagOf": "e87f964efaad06340dc62cb93761fdeb29ebaed9"
+    }
+  },
+  "time": {
+    "0.3.22": "2026-10-31T21:55:37.697Z",
+    "modified": "2026-10-31T21:55:37.697Z"
+  },
+  "description": "webp made easy for Unity3d."
+}

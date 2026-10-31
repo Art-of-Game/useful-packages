@@ -398,8 +398,220 @@
         }
       },
       "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.coffee.ui-effect",
+        "version": "5.11.7",
+        "displayName": "UI Effect",
+        "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",
+        "keywords": [
+          "ui",
+          "effect"
+        ],
+        "author": {
+          "name": "mob-sakai",
+          "email": "sakai861104@gmail.com",
+          "url": "https://github.com/mob-sakai"
+        },
+        "date": "2026-10-31T21:54:45.228Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.cysharp.magiconion.client.unity",
+        "version": "7.11.0",
+        "displayName": "MagicOnion.Client.Unity",
+        "description": "Unified Realtime/API framework for .NET platform and Unity.",
+        "keywords": [
+          "grpc",
+          "magiconion"
+        ],
+        "author": {
+          "name": "Cysharp, Inc.",
+          "url": "https://cysharp.co.jp/en/"
+        },
+        "date": "2026-10-31T21:54:53.392Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.cysharp.unitask",
+        "version": "2.5.11",
+        "displayName": "UniTask",
+        "description": "Provides an efficient async/await integration to Unity.",
+        "keywords": [
+          "async/await",
+          "async",
+          "Task",
+          "UniTask"
+        ],
+        "author": {
+          "name": "Cysharp, Inc.",
+          "url": "https://cysharp.co.jp/en/"
+        },
+        "date": "2026-10-31T21:54:57.471Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.cysharp.yetanotherhttphandler",
+        "version": "1.11.7",
+        "displayName": "YetAnotherHttpHandler",
+        "description": "YetAnotherHttpHandler that brings the power of HTTP/2 (and gRPC) to Unity and .NET Standard.",
+        "author": {
+          "name": "Cysharp, Inc.",
+          "url": "https://cysharp.co.jp/en/"
+        },
+        "date": "2026-10-31T21:55:26.171Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.github-glitchenzo.nugetforunity",
+        "version": "4.5.0",
+        "displayName": "NuGetForUnity",
+        "description": "A NuGet Package Manager for Unity",
+        "keywords": [
+          "nuget",
+          "unity"
+        ],
+        "author": {
+          "name": "GlitchEnzo",
+          "url": "https://github.com/GlitchEnzo/NuGetForUnity"
+        },
+        "date": "2026-10-31T21:55:31.321Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.netpyoung.webp",
+        "version": "0.3.22",
+        "displayName": "Unity.WebP",
+        "description": "webp made easy for Unity3d.",
+        "keywords": [
+          "webp",
+          "unity.webp"
+        ],
+        "author": {
+          "name": "netpyoung",
+          "url": "https://github.com/netpyoung/unity.webp"
+        },
+        "date": "2026-10-31T21:55:37.697Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.nosuchstudio.rtltmpro",
+        "version": "4.0.0",
+        "displayName": "RTL Text Mesh Pro",
+        "description": "This package adds Right-to-left language support to TextMeshPro Unity package. Supports Persian, Arabic and Hebrew.",
+        "keywords": [
+          "Unity",
+          "TMPro",
+          "TextMeshPro",
+          "RTL",
+          "Right-To-Left",
+          "Arabic",
+          "Farsi",
+          "Persian",
+          "Hebrew"
+        ],
+        "author": {
+          "name": "hk1ll3r",
+          "email": "hossein.shbz@gmail.com",
+          "url": "https://github.com/hk1ll3r"
+        },
+        "date": "2026-10-31T21:55:42.114Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
+        "name": "com.yasirkula.nativegallery",
+        "version": "1.9.5",
+        "displayName": "Native Gallery",
+        "description": "This plugin helps you save your images and/or videos to device Gallery on Android and Photos on iOS. It is also possible to pick an image or video from Gallery/Photos.",
+        "author": {
+          "name": "yasirkula",
+          "email": "yasirkula@gmail.com",
+          "url": "https://github.com/yasirkula"
+        },
+        "date": "2026-10-31T21:55:49.328Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
     }
   ],
-  "total": 15,
+  "total": 23,
   "time": "Thu, 01 Jan 1970 00:00:00 GMT"
 }

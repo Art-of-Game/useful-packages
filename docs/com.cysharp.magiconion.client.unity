@@ -1,0 +1,70 @@
+{
+  "name": "com.cysharp.magiconion.client.unity",
+  "dist-tags": {
+    "latest": "7.11.0"
+  },
+  "versions": {
+    "7.10.2": {
+      "name": "com.cysharp.magiconion.client.unity",
+      "displayName": "MagicOnion.Client.Unity",
+      "author": {
+        "name": "Cysharp, Inc.",
+        "url": "https://cysharp.co.jp/en/"
+      },
+      "version": "7.10.2",
+      "unity": "2021.3",
+      "description": "Unified Realtime/API framework for .NET platform and Unity.",
+      "keywords": [
+        "grpc",
+        "magiconion"
+      ],
+      "license": "MIT",
+      "category": "grpc",
+      "dependencies": {},
+      "documentationUrl": "https://cysharp.github.io/MagicOnion/",
+      "changelogUrl": "https://github.com/Cysharp/MagicOnion/releases/tag/7.10.2",
+      "licensesUrl": "https://github.com/Cysharp/MagicOnion/blob/7.10.2/LICENSE",
+      "_id": "com.cysharp.magiconion.client.unity@7.10.2",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.cysharp.magiconion.client.unity-7.10.2/com.cysharp.magiconion.client.unity-7.10.2.tgz",
+        "shasum": "3961d21b7141d6302d4c717182e39895bb56f83c",
+        "integrity": "sha512-SM8QGzkbFIVrs4zqjr1ZTPylqI6GkbJLES4mXPEksSLz5TrAMmRczzruGkw8sZSRZckluTIvRsiszBqbpezUDg=="
+      },
+      "_gitTagOf": "3961d21b7141d6302d4c717182e39895bb56f83c"
+    },
+    "7.11.0": {
+      "name": "com.cysharp.magiconion.client.unity",
+      "displayName": "MagicOnion.Client.Unity",
+      "author": {
+        "name": "Cysharp, Inc.",
+        "url": "https://cysharp.co.jp/en/"
+      },
+      "version": "7.11.0",
+      "unity": "2021.3",
+      "description": "Unified Realtime/API framework for .NET platform and Unity.",
+      "keywords": [
+        "grpc",
+        "magiconion"
+      ],
+      "license": "MIT",
+      "category": "grpc",
+      "dependencies": {},
+      "documentationUrl": "https://cysharp.github.io/MagicOnion/",
+      "changelogUrl": "https://github.com/Cysharp/MagicOnion/releases/tag/7.11.0",
+      "licensesUrl": "https://github.com/Cysharp/MagicOnion/blob/7.11.0/LICENSE",
+      "_id": "com.cysharp.magiconion.client.unity@7.11.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.cysharp.magiconion.client.unity-7.11.0/com.cysharp.magiconion.client.unity-7.11.0.tgz",
+        "shasum": "823cc35c29227598cff256d7e701ecf74d33823a",
+        "integrity": "sha512-hTBMmuVL7rrY4vPqboCSIrySpKp13/gL8dB+S10IawdBEIl9WD1ze3/JBqceHRn2AEPPLe2xjXr7BDhNnHt50A=="
+      },
+      "_gitTagOf": "823cc35c29227598cff256d7e701ecf74d33823a"
+    }
+  },
+  "time": {
+    "7.10.2": "2026-10-31T21:54:49.403Z",
+    "modified": "2026-10-31T21:54:53.392Z",
+    "7.11.0": "2026-10-31T21:54:53.392Z"
+  },
+  "description": "Unified Realtime/API framework for .NET platform and Unity."
+}
