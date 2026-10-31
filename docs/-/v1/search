@@ -38,7 +38,7 @@
     {
       "package": {
         "name": "com.google.firebase.app",
-        "version": "14.0.0",
+        "version": "14.1.0",
         "displayName": "Firebase App (Core)",
         "description": "Firebase App is the core library every Firebase package depends on.",
         "keywords": [
@@ -51,7 +51,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/unity/setup"
         },
-        "date": "2026-10-31T11:49:44.810Z"
+        "date": "2026-10-31T11:50:46.507Z"
       },
       "score": {
         "final": 1,
@@ -66,7 +66,7 @@
     {
       "package": {
         "name": "com.google.firebase.messaging",
-        "version": "14.0.0",
+        "version": "14.1.0",
         "displayName": "Firebase Cloud Messaging",
         "description": "Send targeted messages and notifications.\n\nCloud Messaging gives you a reliable and battery-efficient way to send messages and notifications across platforms. You can target your messages to certain segments of players and customize them to suit your game's brand. You can also gauge their effectiveness with statistics like click rate, open rate, and the downstream effect on conversions.",
         "keywords": [
@@ -81,7 +81,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/cloud-messaging/unity/client"
         },
-        "date": "2026-10-31T11:49:52.047Z"
+        "date": "2026-10-31T11:50:49.874Z"
       },
       "score": {
         "final": 1,

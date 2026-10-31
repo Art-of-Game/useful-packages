@@ -1,7 +1,7 @@
 {
   "name": "com.google.firebase.messaging",
   "dist-tags": {
-    "latest": "14.0.0"
+    "latest": "14.1.0"
   },
   "versions": {
     "14.0.0": {
@@ -31,11 +31,40 @@
         "shasum": "5421aadb5e845ec2e2dbf91271b96535c3954d0f",
         "integrity": "sha512-nnsuj5Y2KNkemOavUnbVWlNP4k5NTGqzmDdzNwj/9y/ogzs5JNE8a9ex1zvN7ulAFpITrituNkUlhXga/3paTw=="
       }
+    },
+    "14.1.0": {
+      "name": "com.google.firebase.messaging",
+      "version": "14.1.0",
+      "displayName": "Firebase Cloud Messaging",
+      "keywords": [
+        "Google",
+        "Firebase",
+        "Cloud Messaging",
+        "Messaging",
+        "vh-name:FirebaseMessaging",
+        "vh-name:Firebase Cloud Messaging"
+      ],
+      "author": {
+        "name": "Google LLC",
+        "url": "https://firebase.google.com/docs/cloud-messaging/unity/client"
+      },
+      "description": "Send targeted messages and notifications.\n\nCloud Messaging gives you a reliable and battery-efficient way to send messages and notifications across platforms. You can target your messages to certain segments of players and customize them to suit your game's brand. You can also gauge their effectiveness with statistics like click rate, open rate, and the downstream effect on conversions.",
+      "unity": "2022.1",
+      "dependencies": {
+        "com.google.firebase.app": "14.1.0"
+      },
+      "_id": "com.google.firebase.messaging@14.1.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.messaging-14.1.0/com.google.firebase.messaging-14.1.0.tgz",
+        "shasum": "c61f61f68270fb428a552988c71451e1e6070c87",
+        "integrity": "sha512-EySeruY0GItcD0aUGCZkHi/hpLMD0u+29WtWQXdZvAdP0jhln9Add4crVQScULXGRDtQk1H6zajcK+nM6o54ew=="
+      }
     }
   },
   "time": {
     "14.0.0": "2026-10-31T11:49:52.047Z",
-    "modified": "2026-10-31T11:49:52.047Z"
+    "modified": "2026-10-31T11:50:49.874Z",
+    "14.1.0": "2026-10-31T11:50:49.874Z"
   },
   "description": "Send targeted messages and notifications.\n\nCloud Messaging gives you a reliable and battery-efficient way to send messages and notifications across platforms. You can target your messages to certain segments of players and customize them to suit your game's brand. You can also gauge their effectiveness with statistics like click rate, open rate, and the downstream effect on conversions."
 }
