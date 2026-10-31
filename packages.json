@@ -5,7 +5,7 @@
   "replaceDependencies": {
     "com.google.external-dependency-manager": {
       "name": "com.unity.external-dependency-manager",
-      "version": "2.1.1"
+      "version": "latest"
     }
   },
   "packages": [
@@ -37,21 +37,30 @@
       "unitypackage": "facebook-unity-sdk-{version}/FacebookSDK/facebook-unity-sdk-{version}.unitypackage",
       "licence": "https://raw.githubusercontent.com/meta/facebook-sdk-for-unity/sdk-version-{version}/LICENSE.txt",
       "take": {
-        "Assets/FacebookSDK/Plugins/Android/": "Plugins/Android/",
-        "Assets/FacebookSDK/Plugins/Editor/": "Plugins/Editor/",
-        "Assets/FacebookSDK/Plugins/iOS/": "Plugins/iOS/",
-        "Assets/FacebookSDK/Plugins/Settings/": "Plugins/Settings/",
-        "Assets/FacebookSDK/Plugins/Facebook.Unity.dll": "Plugins/Facebook.Unity.dll",
+        "Assets/FacebookSDK/Plugins/": "Plugins/",
         "Assets/FacebookSDK/SDK/": "SDK/",
         "Assets/FacebookSDK/link.xml": "link.xml",
-        "Assets/Editor/DisableBitcode.cs": "Editor/DisableBitcode.cs",
-        "Assets/Editor/FBXcodePostProcess.cs": "Editor/FBXcodePostProcess.cs"
+        "Assets/Editor/": "Editor/",
+        "Assets/FacebookSDK/Examples/": "Samples~/Examples/",
+        "Assets/IAPiOS/IAP/": "Samples~/Examples/IAP/",
+        "Assets/Scripts/": "Samples~/Examples/IAP/Scripts/",
+        "Assets/StreamingAssets/": "Samples~/Examples/StreamingAssets/"
+      },
+      "leaveOut": [
+        "Assets/ExternalDependencyManager/"
+      ],
+      "metaLike": {
+        "Plugins/Windows/XInputDotNetPure.dll": "Plugins/Windows/LibFBGManaged.dll",
+        "Plugins/Windows/x64/XInputInterface.dll": "Plugins/Windows/x64/zlib1.dll",
+        "Plugins/Windows/x86/XInputInterface.dll": "Plugins/Windows/x86/zlib1.dll"
       },
       "changes": [
-        "- Made into a Unity package from Meta's `.unitypackage`, with the Android, iOS and Editor parts only. Examples, Windows, WebGL, the IAP sample and the bundled External Dependency Manager are left out.",
+        "- Made into a Unity package from Meta's `.unitypackage`. All of Meta's files are here. The only thing left out is Google's External Dependency Manager, which Meta bundles and Google has deprecated.",
+        "- Meta's examples, the IAP sample they call and the StreamingAssets files they read are under **Samples** in the Package Manager window, so they only enter a project when you import them.",
         "- `package.json` is new and depends on `com.unity.external-dependency-manager`.",
         "- `Editor/Facebook.Unity.PostProcess.asmdef` is new, because Unity compiles no script in a package without one.",
-        "- `Editor/FacebookLinkFile.cs` is new, because Unity reads no `link.xml` from inside a package."
+        "- `Editor/FacebookLinkFile.cs` is new, because Unity reads no `link.xml` from inside a package.",
+        "- The `.meta` files of `XInputDotNetPure.dll` and the two `XInputInterface.dll` now say what Meta's `FacebookImporter` sets, because that importer does nothing to files in a package."
       ]
     }
   ]

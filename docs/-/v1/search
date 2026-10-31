@@ -91,7 +91,7 @@
         "name": "com.facebook.sdk",
         "version": "19.0.0",
         "displayName": "Facebook SDK",
-        "description": "Meta's Facebook SDK for Unity as a package, the Android and iOS parts.",
+        "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples.",
         "keywords": [
           "facebook",
           "meta",
@@ -102,7 +102,7 @@
           "name": "Meta",
           "url": "https://github.com/meta/facebook-sdk-for-unity"
         },
-        "date": "2026-10-31T16:28:38.757Z"
+        "date": "2026-10-31T17:25:04.875Z"
       },
       "score": {
         "final": 1,

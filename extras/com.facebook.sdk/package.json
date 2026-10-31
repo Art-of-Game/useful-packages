@@ -2,7 +2,7 @@
   "name": "com.facebook.sdk",
   "version": "{version}",
   "displayName": "Facebook SDK",
-  "description": "Meta's Facebook SDK for Unity as a package, the Android and iOS parts.",
+  "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples.",
   "unity": "2022.3",
   "license": "SEE LICENSE IN LICENSE.txt",
   "author": {
@@ -21,6 +21,13 @@
     "sdk"
   ],
   "dependencies": {
-    "com.unity.external-dependency-manager": "2.1.1"
-  }
+    "com.unity.external-dependency-manager": "latest"
+  },
+  "samples": [
+    {
+      "displayName": "Examples",
+      "description": "Meta's example scenes, the IAP sample they call and the files they read. Move StreamingAssets to Assets/StreamingAssets to run the upload example.",
+      "path": "Samples~/Examples"
+    }
+  ]
 }

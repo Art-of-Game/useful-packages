@@ -8,7 +8,7 @@
       "name": "com.facebook.sdk",
       "version": "19.0.0",
       "displayName": "Facebook SDK",
-      "description": "Meta's Facebook SDK for Unity as a package, the Android and iOS parts.",
+      "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples.",
       "unity": "2022.3",
       "license": "SEE LICENSE IN LICENSE.txt",
       "author": {
@@ -29,18 +29,24 @@
       "dependencies": {
         "com.unity.external-dependency-manager": "2.1.1"
       },
+      "samples": [
+        {
+          "displayName": "Examples",
+          "description": "Meta's example scenes, the IAP sample they call and the files they read. Move StreamingAssets to Assets/StreamingAssets to run the upload example.",
+          "path": "Samples~/Examples"
+        }
+      ],
       "_id": "com.facebook.sdk@19.0.0",
       "dist": {
         "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.facebook.sdk-19.0.0/com.facebook.sdk-19.0.0.tgz",
-        "shasum": "00f21b720bb3f94094d3a1c773ddfbfd697b885f",
-        "integrity": "sha512-lj3AGHJTObCBDM5JfdbBF8Kd3RHUAZW7xPEP5QQkuocxosrPWnXyj3N1XXR7Wm66ZEiw7oRwvB/KiU1YN/YpEg=="
-      },
-      "_gitTagOf": "00f21b720bb3f94094d3a1c773ddfbfd697b885f"
+        "shasum": "5f1f2db802e20298430248bcb38ae11e6a564b34",
+        "integrity": "sha512-HjoxUwll/foFeSff1rX2sx8Ml5YYHEDT02qSgWBy3sY87luwIwiDZsZ/fPjCiRrtWJseZX12+ZQsBkrOUnwCkQ=="
+      }
     }
   },
   "time": {
-    "19.0.0": "2026-10-31T16:28:38.757Z",
-    "modified": "2026-10-31T16:28:38.757Z"
+    "19.0.0": "2026-10-31T17:25:04.875Z",
+    "modified": "2026-10-31T17:25:04.875Z"
   },
-  "description": "Meta's Facebook SDK for Unity as a package, the Android and iOS parts."
+  "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples."
 }

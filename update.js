@@ -56,6 +56,13 @@ function latestVersion(entry) {
   return tag.replace(/^\D+/, "");
 }
 
+// A package.json must name an exact version, so "latest" becomes the Unity Registry's newest version when a package is published.
+async function newestInUnityRegistry(name) {
+  const response = await fetch(`https://packages.unity.com/${name}`);
+  if (!response.ok) throw new Error(`${response.status} from the Unity Registry for ${name}`);
+  return (await response.json())["dist-tags"].latest;
+}
+
 // Unity wants a .meta next to every file and folder of a package. The same path always gets the same guid.
 function addMissingMetas(name, tree, folder = tree) {
   for (const item of fs.readdirSync(folder, { withFileTypes: true })) {
@@ -85,11 +92,21 @@ async function packageFromUnitypackage(entry, version, folder) {
     if (!fs.existsSync(pathFile) || !fs.existsSync(path.join(files, guid, "asset"))) continue;
     const vendorPath = fs.readFileSync(pathFile, "utf8").split("\n")[0].trim();
     const start = Object.keys(entry.take).find((prefix) => vendorPath.startsWith(prefix));
-    if (!start) continue;
+    if (!start) {
+      // Something new from the vendor must not go missing without anyone noticing.
+      if (!entry.leaveOut.some((prefix) => vendorPath.startsWith(prefix))) throw new Error(`${name} ${version} has ${vendorPath}, which packages.json does not mention`);
+      continue;
+    }
     const target = path.join(tree, entry.take[start], vendorPath.slice(start.length));
     fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.copyFileSync(path.join(files, guid, "asset"), target);
     fs.copyFileSync(path.join(files, guid, "asset.meta"), `${target}.meta`);
+  }
+
+  // The vendor's importer only sets a plugin's platforms under Assets, so these take the .meta of a file set the way it sets them.
+  for (const [file, like] of Object.entries(entry.metaLike ?? {})) {
+    const own = /^guid: .*$/m.exec(fs.readFileSync(path.join(tree, `${file}.meta`), "utf8"))[0];
+    fs.writeFileSync(path.join(tree, `${file}.meta`), fs.readFileSync(path.join(tree, `${like}.meta`), "utf8").replace(/^guid: .*$/m, own));
   }
 
   fs.cpSync(path.join(__dirname, "extras", name), tree, { recursive: true });
@@ -141,6 +158,9 @@ async function prepare(entry, version, folder) {
     delete manifest.dependencies[from];
     manifest.dependencies[to.name] = to.version;
     changes.push(`- \`package.json\` names \`${to.name}\` instead of \`${from}\`, which its vendor has deprecated.`);
+  }
+  for (const [dependency, wanted] of Object.entries(manifest.dependencies ?? {})) {
+    if (wanted === "latest") manifest.dependencies[dependency] = await newestInUnityRegistry(dependency);
   }
   fs.writeFileSync(manifestFile, JSON.stringify(manifest, null, 2) + "\n");
 
