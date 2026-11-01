@@ -391,7 +391,7 @@ function writeIndex(packageDocs) {
     .sort((a, b) => a.displayName.localeCompare(b.displayName))
     .map((p) => {
       const entry = config.packages.find((item) => item.name === p.name);
-      const url = entry.gitUrl ?? `https://github.com/${config.repo}.git#upm/${p.name}`;
+      const url = entry.gitUrl ? fill(entry.gitUrl, p.name, p.version) : `https://github.com/${config.repo}.git#upm/${p.name}`;
       // Unity fetches dependencies from a registry, never from Git, so a Git URL needs its dependencies added first.
       const first = Object.keys(p.dependencies ?? {}).filter((name) => displayNames[name]).map((name) => displayNames[name]);
       return `<div class="row">

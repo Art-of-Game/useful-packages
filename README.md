@@ -48,7 +48,7 @@ Google has archived `play-unity-plugins` too. Those packages are the newest vers
 |---|---|---|---|
 | `com.playeveryware.eos` | Epic Online Services plugin | [EOS-Contrib/eos_plugin_for_unity](https://github.com/EOS-Contrib/eos_plugin_for_unity) | Newtonsoft Json, Editor Coroutines |
 
-Epic's [developer agreement](https://dev.epicgames.com/services/terms/agreements) lets the EOS SDK be passed on only inside a game, so I keep no copy of it here. The registry points at Epic's own download, so you get Epic's file exactly. That's why this one isn't signed and has no `MODIFIED.md`, and Unity warns about the missing signature when it installs.
+Epic's [developer agreement](https://dev.epicgames.com/services/terms/agreements) lets the EOS SDK be passed on only inside a game, so I keep no copy of it here. The registry points at Epic's own download, so you get Epic's file exactly. That's why this one isn't signed and has no `MODIFIED.md`, and Unity warns about the missing signature when it installs from the registry. With the Git URL below there's no such warning.
 
 ### Other
 
@@ -135,10 +135,10 @@ Facebook:
 https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk
 ```
 
-Epic, from its own repo, which needs [Git LFS](https://git-lfs.com). To stay on one version, end it with `#v6.2.0`:
+Epic, from its own repo, which needs [Git LFS](https://git-lfs.com). Keep the version at the end, because that repo's default branch is behind:
 
 ```
-https://github.com/EOS-Contrib/eos_plugin_for_unity_upm.git
+https://github.com/EOS-Contrib/eos_plugin_for_unity_upm.git#v6.2.0
 ```
 
 Other:
