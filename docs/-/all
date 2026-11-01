@@ -195,19 +195,6 @@
       "modified": "2026-10-31T21:21:38.975Z"
     }
   },
-  "com.playeveryware.eos": {
-    "name": "com.playeveryware.eos",
-    "description": "Unity Plugin for Epic Online Services\n Unity 2021.3.16f1\n EOS SDK 1.19.1.2-CL58105819\n\n Dependencies for Extra Packs:\n P2P Netcode Sample : [com.unity.netcode.gameobjects] \n Performance Stress Test Sample : [com.unity.postprocessing]",
-    "dist-tags": {
-      "latest": "6.2.0"
-    },
-    "versions": {
-      "6.2.0": "latest"
-    },
-    "time": {
-      "modified": "2026-11-01T09:37:02.442Z"
-    }
-  },
   "com.coffee.ui-effect": {
     "name": "com.coffee.ui-effect",
     "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",

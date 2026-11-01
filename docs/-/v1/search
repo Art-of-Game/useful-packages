@@ -401,34 +401,6 @@
     },
     {
       "package": {
-        "name": "com.playeveryware.eos",
-        "version": "6.2.0",
-        "displayName": "Epic Online Services Plugin for Unity",
-        "description": "Unity Plugin for Epic Online Services\n Unity 2021.3.16f1\n EOS SDK 1.19.1.2-CL58105819\n\n Dependencies for Extra Packs:\n P2P Netcode Sample : [com.unity.netcode.gameobjects] \n Performance Stress Test Sample : [com.unity.postprocessing]",
-        "keywords": [
-          "EOS",
-          "Epic",
-          "Epic Online Service",
-          "Windows"
-        ],
-        "author": {
-          "name": "Epic Games, Inc.",
-          "url": "https://onlineservices.epicgames.com/"
-        },
-        "date": "2026-11-01T09:37:02.442Z"
-      },
-      "score": {
-        "final": 1,
-        "detail": {
-          "quality": 1,
-          "popularity": 1,
-          "maintenance": 1
-        }
-      },
-      "searchScore": 1
-    },
-    {
-      "package": {
         "name": "com.coffee.ui-effect",
         "version": "5.11.7",
         "displayName": "UI Effect",
@@ -778,6 +750,6 @@
       "searchScore": 1
     }
   ],
-  "total": 29,
+  "total": 28,
   "time": "Thu, 01 Jan 1970 00:00:00 GMT"
 }
