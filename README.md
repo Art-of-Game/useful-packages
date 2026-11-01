@@ -42,14 +42,6 @@ Google has archived `play-unity-plugins` too. Those packages are the newest vers
 |---|---|---|---|
 | `com.facebook.sdk` | Facebook SDK | [meta/facebook-sdk-for-unity](https://github.com/meta/facebook-sdk-for-unity) | External Dependency Manager |
 
-### Epic
-
-| Package | What it is | Source | Also brings |
-|---|---|---|---|
-| `com.playeveryware.eos` | Epic Online Services plugin | [EOS-Contrib/eos_plugin_for_unity](https://github.com/EOS-Contrib/eos_plugin_for_unity) | Newtonsoft Json, Editor Coroutines |
-
-Epic's [developer agreement](https://dev.epicgames.com/services/terms/agreements) lets the EOS SDK be passed on only inside a game, so I keep no copy of it here. The registry points at Epic's own download, so you get Epic's file exactly. That's why this one isn't signed and has no `MODIFIED.md`, and Unity warns about the missing signature when it installs from the registry. With the Git URL below there's no such warning.
-
 ### Other
 
 | Package | What it is | Source | Also brings |
@@ -91,7 +83,7 @@ Add this to `Packages/manifest.json`, with only the packages you want:
     {
       "name": "Useful Packages",
       "url": "https://art-of-game.github.io/useful-packages",
-      "scopes": ["com.google", "com.facebook", "com.adrenak", "com.coffee", "com.cysharp", "com.github-glitchenzo", "com.netpyoung", "com.nosuchstudio", "com.playeveryware", "com.yasirkula"]
+      "scopes": ["com.google", "com.facebook", "com.adrenak", "com.coffee", "com.cysharp", "com.github-glitchenzo", "com.netpyoung", "com.nosuchstudio", "com.yasirkula"]
     }
   ]
 }
@@ -133,12 +125,6 @@ Facebook:
 
 ```
 https://github.com/Art-of-Game/useful-packages.git#upm/com.facebook.sdk
-```
-
-Epic, from its own repo, which needs [Git LFS](https://git-lfs.com). Keep the version at the end, because that repo's default branch is behind:
-
-```
-https://github.com/EOS-Contrib/eos_plugin_for_unity_upm.git#v6.2.0
 ```
 
 Other:

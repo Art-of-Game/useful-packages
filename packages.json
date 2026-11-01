@@ -201,19 +201,6 @@
       }
     },
     {
-      "name": "com.playeveryware.eos",
-      "latestFrom": "EOS-Contrib/eos_plugin_for_unity",
-      "vendorDownload": true,
-      "tarball": "https://github.com/EOS-Contrib/eos_plugin_for_unity/releases/download/v{version}/{name}-{version}.tgz",
-      "gitUrl": "https://github.com/EOS-Contrib/eos_plugin_for_unity_upm.git#v{version}",
-      "gitNote": "Epic's own repo, which needs Git LFS. Unity checks no signature on a Git URL, so it gives no warning this way. Keep the version at the end, because that repo's default branch is behind.",
-      "links": {
-        "documentationUrl": "https://github.com/EOS-Contrib/eos_plugin_for_unity#readme",
-        "changelogUrl": "https://github.com/EOS-Contrib/eos_plugin_for_unity/blob/v{version}/com.playeveryware.eos/CHANGELOG.md",
-        "licensesUrl": "https://github.com/EOS-Contrib/eos_plugin_for_unity/blob/v{version}/com.playeveryware.eos/LICENSE.md"
-      }
-    },
-    {
       "name": "com.coffee.ui-effect",
       "latestFrom": "mob-sakai/UIEffect",
       "alsoVersions": [

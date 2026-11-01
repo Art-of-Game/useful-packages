@@ -257,18 +257,13 @@ function publish(tarball) {
     gh("release", "create", tag, asset, "--repo", config.repo, "--latest=false", "--title", title, "--notes", notes);
   }
 
-  recordVersion(manifest, `https://github.com/${config.repo}/releases/download/${tag}/${assetName}`, fs.readFileSync(tarball));
-}
-
-// What Unity reads about one version: its package.json and where to download it.
-function recordVersion(manifest, tarballUrl, bytes) {
-  const { name, version } = manifest;
+  const bytes = fs.readFileSync(tarball);
   const doc = readDoc(name);
   doc.versions[version] = {
     ...manifest,
     _id: `${name}@${version}`,
     dist: {
-      tarball: tarballUrl,
+      tarball: `https://github.com/${config.repo}/releases/download/${tag}/${assetName}`,
       shasum: hash("sha1", bytes, "hex"),
       integrity: `sha512-${hash("sha512", bytes, "base64")}`,
     },
@@ -279,29 +274,6 @@ function recordVersion(manifest, tarballUrl, bytes) {
   doc.time.modified = doc.time[version];
   write(name, doc);
   console.log(`${name} ${version}: published`);
-}
-
-// Some vendors' terms allow no copy of their files, like Epic's for the EOS SDK. Nothing of theirs is kept or signed here,
-// the registry only names the vendor's own download, so there is no release and no Git tag either.
-async function listVendorDownload(entry, version) {
-  const source = fillRef(entry.tarball, entry, version);
-  const response = await fetch(source);
-  if (!response.ok) {
-    console.log(`${entry.name} ${version}: not available yet (${response.status} from ${source})`);
-    return;
-  }
-
-  const bytes = Buffer.from(await response.arrayBuffer());
-  const work = tempFolder();
-  fs.writeFileSync(path.join(work, "source.tgz"), bytes);
-  const manifest = JSON.parse(execFileSync("tar", ["-xzOf", "source.tgz", "package/package.json"], { cwd: work, encoding: "utf8" }));
-  fs.rmSync(work, { recursive: true, force: true });
-  if (manifest.name !== entry.name || manifest.version !== version) {
-    throw new Error(`${source} holds ${manifest.name} ${manifest.version}`);
-  }
-
-  for (const [field, url] of Object.entries(entry.links ?? {})) manifest[field] = fill(url, entry.name, version);
-  recordVersion(manifest, source, bytes);
 }
 
 // The branch upm/<package> always sits on the newest version. A project installed from the branch gets a new version
@@ -390,14 +362,13 @@ function writeIndex(packageDocs) {
   const rows = [...newest]
     .sort((a, b) => a.displayName.localeCompare(b.displayName))
     .map((p) => {
-      const entry = config.packages.find((item) => item.name === p.name);
-      const url = entry.gitUrl ? fill(entry.gitUrl, p.name, p.version) : `https://github.com/${config.repo}.git#upm/${p.name}`;
+      const url = `https://github.com/${config.repo}.git#upm/${p.name}`;
       // Unity fetches dependencies from a registry, never from Git, so a Git URL needs its dependencies added first.
       const first = Object.keys(p.dependencies ?? {}).filter((name) => displayNames[name]).map((name) => displayNames[name]);
       return `<div class="row">
 <div class="title">${escape(p.displayName)} <span class="version">${escape(p.version)}</span></div>
 <code class="url">${escape(url)}</code>
-${entry.gitNote ? `<div class="first">${escape(fill(entry.gitNote, p.name, p.version))}</div>\n` : ""}${first.length ? `<div class="first">Add first: ${escape(first.join(", "))}</div>\n` : ""}<button data-copy="${escape(url)}">Copy</button>
+${first.length ? `<div class="first">Add first: ${escape(first.join(", "))}</div>\n` : ""}<button data-copy="${escape(url)}">Copy</button>
 </div>`;
     });
   const [owner, repoName] = config.repo.split("/");
@@ -412,7 +383,7 @@ ${entry.gitNote ? `<div class="first">${escape(fill(entry.gitNote, p.name, p.ver
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Useful Packages: signed Unity packages by scoped registry or Git URL</title>
-<meta name="description" content="Unity packages I use in my projects, signed and installable by scoped registry or Git URL: Firebase, Google Sign-In, Google Play Games, Facebook SDK, Epic Online Services, MagicOnion, UniTask, UIEffect and more.">
+<meta name="description" content="Unity packages I use in my projects, signed and installable by scoped registry or Git URL: Firebase, Google Sign-In, Google Play Games, Facebook SDK, MagicOnion, UniTask, UIEffect and more.">
 <link rel="canonical" href="${escape(registry)}/">${config.googleSiteVerification ? `\n<meta name="google-site-verification" content="${escape(config.googleSiteVerification)}">` : ""}
 <style>
 body { font: 16px/1.5 system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 32px 16px; }
@@ -484,10 +455,6 @@ async function publishNewVersions() {
           console.log(`${entry.name} ${version}: already published`);
           continue;
         }
-        if (entry.vendorDownload) {
-          await listVendorDownload(entry, version);
-          continue;
-        }
         const work = tempFolder();
         if (await prepare(entry, version, work)) {
           publish(sign(path.join(work, "package"), path.join(work, "signed"), `${entry.name} ${version}`));
@@ -535,8 +502,7 @@ async function main() {
   writeListings();
 
   // A refused Git tag (GitHub takes no file over 100 MiB) must not stop the registry, which has no such limit.
-  for (const { name, vendorDownload } of config.packages) {
-    if (vendorDownload) continue;
+  for (const { name } of config.packages) {
     const doc = readDoc(name);
     for (const version of Object.keys(doc.versions)) {
       try {
