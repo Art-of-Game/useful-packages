@@ -402,7 +402,7 @@
     {
       "package": {
         "name": "com.coffee.ui-effect",
-        "version": "5.11.7",
+        "version": "5.11.8",
         "displayName": "UI Effect",
         "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",
         "keywords": [
@@ -414,7 +414,7 @@
           "email": "sakai861104@gmail.com",
           "url": "https://github.com/mob-sakai"
         },
-        "date": "2026-10-31T21:54:45.228Z"
+        "date": "2026-11-06T10:50:29.324Z"
       },
       "score": {
         "final": 1,
