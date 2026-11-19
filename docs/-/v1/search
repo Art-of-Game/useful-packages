@@ -374,7 +374,7 @@
     {
       "package": {
         "name": "com.facebook.sdk",
-        "version": "19.0.0",
+        "version": "19.0.1",
         "displayName": "Facebook SDK",
         "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples.",
         "keywords": [
@@ -387,7 +387,7 @@
           "name": "Meta",
           "url": "https://github.com/meta/facebook-sdk-for-unity"
         },
-        "date": "2026-10-31T21:21:38.975Z"
+        "date": "2026-11-19T11:36:31.273Z"
       },
       "score": {
         "final": 1,

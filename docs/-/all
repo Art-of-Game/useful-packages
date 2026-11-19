@@ -186,13 +186,13 @@
     "name": "com.facebook.sdk",
     "description": "Meta's Facebook SDK for Unity as a package. Meta's examples are under Samples.",
     "dist-tags": {
-      "latest": "19.0.0"
+      "latest": "19.0.1"
     },
     "versions": {
-      "19.0.0": "latest"
+      "19.0.1": "latest"
     },
     "time": {
-      "modified": "2026-10-31T21:21:38.975Z"
+      "modified": "2026-11-19T11:36:31.273Z"
     }
   },
   "com.coffee.ui-effect": {
