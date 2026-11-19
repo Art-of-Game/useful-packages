@@ -1,0 +1,7 @@
+{
+  "name": "Facebook.Unity.PostProcess",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}
