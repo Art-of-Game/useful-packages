@@ -3,7 +3,7 @@
     {
       "package": {
         "name": "com.google.firebase.app",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Firebase App (Core)",
         "description": "Firebase App is the core library every Firebase package depends on.",
         "keywords": [
@@ -16,7 +16,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/unity/setup"
         },
-        "date": "2026-10-31T21:20:35.331Z"
+        "date": "2026-11-20T11:34:44.302Z"
       },
       "score": {
         "final": 1,
@@ -31,7 +31,7 @@
     {
       "package": {
         "name": "com.google.firebase.messaging",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Firebase Cloud Messaging",
         "description": "Send targeted messages and notifications.\n\nCloud Messaging gives you a reliable and battery-efficient way to send messages and notifications across platforms. You can target your messages to certain segments of players and customize them to suit your game's brand. You can also gauge their effectiveness with statistics like click rate, open rate, and the downstream effect on conversions.",
         "keywords": [
@@ -46,7 +46,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/cloud-messaging/unity/client"
         },
-        "date": "2026-10-31T21:20:39.523Z"
+        "date": "2026-11-20T11:34:49.531Z"
       },
       "score": {
         "final": 1,
@@ -61,7 +61,7 @@
     {
       "package": {
         "name": "com.google.firebase.analytics",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Google Analytics",
         "description": "Get free and unlimited game and player analytics\n\nGoogle Analytics helps you understand and engage your players by revealing what actions they're taking inside your game, where they spend the most time, and why they churn. From acquisition to app usage, Google Analytics will give you insights to make better decisions about your game. You can even combine your analytics data with Google Ads to make sure you're running campaigns that deliver you high-quality players.",
         "keywords": [
@@ -75,7 +75,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/analytics/unity/start"
         },
-        "date": "2026-10-31T21:20:43.900Z"
+        "date": "2026-11-20T11:34:53.752Z"
       },
       "score": {
         "final": 1,
@@ -90,7 +90,7 @@
     {
       "package": {
         "name": "com.google.firebase.app-check",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Firebase App Check",
         "description": "App Check helps protect your API resources from abuse by preventing unauthorized clients from accessing your backend resources. It works with both Firebase services, Google Cloud services, and your own APIs to keep your resources safe.",
         "keywords": [
@@ -104,7 +104,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/app-check"
         },
-        "date": "2026-10-31T21:20:48.855Z"
+        "date": "2026-11-20T11:34:58.864Z"
       },
       "score": {
         "final": 1,
@@ -119,7 +119,7 @@
     {
       "package": {
         "name": "com.google.firebase.auth",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Firebase Authentication",
         "description": "Easily sign-in and authenticate players.\n\nSign-in players using any identity provider with Firebase Authentication. It supports email and password, phone authentication, Facebook, Google, Twitter, and more. Out-of-the-box, you get a secure, end-to-end identity solution.",
         "keywords": [
@@ -135,7 +135,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/auth/unity/start"
         },
-        "date": "2026-10-31T21:20:53.563Z"
+        "date": "2026-11-20T11:35:04.342Z"
       },
       "score": {
         "final": 1,
@@ -150,7 +150,7 @@
     {
       "package": {
         "name": "com.google.firebase.crashlytics",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Firebase Crashlytics",
         "description": "Prioritize and fix stability issues faster.\n\nFirebase Crashlytics helps you track, prioritize, and fix stability issues that erode game quality, in realtime. Spend less time triaging and troubleshooting crashes and more time building game content and features that delight players.\n\nCrashlytics also sends realtime alerts for new issues, regressed issues, and burgeoning issues that might require immediate attention to ensure you never miss a critical crash no matter where you are.",
         "keywords": [
@@ -165,7 +165,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/crashlytics/unity/start"
         },
-        "date": "2026-10-31T21:20:57.131Z"
+        "date": "2026-11-20T11:35:09.172Z"
       },
       "score": {
         "final": 1,
@@ -180,7 +180,7 @@
     {
       "package": {
         "name": "com.google.firebase.firestore",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Cloud Firestore",
         "description": "Store and sync game data at global scale.\n\nCloud Firestore is a flexible NoSQL document database that lets you easily store, sync, and query data for your games - at global scale.\n\nFirestore supports a million players connected simultaneously with a guaranteed uptime of 5 nines for multi-region instances. That's less than 5 minutes of downtime a year!\n\nWith Cloud Firestore, your players can access and make changes to their data at any time, even when they're offline.",
         "keywords": [
@@ -195,7 +195,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/firestore"
         },
-        "date": "2026-10-31T21:21:04.397Z"
+        "date": "2026-11-20T11:35:15.815Z"
       },
       "score": {
         "final": 1,
@@ -210,7 +210,7 @@
     {
       "package": {
         "name": "com.google.firebase.remote-config",
-        "version": "14.1.0",
+        "version": "14.2.0",
         "displayName": "Firebase Remote Config",
         "description": "Customize your game on the fly.\n\nRemote Config lets you dynamically change the behavior and appearance of your game right from the Firebase console so you can deliver personalized experiences to players - without waiting for app store approval.",
         "keywords": [
@@ -226,7 +226,7 @@
           "name": "Google LLC",
           "url": "https://firebase.google.com/docs/remote-config/use-config-unity"
         },
-        "date": "2026-10-31T21:21:08.527Z"
+        "date": "2026-11-20T11:35:20.618Z"
       },
       "score": {
         "final": 1,

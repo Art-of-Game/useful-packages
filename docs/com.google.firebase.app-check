@@ -1,7 +1,7 @@
 {
   "name": "com.google.firebase.app-check",
   "dist-tags": {
-    "latest": "14.1.0"
+    "latest": "14.2.0"
   },
   "versions": {
     "14.1.0": {
@@ -34,11 +34,43 @@
         "integrity": "sha512-OWryWNGzmtLLQAON/HO53yP+CeNgyfmDu7Fw4WiBYK+gMUCwECmY+sHSm0Kl2t0zhhhszjTf5Ce8KxTGxnBIhA=="
       },
       "_gitTagOf": "88c6286210ac55f476579887044b45daf7aa9b9a"
+    },
+    "14.2.0": {
+      "name": "com.google.firebase.app-check",
+      "version": "14.2.0",
+      "displayName": "Firebase App Check",
+      "keywords": [
+        "Google",
+        "Firebase",
+        "App Check",
+        "vh-name:FirebaseAppCheck",
+        "vh-name:Firebase App Check"
+      ],
+      "author": {
+        "name": "Google LLC",
+        "url": "https://firebase.google.com/docs/app-check"
+      },
+      "description": "App Check helps protect your API resources from abuse by preventing unauthorized clients from accessing your backend resources. It works with both Firebase services, Google Cloud services, and your own APIs to keep your resources safe.",
+      "unity": "2022.1",
+      "dependencies": {
+        "com.google.firebase.app": "14.2.0"
+      },
+      "documentationUrl": "https://firebase.google.com/docs/app-check/unity/default-providers",
+      "changelogUrl": "https://firebase.google.com/support/release-notes/unity",
+      "licensesUrl": "https://github.com/firebase/firebase-unity-sdk/blob/v14.2.0/LICENSE",
+      "_id": "com.google.firebase.app-check@14.2.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.google.firebase.app-check-14.2.0/com.google.firebase.app-check-14.2.0.tgz",
+        "shasum": "d7087a478351c49c7fffd96d7b6312b4492f0c6e",
+        "integrity": "sha512-OVwxNU5lSwlfNjM8XM2520l1IUJj+hKp4I9db5lG3p+zvAjX87kDKohK+DdrkmVu5/JqNQiXoDxCKJYeK8Pd1g=="
+      },
+      "_gitTagOf": "d7087a478351c49c7fffd96d7b6312b4492f0c6e"
     }
   },
   "time": {
     "14.1.0": "2026-10-31T21:20:48.855Z",
-    "modified": "2026-10-31T21:20:48.855Z"
+    "modified": "2026-11-20T11:34:58.864Z",
+    "14.2.0": "2026-11-20T11:34:58.864Z"
   },
   "description": "App Check helps protect your API resources from abuse by preventing unauthorized clients from accessing your backend resources. It works with both Firebase services, Google Cloud services, and your own APIs to keep your resources safe."
 }
