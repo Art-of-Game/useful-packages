@@ -402,7 +402,7 @@
     {
       "package": {
         "name": "com.coffee.ui-effect",
-        "version": "5.12.0",
+        "version": "5.12.1",
         "displayName": "UI Effect",
         "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",
         "keywords": [
@@ -414,7 +414,7 @@
           "email": "sakai861104@gmail.com",
           "url": "https://github.com/mob-sakai"
         },
-        "date": "2026-11-18T11:37:48.596Z"
+        "date": "2026-11-24T13:39:49.271Z"
       },
       "score": {
         "final": 1,
@@ -429,7 +429,7 @@
     {
       "package": {
         "name": "com.cysharp.magiconion.client.unity",
-        "version": "7.11.0",
+        "version": "7.12.0",
         "displayName": "MagicOnion.Client.Unity",
         "description": "Unified Realtime/API framework for .NET platform and Unity.",
         "keywords": [
@@ -440,7 +440,7 @@
           "name": "Cysharp, Inc.",
           "url": "https://cysharp.co.jp/en/"
         },
-        "date": "2026-10-31T21:54:53.392Z"
+        "date": "2026-11-24T13:39:55.044Z"
       },
       "score": {
         "final": 1,
