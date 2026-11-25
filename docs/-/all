@@ -199,13 +199,13 @@
     "name": "com.coffee.ui-effect",
     "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",
     "dist-tags": {
-      "latest": "5.12.1"
+      "latest": "5.13.0"
     },
     "versions": {
-      "5.12.1": "latest"
+      "5.13.0": "latest"
     },
     "time": {
-      "modified": "2026-11-24T13:39:49.271Z"
+      "modified": "2026-11-25T12:50:33.411Z"
     }
   },
   "com.cysharp.magiconion.client.unity": {
