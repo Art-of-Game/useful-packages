@@ -1,7 +1,7 @@
 {
   "name": "com.coffee.ui-effect",
   "dist-tags": {
-    "latest": "5.13.0"
+    "latest": "5.15.0"
   },
   "versions": {
     "5.11.5": {
@@ -531,18 +531,85 @@
         "integrity": "sha512-oXmVE6k4vaA7YT3nWI4WlpFK9IfehnM3KasrKxYW2TGl/hE2Vz7ZPG8z0Zk2p6kDCVHJxP+IoJYoNENUW68ktQ=="
       },
       "_gitTagOf": "d73927fafb84699bbcdedf081786588ca78002c0"
+    },
+    "5.15.0": {
+      "name": "com.coffee.ui-effect",
+      "displayName": "UI Effect",
+      "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",
+      "version": "5.15.0",
+      "unity": "2020.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mob-sakai/UIEffect.git"
+      },
+      "author": {
+        "name": "mob-sakai",
+        "email": "sakai861104@gmail.com",
+        "url": "https://github.com/mob-sakai"
+      },
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "keywords": [
+        "ui",
+        "effect"
+      ],
+      "samples": [
+        {
+          "displayName": "Demo",
+          "description": "UI Effect Demo",
+          "path": "Samples~/Demo"
+        },
+        {
+          "displayName": "v4 Compatible Components",
+          "description": "v4 Compatible Components",
+          "path": "Samples~/com.coffee.ui-effect.v4-compatible-components"
+        },
+        {
+          "displayName": "TextMeshPro Support",
+          "description": "TextMeshPro Support",
+          "path": "Samples~/com.coffee.ui-effect.textmeshpro-legacy"
+        },
+        {
+          "displayName": "TextMeshPro Support (Unity 6)",
+          "description": "TextMeshPro Support (Unity 6)",
+          "path": "Samples~/com.coffee.ui-effect.textmeshpro"
+        },
+        {
+          "displayName": "ShaderGraph Support (Unity 6 BuiltIn)",
+          "description": "ShaderGraph Support (Unity 6 BuiltIn)",
+          "path": "Samples~/com.coffee.ui-effect.shadergraph-builtin"
+        },
+        {
+          "displayName": "ShaderGraph Support (Unity 6 URP)",
+          "description": "ShaderGraph Support (Unity 6 URP)",
+          "path": "Samples~/com.coffee.ui-effect.shadergraph-urp"
+        }
+      ],
+      "documentationUrl": "https://github.com/mob-sakai/UIEffect#readme",
+      "changelogUrl": "https://github.com/mob-sakai/UIEffect/blob/5.15.0/Packages/src/CHANGELOG.md",
+      "licensesUrl": "https://github.com/mob-sakai/UIEffect/blob/5.15.0/Packages/src/LICENSE.md",
+      "_id": "com.coffee.ui-effect@5.15.0",
+      "dist": {
+        "tarball": "https://github.com/Art-of-Game/useful-packages/releases/download/com.coffee.ui-effect-5.15.0/com.coffee.ui-effect-5.15.0.tgz",
+        "shasum": "0bec46113caac531997bfad3b0b87a20c217604d",
+        "integrity": "sha512-f92A1I8oU0Dltj0QgA7/oSHtbsBSNt4Vwu4OQt72RLvn9vFfne1K4ptSjVjR2lgf6EbAPObnXSJKDZ2MvM3bjQ=="
+      },
+      "_gitTagOf": "0bec46113caac531997bfad3b0b87a20c217604d"
     }
   },
   "time": {
     "5.11.5": "2026-10-31T21:54:40.506Z",
-    "modified": "2026-11-25T12:50:33.411Z",
+    "modified": "2026-11-26T12:27:56.054Z",
     "5.11.7": "2026-10-31T21:54:45.228Z",
     "5.11.8": "2026-11-06T10:50:29.324Z",
     "5.11.9": "2026-11-15T10:50:08.749Z",
     "5.11.10": "2026-11-17T11:48:13.444Z",
     "5.12.0": "2026-11-18T11:37:48.596Z",
     "5.12.1": "2026-11-24T13:39:49.271Z",
-    "5.13.0": "2026-11-25T12:50:33.411Z"
+    "5.13.0": "2026-11-25T12:50:33.411Z",
+    "5.15.0": "2026-11-26T12:27:56.054Z"
   },
   "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.\nCombine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!"
 }
