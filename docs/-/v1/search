@@ -613,6 +613,29 @@
     },
     {
       "package": {
+        "name": "com.yasirkula.nativefilepicker",
+        "version": "1.4.4",
+        "displayName": "Native File Picker",
+        "description": "This plugin helps you import/export files from/to various document providers on Android & iOS. On iOS, it uses UIDocumentPickerViewController which has the following requirements:\r\n\r\n- iOS 8 or later\r\n- an Apple Developer Program account (signing the app with a free account won't work)\r\n\r\nNOTE: Custom file extensions are supported on iOS only.",
+        "author": {
+          "name": "yasirkula",
+          "email": "yasirkula@gmail.com",
+          "url": "https://github.com/yasirkula"
+        },
+        "date": "2026-11-27T23:52:52.399Z"
+      },
+      "score": {
+        "final": 1,
+        "detail": {
+          "quality": 1,
+          "popularity": 1,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 1
+    },
+    {
+      "package": {
         "name": "com.adrenak.brw",
         "version": "1.2.0",
         "displayName": "Adrenak.BRW: Byte Reader Writer",
@@ -750,6 +773,6 @@
       "searchScore": 1
     }
   ],
-  "total": 28,
+  "total": 29,
   "time": "Thu, 01 Jan 1970 00:00:00 GMT"
 }
