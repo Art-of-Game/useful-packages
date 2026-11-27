@@ -318,6 +318,17 @@
       }
     },
     {
+      "name": "com.yasirkula.nativefilepicker",
+      "latestFrom": "yasirkula/UnityNativeFilePicker",
+      "tarball": "https://codeload.github.com/yasirkula/UnityNativeFilePicker/tar.gz/v{ref}",
+      "folder": "UnityNativeFilePicker-{ref}",
+      "links": {
+        "documentationUrl": "https://github.com/yasirkula/UnityNativeFilePicker#readme",
+        "changelogUrl": "https://github.com/yasirkula/UnityNativeFilePicker/releases/tag/v{version}",
+        "licensesUrl": "https://github.com/yasirkula/UnityNativeFilePicker/blob/v{version}/LICENSE.txt"
+      }
+    },
+    {
       "name": "com.adrenak.brw",
       "latestFrom": "adrenak/brw",
       "latestBy": "branch",

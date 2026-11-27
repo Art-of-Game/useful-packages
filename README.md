@@ -59,6 +59,7 @@ Google has archived `play-unity-plugins` too. Those packages are the newest vers
 | `com.netpyoung.webp` | unity.webp | [netpyoung/unity.webp](https://github.com/netpyoung/unity.webp) | Nothing |
 | `com.nosuchstudio.rtltmpro` | RTL TextMesh Pro | [hk1ll3r/RTLTMPro](https://github.com/hk1ll3r/RTLTMPro) | Nothing |
 | `com.yasirkula.nativegallery` | Native Gallery | [yasirkula/UnityNativeGallery](https://github.com/yasirkula/UnityNativeGallery) | Nothing |
+| `com.yasirkula.nativefilepicker` | Native File Picker | [yasirkula/UnityNativeFilePicker](https://github.com/yasirkula/UnityNativeFilePicker) | Nothing |
 
 The MagicOnion client and YetAnotherHttpHandler also need NuGet libraries, which their own READMEs list. NuGetForUnity installs them.
 
@@ -143,6 +144,7 @@ https://github.com/Art-of-Game/useful-packages.git#upm/com.github-glitchenzo.nug
 https://github.com/Art-of-Game/useful-packages.git#upm/com.netpyoung.webp
 https://github.com/Art-of-Game/useful-packages.git#upm/com.nosuchstudio.rtltmpro
 https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativegallery
+https://github.com/Art-of-Game/useful-packages.git#upm/com.yasirkula.nativefilepicker
 ```
 
 These follow the newest version. To stay on one version, add it to the end, like `#upm/com.google.firebase.app/14.1.0`.
