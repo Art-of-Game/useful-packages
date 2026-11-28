@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dependencies>
+  <!-- See https://github.com/googlesamples/unity-jar-resolver#usage for
+    how to configure dependencies -->
+  <androidPackages>
+    <androidPackage spec="androidx.credentials:credentials:1.3.0" />
+    <androidPackage spec="androidx.credentials:credentials-play-services-auth:1.3.0" />
+    <androidPackage spec="com.google.android.libraries.identity.googleid:googleid:1.1.1" />
+    <androidPackage spec="com.google.android.gms:play-services-auth:22.0.0" />
+  </androidPackages>
+
+  <!-- iOS Cocoapod dependencies can be specified by each iosPod element. -->
+  <iosPods>
+    <iosPod name="GoogleSignIn" version="10.1.0" bitcodeEnabled="false" />
+  </iosPods>
+
+  <!-- GoogleSignIn 10.1.0 is the last CocoaPods release; newer versions ship
+       only via Swift Package Manager. The External Dependency Manager uses this
+       Swift package when its Swift Package Manager integration is on (the
+       default) and falls back to the pod above otherwise; replacesPod prevents
+       double inclusion. -->
+  <remoteSwiftPackage url="https://github.com/google/GoogleSignIn-iOS.git" version="10.1.0">
+    <swiftPackage name="GoogleSignIn" replacesPod="GoogleSignIn"/>
+  </remoteSwiftPackage>
+</dependencies>
